@@ -22,6 +22,12 @@
 - 备份仓库：https://github.com/cooywjw/lottery-tools
 - 自动备份时间：每天 20:00
 
+### 模型配置注意事项
+- **所有模型必须指向同一个工作区**：`~/.openclaw/workspace`
+- 这样 skill 才能跨模型共享使用
+- 切换模型后 skill 仍然可用（前提是同一工作区）
+- 不同模型的 tool use 能力有差异，需要主动提示使用 skill
+
 ### API Keys（已配置）
 - Moonshot (Kimi)
 - DeepSeek (V3/R1)
