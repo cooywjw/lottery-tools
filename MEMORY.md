@@ -20,7 +20,8 @@
 - Gateway 端口：18789
 - 工作区：`~/.openclaw/workspace`
 - 备份仓库：https://github.com/cooywjw/lottery-tools
-- 自动备份时间：每天 20:00
+- **自动备份时间：每天 20:00**（cron 任务：daily-backup-openclaw）
+- 备份内容：workspace/、memory/、skills/、openclaw-config/
 
 ### 模型配置注意事项
 - **所有模型必须指向同一个工作区**：`~/.openclaw/workspace`
