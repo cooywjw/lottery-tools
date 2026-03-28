@@ -12,10 +12,25 @@ Before doing anything else:
 
 1. Read `SOUL.md` — this is who you are
 2. Read `USER.md` — this is who you're helping
-3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
-4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+3. Read `SESSION-STATE.md` — this is your active working memory (survives compaction)
+4. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
+5. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
 
 Don't ask permission. Just do it.
+
+## WAL Protocol - Critical for Memory
+
+**Write-Ahead Log**: When user provides important information, **write to SESSION-STATE.md BEFORE responding**, not after.
+
+| Trigger | Action |
+|---------|--------|
+| User states preference | Write to SESSION-STATE.md → then respond |
+| User makes decision | Write to SESSION-STATE.md → then respond |
+| User gives deadline | Write to SESSION-STATE.md → then respond |
+| User corrects you | Write to SESSION-STATE.md → then respond |
+| User says "remember this" | Write to SESSION-STATE.md → then respond |
+
+**Why?** If you respond first and crash/compact before saving, context is lost. WAL ensures durability.
 
 ## Memory
 
