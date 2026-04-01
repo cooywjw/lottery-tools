@@ -1,0 +1,11 @@
+{
+  "name": "tianshu-wan-video",
+  "version": "1.0.0",
+  "description": "使用通义万相 2.6 生成视频，支持文生视频和图生视频",
+  "main": "scripts/generate_video.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["video", "generation", "wanxiang", "dashscope"],
+  "license": "MIT"
+}

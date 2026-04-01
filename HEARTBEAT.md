@@ -1,5 +1,75 @@
-# HEARTBEAT.md
+# HEARTBEAT.md - 定期检查清单
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+## 检查频率
+- 每 30-60 分钟检查一次
+- 避开深夜时段 (23:00-08:00)
+- 用户忙碌时减少频率
 
-# Add tasks below when you want the agent to check something periodically.
+## 检查项目
+
+### 1. 上下文使用率检查
+- 使用 context-manager 技能检查当前上下文使用率
+- 如果 >85%：提醒用户考虑清理
+- 如果 >90%：建议立即清理
+- 命令：检查 session_status 中的 token 使用情况
+
+### 2. 公众号内容更新
+- 检查是否需要发布新的竞彩分析
+- 查看是否有重要足球赛事
+- 准备相关内容素材
+
+### 3. 系统健康检查
+- OpenClaw 运行状态
+- 模型连接状态
+- 备份是否正常执行
+
+### 4. 用户任务跟进
+- 查看 TODOS.md 中的待办事项
+- 检查是否有快到期的任务
+- 提醒重要事项
+
+## 执行逻辑
+
+```javascript
+// 伪代码逻辑
+if (当前时间在 08:00-23:00 之间) {
+  if (距离上次检查 > 30分钟) {
+    1. 检查上下文使用率
+    2. 检查公众号内容需求
+    3. 检查系统健康状态
+    4. 检查用户任务
+    
+    if (有任何需要提醒的事项) {
+      汇总提醒用户
+    } else {
+      HEARTBEAT_OK
+    }
+  } else {
+    HEARTBEAT_OK
+  }
+} else {
+  // 深夜时段，不打扰
+  HEARTBEAT_OK
+}
+```
+
+## 上下文管理集成
+
+当检查到高上下文使用率时：
+1. **85-90%**：温和提醒："上下文使用率较高(XX%)，建议适时清理"
+2. **>90%**：强烈建议："上下文使用率临界(XX%)，建议立即清理，说'开始上下文整理'即可"
+
+## 记录上次检查时间
+
+在 `memory/heartbeat-state.json` 中记录：
+```json
+{
+  "lastCheck": 1709276400,
+  "lastContextCheck": 1709276400,
+  "lastWechatCheck": 1709190000,
+  "lastSystemCheck": 1709276400
+}
+```
+
+---
+**目标**：主动但不打扰，有用但不烦人

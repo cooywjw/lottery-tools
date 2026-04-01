@@ -1,0 +1,17 @@
+{
+  "lastCheck": 1774974350,
+  "lastContextCheck": 1774974350,
+  "lastWechatCheck": 1709190000,
+  "lastSystemCheck": 1774974350,
+  "lastHeartbeat": 1774974350,
+  "contextCleanup": {
+    "lastCleanup": 1709276400,
+    "reason": "Context usage 118% exceeded critical threshold",
+    "summaryFile": "memory/context-summary-2026-03-31-1614.md"
+  },
+  "lastHeartbeatCheck": 1774974350,
+  "lastContextUsageCheck": 1774974350,
+  "lastWechatContentCheck": 1774974350,
+  "lastSystemHealthCheck": 1774974350,
+  "lastTodoCheck": 1774974350
+}

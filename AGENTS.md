@@ -225,3 +225,22 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
+
+## Installed Skills
+
+### context-manager (v1.0.0)
+**Purpose**: Monitor conversation context usage, summarize and reset when threshold exceeded
+**Location**: `skills/context-manager-1.0.0/`
+**Key Features**:
+- Real-time context usage monitoring
+- Smart summarization when usage >85% (warning) or >90% (critical)
+- Seamless session transition with preserved context
+- User-friendly natural language commands
+
+**Usage Commands**:
+- "查一下上下文还剩多少" - Check current context usage
+- "开始上下文整理" - Start context cleanup process
+- "读取总结继续" - Load summary and continue conversation
+
+**Integration**: Works with memory-manager and cross-model-memory skills
+**Created**: 2026-03-31 (developed to solve high context usage issues)

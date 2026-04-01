@@ -1,0 +1,17 @@
+{
+  "warningThreshold": 0.85,
+  "criticalThreshold": 0.90,
+  "checkInterval": 300,
+  "summaryDir": "memory/context-summaries",
+  "autoApprove": false,
+  "maxSummariesToKeep": 10,
+  "preserveItems": [
+    "decisions",
+    "todos",
+    "userPreferences",
+    "importantFacts",
+    "projectContext",
+    "nextSteps"
+  ],
+  "summaryTemplate": "# Context Summary - {timestamp}\n\n## Key Decisions\n{decisions}\n\n## Open TODOs\n{todos}\n\n## User Preferences\n{preferences}\n\n## Important Information\n{importantInfo}\n\n## Next Steps\n{nextSteps}\n\n## Conversation Flow\n{flowSummary}\n\n---\n**Original Context**: {originalTokens} tokens\n**Summary**: {summaryTokens} tokens\n**Reduction**: {reductionPercent}%\n**Session ID**: {sessionId}"
+}
