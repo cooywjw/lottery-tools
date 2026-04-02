@@ -3,26 +3,51 @@
  * 
  * 用法:
  *   node agent_spawn.js --name <名称> --description <描述> --prompt <任务> [--team <团队>] [--background]
- *   node agent_spawn.js --name researcher --description "代码审计" --prompt "分析 src/auth/..." --team my-team
  */
 
-const path = require('path');
-const { spawn } = require('child_process');
+const http = require('http');
 
-// 读取 API 配置
-function getApiConfig() {
-  const configPath = path.join(__dirname, '..', '..', 'openclaw-config', 'api-config.json');
-  try {
-    return require(configPath);
-  } catch {
-    return null;
-  }
+const GATEWAY_HOST = 'localhost';
+const GATEWAY_PORT = 18789;
+const GATEWAY_TOKEN = 'a3e09c327f476ad37e8a5b1e2cda8bbef85b62faf60bd61f';
+
+/**
+ * 调用 Gateway HTTP API
+ */
+function invoke(tool, args) {
+  return new Promise((resolve, reject) => {
+    const data = JSON.stringify({ tool, args });
+    const options = {
+      hostname: GATEWAY_HOST,
+      port: GATEWAY_PORT,
+      path: '/tools/invoke',
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${GATEWAY_TOKEN}`,
+        'Content-Type': 'application/json',
+        'Content-Length': Buffer.byteLength(data)
+      }
+    };
+    const req = http.request(options, (res) => {
+      let body = '';
+      res.on('data', c => body += c);
+      res.on('end', () => {
+        try {
+          const r = JSON.parse(body);
+          if (r.ok) resolve(r.result);
+          else reject(new Error(r.error?.message || JSON.stringify(r.error)));
+        } catch (e) { reject(e); }
+      });
+    });
+    req.on('error', reject);
+    req.write(data);
+    req.end();
+  });
 }
 
 async function main() {
   const args = process.argv.slice(2);
   
-  // 解析参数
   let name, description, prompt, teamName = 'default', background = false;
   
   for (let i = 0; i < args.length; i++) {
@@ -37,85 +62,45 @@ async function main() {
   
   if (!name || !description || !prompt) {
     console.log(JSON.stringify({
-      error: 'Missing required arguments: --name, --description, --prompt are required',
-      usage: 'node agent_spawn.js --name <名称> --description <描述> --prompt <任务> [--team <团队>] [--background]'
+      error: 'Missing required: --name, --description, --prompt',
+      usage: 'node agent_spawn.js --name <名称> --description <描述> --prompt <任务>'
     }, null, 2));
     process.exit(1);
   }
   
-  // 加载 team-state
   const teamState = require('./team-state');
   
-  // 检查是否可 spawn
+  // 检查并发限制
   const stats = teamState.getStats();
   if (!stats.canSpawn) {
     console.log(JSON.stringify({
       success: false,
-      error: `已达最大并发数 (${stats.maxAgents})，无法 spawn 新 Agent`,
-      activeAgents: stats.activeCount,
-      suggestion: '等待现有 Agent 完成后重试'
+      error: `已达最大并发数 (${stats.maxAgents})`,
+      activeCount: stats.activeCount
     }, null, 2));
     process.exit(1);
   }
   
-  // 检查名称是否冲突
-  const existing = teamState.get(name);
-  if (existing && existing.status === 'running') {
-    console.log(JSON.stringify({
-      success: false,
-      error: `Agent "${name}" 已在运行中`,
-      existingAgent: existing
-    }, null, 2));
-    process.exit(1);
-  }
-  
-  // 构建 task prompt（自包含）
-  const taskPrompt = `[Agent: ${name}] [Team: ${teamName}]\n\n任务：${prompt}\n\n请执行任务，完成后返回结果。如果遇到问题，请汇报错误信息。`;
-  
-  // 调用 OpenClaw HTTP API spawn agent
-  const apiConfig = getApiConfig();
-  const gatewayUrl = apiConfig?.gatewayUrl || 'http://localhost:18789';
-  const gatewayToken = apiConfig?.token || process.env.OPENCLAW_TOKEN || '';
-  
-  const requestBody = {
-    task: taskPrompt,
-    model: 'minimax/MiniMax-M2.7', // 默认模型
-    thinking: 'low',
-    timeoutSeconds: background ? 0 : 180 // background=true 则无超时限制
-  };
-  
-  // 添加 label 作为 name 标识
-  if (background) {
-    requestBody.label = `coordinator-${name}`;
-  }
+  // 构建 task prompt
+  const taskPrompt = `[Agent: ${name}] [Team: ${teamName}]\n\n任务：${prompt}\n\n请执行任务，完成后返回结果。`;
   
   try {
-    const response = await fetch(`${gatewayUrl}/api/sessions`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${gatewayToken}`
-      },
-      body: JSON.stringify(requestBody)
+    // 调用 sessions_spawn
+    const result = await invoke('sessions_spawn', {
+      task: taskPrompt,
+      model: 'minimax/MiniMax-M2.7',
+      thinking: 'low',
+      timeoutSeconds: background ? 0 : 180
     });
     
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-    }
-    
-    const sessionData = await response.json();
-    const sessionKey = sessionData.sessionKey || sessionData.id;
-    const taskId = sessionData.taskId || sessionKey;
+    const sessionKey = result.childSessionKey;
+    const taskId = result.runId || sessionKey;
     
     // 注册到 team-state
     const registered = teamState.register(name, sessionKey, taskId, description, teamName);
     
     if (!registered.success) {
-      console.log(JSON.stringify({
-        success: false,
-        error: registered.error,
-        activeCount: registered.activeCount
-      }, null, 2));
+      console.log(JSON.stringify({ success: false, error: registered.error }, null, 2));
       process.exit(1);
     }
     
@@ -126,17 +111,15 @@ async function main() {
       taskId,
       teamName,
       description,
-      runInBackground: background,
       message: background
         ? `Agent "${name}" 已启动（后台模式）`
-        : `Agent "${name}" 已启动，正在执行任务...`
+        : `Agent "${name}" 已启动，执行中...`
     }, null, 2));
     
   } catch (err) {
     console.log(JSON.stringify({
       success: false,
-      error: `Spawn 失败: ${err.message}`,
-      hint: '检查 OpenClaw Gateway 是否运行中 (http://localhost:18789)'
+      error: `Spawn 失败: ${err.message}`
     }, null, 2));
     process.exit(1);
   }
