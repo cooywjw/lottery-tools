@@ -1,12 +1,48 @@
 ---
 name: context-manager
 description: "Monitor conversation context usage, summarize and reset when threshold exceeded. Use when: (1) context usage >85%, (2) user wants to continue long conversation, (3) AI performance slows down, (4) manual context cleanup needed."
+claude_tool_interface: true
+version: 1.1.0
 metadata: { "openclaw": { "emoji": "🧠" } }
 ---
 
-# Context Manager Skill
+# Context Manager Skill (v1.1.0)
 
 Monitor conversation context usage in real-time, generate summaries when approaching limits, and create new sessions with preserved context.
+
+## Claude Tool Interface
+
+### inputSchema
+
+```typescript
+{
+  action: enum["check", "summarize", "reset"],  // 必填
+  threshold: number[0-1],                          // 可选，默认0.85
+  force: boolean,                                 // 可选，强制执行
+  sessionId: string                               // 可选，指定会话
+}
+```
+
+### 能力标记
+
+- **并发安全**: ✅ (`action=check` 时) / ❌ (`action=summarize|reset`)
+- **只读**: ✅ (`action=check`) / ❌ (`action=summarize|reset`)
+- **破坏性**: ❌ (`action=check|summarize`) / ✅ (`action=reset` 会话重置)
+- **最大结果**: 5000 字符
+
+### description() 动态描述
+
+```typescript
+(action) => {
+  switch(action) {
+    case "check":   return "Check current context usage percentage"
+    case "summarize": return "Summarize conversation into summary file"
+    case "reset":  return "Reset session after user confirmation (DESTRUCTIVE)"
+  }
+}
+```
+
+---
 
 ## When to Use
 
@@ -33,6 +69,18 @@ Monitor conversation context usage in real-time, generate summaries when approac
 - User is in middle of critical operation (ask first)
 - Fresh session just started
 
+---
+
+## Migration Notes (v1.0.0 → v1.1.0)
+
+Added Claude Tool Interface support:
+- Zod `inputSchema` for structured parameters
+- `isConcurrencySafe` / `isReadOnly` / `isDestructive` capability flags
+- Dynamic `description()` based on action
+- Tool registry compatible format
+
+---
+
 ## Core Functions
 
 ### 1. Context Monitoring
@@ -55,6 +103,8 @@ Monitor conversation context usage in real-time, generate summaries when approac
 - Progress updates during summarization
 - Confirmation before session reset
 
+---
+
 ## Usage
 
 ### Manual Trigger
@@ -63,31 +113,17 @@ Ask the AI assistant:
 - "Start context cleanup"
 - "Save summary and continue"
 
-### Automated Operation
-The skill runs automatically when:
-- Context usage exceeds configured thresholds
-- User approves the cleanup process
-
 ### Script Usage (Advanced)
 ```bash
-# Check context usage
-node ~/.openclaw/workspace/skills/context-manager-1.0.0/context-monitor.js --check
-
-# Force summary generation
-node ~/.openclaw/workspace/skills/context-manager-1.0.0/context-monitor.js --summarize
-
-# Reset session with summary
-node ~/.openclaw/workspace/skills/context-manager-1.0.0/context-monitor.js --reset
+node skills/context-manager-1.0.0/context-monitor.js --check
+node skills/context-manager-1.0.0/context-monitor.js --summarize
+node skills/context-manager-1.0.0/context-monitor.js --reset
 ```
+
+---
 
 ## Configuration
 
-Default thresholds:
-- **Warning**: 85% - User gets notified
-- **Critical**: 90% - Auto-cleanup recommended
-- **Auto-check interval**: 300 seconds (5 minutes)
-
-Customize in `config.json`:
 ```json
 {
   "warningThreshold": 0.85,
@@ -98,11 +134,7 @@ Customize in `config.json`:
 }
 ```
 
-## File Structure
-
-- `memory/context-summary-YYYY-MM-DD-HHMM.md` - Generated summaries
-- `memory/context-state.json` - Last check timestamps and thresholds
-- `skills/context-manager-1.0.0/` - Skill files
+---
 
 ## Safety Notes
 
@@ -111,12 +143,9 @@ Customize in `config.json`:
 - **Never delete** original conversation files
 - **Keep backups** of important context
 
-## Integration with Other Skills
+## Integration
 
-Works with:
-- **memory-manager** - For long-term memory storage
-- **cross-model-memory** - For consistency across model switches
-- **self-improving** - To learn optimal summarization techniques
+Works with: **memory-manager**, **cross-model-memory**, **self-improving**
 
 ---
 **Purpose**: Extend effective conversation length, prevent context overflow, maintain conversation continuity across sessions.

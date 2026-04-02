@@ -1,0 +1,87 @@
+{
+  "version": "1.0.0",
+  "description": "OpenClaw 全局工具注册表 - Claude Tool Interface 兼容",
+  "updated": "2026-04-02",
+  "tools": [
+    {
+      "name": "context_check",
+      "displayName": "Context Check",
+      "skill": "context-manager",
+      "description": "Check current context usage percentage",
+      "capabilities": ["read"],
+      "trustLevel": "safe",
+      "concurrentSafe": true,
+      "readOnly": true,
+      "destructive": false,
+      "maxResultChars": 5000,
+      "version": "1.1.0"
+    },
+    {
+      "name": "context_summarize",
+      "displayName": "Context Summarize",
+      "skill": "context-manager",
+      "description": "Summarize conversation into summary file",
+      "capabilities": ["write"],
+      "trustLevel": "safe",
+      "concurrentSafe": false,
+      "readOnly": false,
+      "destructive": false,
+      "maxResultChars": 5000,
+      "version": "1.1.0"
+    },
+    {
+      "name": "context_reset",
+      "displayName": "Context Reset",
+      "skill": "context-manager",
+      "description": "Reset session after user confirmation (DESTRUCTIVE)",
+      "capabilities": ["write", "delete"],
+      "trustLevel": "review",
+      "concurrentSafe": false,
+      "readOnly": false,
+      "destructive": true,
+      "maxResultChars": 5000,
+      "version": "1.1.0"
+    },
+    {
+      "name": "web_search",
+      "displayName": "Web Search",
+      "skill": "tavily-search",
+      "description": "Search the web using Tavily API",
+      "capabilities": ["read", "network"],
+      "trustLevel": "safe",
+      "concurrentSafe": true,
+      "readOnly": true,
+      "destructive": false,
+      "maxResultChars": 10000,
+      "version": "1.1.0"
+    },
+    {
+      "name": "tavily_advanced_search",
+      "displayName": "Tavily Advanced Search",
+      "skill": "tavily-search",
+      "description": "Deep search with more comprehensive results",
+      "capabilities": ["read", "network"],
+      "trustLevel": "safe",
+      "concurrentSafe": true,
+      "readOnly": true,
+      "destructive": false,
+      "maxResultChars": 10000,
+      "version": "1.1.0"
+    }
+  ],
+  "categories": {
+    "memory": {
+      "tools": ["context_check", "context_summarize", "context_reset"],
+      "description": "上下文和记忆管理工具"
+    },
+    "network": {
+      "tools": ["web_search", "tavily_advanced_search"],
+      "description": "网络搜索工具"
+    }
+  },
+  "rules": {
+    "maxConcurrent": 5,
+    "defaultTimeout": 30000,
+    "dangerousTools": ["context_reset"]
+  }
+}
