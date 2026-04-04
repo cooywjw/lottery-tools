@@ -77,7 +77,7 @@
 - **下一步**：迁移 context-manager + tavily-search
 
 #### Phase 2：多Agent编排
-- **状态**：✅ **核心功能已完成**（2026-04-02）
+- **状态**：✅ **核心功能已完成**（2026-04-02）**+ 角色集成**（2026-04-04）
 - **目标**：实现 Coordinator Mode + agent_spawn/list/send/stop
 - **产出**：
   - `D:\work\projects\claude-code-source/PHASE2_COORDINATOR_DESIGN.md` — 设计文档
@@ -86,12 +86,14 @@
   - `skills/coordinator/SYSTEM_PROMPT.md` — Coordinator 系统提示词
   - `skills/coordinator/team-state.js` — Agent 注册表
   - `skills/coordinator/team-state.json` — 持久化状态
+  - `skills/coordinator/roles/role-loader.js` — **角色加载器** ✅（2026-04-04新增）
 - **已实现功能**：
   - `spawn` — 创建并行 Worker Agent（最多3个并发）
   - `send` — 向运行中的 Agent 发送消息
   - `list` — 列出团队所有 Agent
   - `stop` — 停止运行中的 Agent
   - `status` — 查看团队整体状态
+  - `--role` 参数 — 加载 agency-agents 专业角色人设（2026-04-04新增）
 - **Gateway API**：通过 `/tools/invoke` 调用 `sessions_spawn/sessions_send`
 - **下一步**：集成到 OpenClaw 工具系统，实现任务通知回调
 
@@ -121,6 +123,17 @@
 8. **claude-tool-interface** - 统一工具接口规范 ✓ (v1.0.0 新建，2026-04-02)
 9. **cli-anything** - CLI 生成工具 ✓ (v0.1.0 新安装，2026-04-03)
    - 用途：将 GUI 应用转换为 AI 可用的命令行接口
+10. **coordinator** - 多Agent编排引擎 ✓ (2026-04-02，含角色集成，2026-04-04)
+    - 新增：支持 `--role` 参数加载 agency-agents 专业角色
+    - 角色库：`roles/engineering/`, `roles/marketing/`, `roles/project-management/`, `roles/testing/`
+11. **agency-agents** - 专业Agent角色库 ⚠️ (2026-04-04 评估安装)
+    - 描述：5个预设角色（前端/后端/增长/项目经理/测试）
+    - 注意：ClawHub有 Warnings 警告，实际仅5个Agent（非宣称的61个）
+12. **cognee** - AI记忆引擎 ⚠️ (2026-04-04 评估+包装)
+    - 来源：topoteretes/cognee（14.9k stars）
+    - 功能：文本→知识图谱，Agent长期记忆
+    - ⚠️ Python 3.14 不兼容，必须用 Python 3.12（`py -3.12`）
+    - 状态：cognee 0.5.7 已装，litellm/lancedb 仍下载中
 
 ## 已知问题
 - OpenClaw CLI WebSocket 连接有问题（HTTP API 可用）
@@ -148,6 +161,43 @@
 - [ ] Phase 3：增强 context-manager（autoCompact）
 - [ ] 配置公众号自动回复和菜单栏
 - [ ] 每日更新竞彩数据 + 足球内容
+- [ ] **cognee 测试**（等待网络恢复）
+
+## Cognee 安装记录 (2026-04-04)
+
+### 已完成
+- ✅ cognee 0.5.7 安装成功 (Python 3.12)
+- ✅ DeepSeek LLM API 验证通过 (deepseek/deepseek-chat via litellm)
+- ✅ fastembed 0.8.0 安装成功
+- ✅ 测试脚本已保存: `test_cognee.py`
+
+### 卡住原因
+- ❌ Embedding 模型下载超时 (HuggingFace 访问失败, WinError 10060)
+- 原因：网络不稳定，HuggingFace 连接超时
+
+### 配置说明
+```python
+# LLM: openai provider + deepseek/deepseek-chat (litellm 自动路由)
+config.set_llm_provider("openai")
+config.set_llm_api_key("sk-11936f8a91394f5a8c549e6e4ccacf4f")
+config.set_llm_model("deepseek/deepseek-chat")
+
+# Embedding: fastembed 本地模型 (免费)
+config.set_embedding_provider("fastembed")
+config.set_embedding_model("BAAI/bge-small-en-v1.5")
+```
+
+### 下一步
+网络恢复后运行：
+```bash
+python test_cognee.py
+```
+
+### cognee 依赖列表
+- lancedb (向量数据库)
+- litellm (LLM 路由)
+- fastembed (本地 embedding)
+- deepseek-chat (LLM)
 
 ## 沟通偏好
 - 简洁、直接、步骤清晰
