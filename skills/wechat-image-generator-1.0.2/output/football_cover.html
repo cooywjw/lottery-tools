@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, initial-scale=1.0">
+    <title>足球赛事封面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 1080px;
+            height: 1440px;
+            overflow: hidden;
+            font-family: -apple-system, "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+            position: relative;
+        }
+        /* 足球场背景 */
+        .bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, 
+                #0a1628 0%, 
+                #1a2d4a 20%, 
+                #1e3a5f 40%, 
+                #2d5a3d 60%, 
+                #1a4d2e 80%, 
+                #0d2818 100%);
+        }
+        /* 足球场线条 */
+        .field-lines {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.15;
+        }
+        .field-lines::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 85%;
+            height: 70%;
+            border: 3px solid rgba(255,255,255,0.6);
+            border-bottom: none;
+            border-radius: 8px 8px 0 0;
+        }
+        .field-lines::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30%;
+            height: 18%;
+            border: 2px solid rgba(255,255,255,0.5);
+            border-bottom: none;
+        }
+        /* 中心圆 */
+        .center-circle {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            border: 3px solid rgba(255,255,255,0.2);
+            border-radius: 50%;
+        }
+        .center-dot {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 16px;
+            height: 16px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 50%;
+        }
+        /* 中线 */
+        .halfway-line {
+            position: absolute;
+            top: 45%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: rgba(255,255,255,0.15);
+        }
+        /* 足球元素装饰 */
+        .football-icon {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border: 3px solid rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .football-icon::before {
+            content: '⚽';
+            font-size: 48px;
+            opacity: 0.15;
+        }
+        .football-1 { top: 8%; left: 5%; transform: rotate(-15deg); }
+        .football-2 { top: 15%; right: 8%; transform: rotate(25deg); }
+        .football-3 { bottom: 35%; left: 3%; transform: rotate(-30deg); }
+        .football-4 { bottom: 25%; right: 5%; transform: rotate(10deg); }
+        /* 发光效果 */
+        .glow {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            filter: blur(150px);
+            opacity: 0.15;
+        }
+        .glow-1 {
+            top: -200px;
+            right: -100px;
+            background: radial-gradient(circle, #4a90d9 0%, transparent 70%);
+        }
+        .glow-2 {
+            bottom: -100px;
+            left: -150px;
+            background: radial-gradient(circle, #2d8a4e 0%, transparent 70%);
+        }
+        /* 顶部装饰条 */
+        .top-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(90deg, 
+                #3b82f6 0%, 
+                #10b981 33%, 
+                #f59e0b 66%, 
+                #ef4444 100%);
+        }
+        /* 底部渐变 */
+        .bottom-gradient {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(180deg, 
+                transparent 0%, 
+                rgba(10,22,40,0.7) 50%, 
+                rgba(10,22,40,0.95) 100%);
+        }
+        /* 联赛元素 */
+        .leagues {
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 40px;
+            z-index: 10;
+        }
+        .league-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 30px;
+            border: 1px solid rgba(255,255,255,0.12);
+            backdrop-filter: blur(10px);
+        }
+        .league-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        .league-dot.england { background: #3b82f6; box-shadow: 0 0 10px #3b82f6; }
+        .league-dot.france { background: #10b981; box-shadow: 0 0 10px #10b981; }
+        .league-dot.australia { background: #f59e0b; box-shadow: 0 0 10px #f59e0b; }
+        .league-name {
+            color: rgba(255,255,255,0.9);
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+        /* 日期标签 */
+        .date-badge {
+            position: absolute;
+            top: 160px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            padding: 12px 30px;
+            background: rgba(239,68,68,0.9);
+            border-radius: 25px;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            box-shadow: 0 4px 20px rgba(239,68,68,0.4);
+        }
+        /* 中央装饰线 */
+        .center-divider {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+        }
+        /* 底部水印 */
+        .watermark {
+            position: absolute;
+            bottom: 340px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: rgba(255,255,255,0.5);
+            font-size: 16px;
+            letter-spacing: 4px;
+            z-index: 20;
+        }
+        /* 底部AI生成标签 */
+        .ai-tag {
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 30px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 20px;
+            color: rgba(255,255,255,0.5);
+            font-size: 14px;
+            letter-spacing: 3px;
+            z-index: 20;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="field-lines"></div>
+    <div class="halfway-line"></div>
+    <div class="center-circle"></div>
+    <div class="center-dot"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    
+    <div class="football-icon football-1"></div>
+    <div class="football-icon football-2"></div>
+    <div class="football-icon football-3"></div>
+    <div class="football-icon football-4"></div>
+    
+    <div class="top-bar"></div>
+    <div class="bottom-gradient"></div>
+    <div class="center-divider"></div>
+    
+    <div class="leagues">
+        <div class="league-item">
+            <div class="league-dot england"></div>
+            <span class="league-name">英冠</span>
+        </div>
+        <div class="league-item">
+            <div class="league-dot france"></div>
+            <span class="league-name">法甲</span>
+        </div>
+        <div class="league-item">
+            <div class="league-dot australia"></div>
+            <span class="league-name">澳超</span>
+        </div>
+    </div>
+    
+    <div class="date-badge">4月3日 周五 · 13场赛事</div>
+    
+    <!-- 标题留白区域 -->
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; text-align: center; z-index: 15;">
+        <!-- 标题区域预留 -->
+    </div>
+    
+    <div class="watermark">慈云小白说球</div>
+    <div class="ai-tag">AI生成</div>
+</body>
+</html>

@@ -2,7 +2,7 @@
 name: coordinator
 description: "Multi-agent orchestration skill. Spawn workers, coordinate parallel tasks, aggregate results. Use when: tasks can be parallelized, research across multiple topics, or complex projects needing concurrent sub-agents."
 claude_tool_interface: true
-version: 1.0.0
+version: 1.1.0
 metadata: { "openclaw": { "emoji": "🎯" } }
 ---
 
@@ -202,12 +202,38 @@ coordinator(action="status")
 skills/coordinator/
 ├── SKILL.md           # 本文件
 ├── SYSTEM_PROMPT.md   # Coordinator system prompt
+├── coordinator.js     # ✅ 统一入口（推荐使用）
 ├── team-state.js      # Agent 注册表（内存 + 磁盘）
-├── agent_spawn.js     # spawn 工具
-├── agent_send.js      # send 工具
-├── agent_list.js      # list 工具
-├── agent_stop.js      # stop 工具
-└── agent_status.js    # status 工具
+├── team-state.json    # 持久化状态文件
+├── agent_spawn.js     # spawn 工具（独立脚本）
+├── agent_send.js      # send 工具（独立脚本）
+├── agent_list.js      # list 工具（独立脚本）
+├── agent_stop.js      # stop 工具（独立脚本）
+└── agent_status.js    # status 工具（独立脚本）
+```
+
+## 统一入口（coordinator.js）
+
+推荐使用 `coordinator.js` 作为统一入口：
+
+```bash
+# Spawn - 创建新 Agent
+node skills/coordinator/coordinator.js --action spawn \
+  --name <名称> --description <描述> --prompt <任务> \
+  [--team <团队>] [--run_in_background]
+
+# Send - 向运行中的 Agent 发送消息
+node skills/coordinator/coordinator.js --action send \
+  --to <Agent名称> --message <消息>
+
+# List - 列出所有 Agent
+node skills/coordinator/coordinator.js --action list [--team <团队>]
+
+# Stop - 停止 Agent
+node skills/coordinator/coordinator.js --action stop --task_id <Agent名称或ID>
+
+# Status - 查看团队状态
+node skills/coordinator/coordinator.js --action status
 ```
 
 ---
@@ -236,4 +262,54 @@ node skills/coordinator/agent_list.js
 
 # 测试 stop
 node skills/coordinator/agent_stop.js --task_id test
+```
+
+---
+
+## 角色集成（Roles）
+
+Coordinated 内置支持专业角色库，可与 Agency Agents 配合使用。
+
+### 可用角色
+
+| 角色 | 路径 | 用途 |
+|------|------|------|
+| `frontend-developer` | roles/engineering/ | 前端开发、React/Vue |
+| `backend-architect` | roles/engineering/ | 后端架构、API设计 |
+| `growth-hacker` | roles/marketing/ | 增长策略、营销自动化 |
+| `project-manager-senior` | roles/project-management/ | 项目规划、任务分解 |
+| `testing-reality-checker` | roles/testing/ | 质量验证、测试分析 |
+
+### 使用角色
+
+在 spawn 时指定 `--role` 参数：
+
+```bash
+# 使用前端开发角色
+node coordinator.js --action spawn \
+  --name fe-dev \
+  --role frontend-developer \
+  --description "React登录组件" \
+  --prompt "创建一个React登录组件，包含用户名/密码输入和登录按钮"
+
+# 使用增长黑客角色
+node coordinator.js --action spawn \
+  --name growth \
+  --role growth-hacker \
+  --description "彩票店引流方案" \
+  --prompt "为彩票店设计抖音/视频号引流方案，目标人群是30-50岁男性"
+```
+
+### 查看角色列表
+
+```bash
+node roles/role-loader.js list
+```
+
+### 添加新角色
+
+从 ClawHub 安装：
+```bash
+npx clawhub inspect agency-agents --file agents/design/ui-designer.md
+# 复制到 roles/design/ 目录
 ```

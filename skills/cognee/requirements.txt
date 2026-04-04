@@ -1,0 +1,16 @@
+# Cognee Python Dependencies
+# Requires Python 3.10 - 3.13 (NOT 3.14+)
+
+# Install with:
+#   py -3.12 -m pip install -r requirements.txt
+# Or:
+#   py -3.12 -m pip install cognee
+
+cognee>=0.5.7
+
+# Optional extras for full installation:
+# cognee[postgres,neo4j,chromadb,scraping,langchain,llama-index,anthropic,gemini]
+
+# Note: Python 3.14 is NOT supported. Use Python 3.12:
+#   py -3.12 --version  # Verify
+#   py -3.12 -m pip install cognee

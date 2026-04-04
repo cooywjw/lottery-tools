@@ -4,6 +4,14 @@
     "api-gateway": {
       "version": "1.0.71",
       "installedAt": 1774409831484
+    },
+    "cli-anything": {
+      "version": "0.1.0",
+      "installedAt": 1775209020219
+    },
+    "agency-agents": {
+      "version": "1.0.2",
+      "installedAt": 1775299322394
     }
   }
 }

@@ -78,10 +78,23 @@ Copy-Item -Path "C:\Users\Administrator\.openclaw\workspace\memory\*" -Destinati
 ffmpeg -i input.mp4 D:\work\media\output_$(Get-Date -Format "yyyyMMdd").mp4
 ```
 
+#### 重启说明
+- **飞书上聊时重启 OpenClaw → 重启电脑**：用户设置了开机自启 OpenClaw + 浏览器，飞书无法手动操作，重启电脑后自动连接
+- **本地 webchat 重启**：可以单独重启 OpenClaw 服务（`openclaw gateway restart`）
+- 命令：`shutdown /r /t 60`（60秒后重启，需确认）
+
 #### 已迁移文件
 - `lottery_shop.mp4` (2.57MB) → D:\work\media\
 - `output-video.mp4` (0.53MB) → D:\work\media\
 - 其他多个媒体文件 → D:\work\media\
 - memory文件夹完整备份 → D:\work\memory\
+
+### 媒体生成配置
+- **默认引擎**：通义万相 (Tianshu Wan Xiang 2.6)
+- **技能位置**：`~/.openclaw/workspace/skills/tianshu-wan-video/`
+- **输出目录**：`D:\work\media\` (自动保存)
+- **命名规则**：`项目名_日期_序号.扩展名` (如: `tianshu_20260403_01.png`)
+- **触发命令**：用户说“生图”或“生视频”时自动使用
+- **API状态**：✅ 已配置，endpoint 和请求格式已更新
 
 **详细配置**: 参见 `STORAGE_CONFIG.md`

@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-04-04T10:58:46.541Z",
+  "agents": {
+    "LotteryAnalyst": {
+      "description": "竞彩分析师",
+      "teamName": "default",
+      "status": "timeout",
+      "createdAt": "2026-04-03T08:25:45.060Z",
+      "lastSeen": "2026-04-03T08:25:45.061Z",
+      "removedAt": "2026-04-03T08:40:49.417Z"
+    },
+    "TestResearcher": {
+      "description": "足球研究员",
+      "teamName": "default",
+      "status": "timeout",
+      "createdAt": "2026-04-03T08:40:49.417Z",
+      "lastSeen": "2026-04-03T08:40:49.417Z",
+      "removedAt": "2026-04-04T10:58:35.707Z"
+    },
+    "test-role": {
+      "description": "frontend-developer | 测试角色",
+      "teamName": "default",
+      "status": "running",
+      "createdAt": "2026-04-04T10:58:35.707Z",
+      "lastSeen": "2026-04-04T10:58:35.707Z"
+    }
+  },
+  "teams": {
+    "default": [
+      "LotteryAnalyst",
+      "TestResearcher",
+      "test-role"
+    ]
+  },
+  "history": [
+    {
+      "name": "FootballResearcher",
+      "description": "足球赛事研究员",
+      "teamName": "default",
+      "status": "stopped",
+      "createdAt": "2026-04-03T08:25:36.203Z",
+      "lastSeen": "2026-04-04T10:58:46.538Z",
+      "removedAt": "2026-04-04T10:58:46.541Z"
+    }
+  ]
+}

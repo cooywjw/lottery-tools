@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, initial-scale=1.0">
+    <title>4月3日竞彩13场赛事全解析</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 40px 60px;
+            font-family: -apple-system, "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+            background: #1a1a2e;
+            color: #e0e0e0;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        /* 标题区 */
+        .header {
+            text-align: center;
+            padding: 60px 0 40px;
+            border-bottom: 2px solid #333;
+            margin-bottom: 40px;
+        }
+        .header-tag {
+            display: inline-block;
+            padding: 6px 20px;
+            background: #e74c3c;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+        .header h1 {
+            color: #fff;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+        .header-sub {
+            color: #888;
+            font-size: 15px;
+        }
+        /* 导语 */
+        .intro {
+            background: rgba(59,130,246,0.08);
+            border-left: 4px solid #3b82f6;
+            padding: 20px 28px;
+            margin-bottom: 40px;
+            border-radius: 0 8px 8px 0;
+            color: #b0b0b0;
+            font-size: 15px;
+            line-height: 1.9;
+        }
+        /* 章节标题 */
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 45px 0 25px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #333;
+        }
+        .section-num {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, #3b82f6, #10b981);
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+        }
+        .section-name {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        /* 比赛卡片 */
+        .match-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 18px;
+        }
+        .match-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .match-tag {
+            padding: 4px 12px;
+            background: rgba(239,68,68,0.8);
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 4px;
+        }
+        .match-time {
+            color: #666;
+            font-size: 13px;
+        }
+        .match-teams {
+            color: #fff;
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .match-analysis {
+            color: #a0a0a0;
+            font-size: 14px;
+            line-height: 1.9;
+            margin-bottom: 14px;
+        }
+        .match-result {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .result-tag {
+            padding: 5px 14px;
+            background: rgba(16,185,129,0.15);
+            border: 1px solid rgba(16,185,129,0.3);
+            color: #10b981;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 4px;
+        }
+        .result-tag.warn {
+            background: rgba(245,158,11,0.12);
+            border-color: rgba(245,158,11,0.3);
+            color: #f59e0b;
+        }
+        /* 分割线 */
+        .time-divider {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 35px 0;
+            color: #555;
+            font-size: 13px;
+        }
+        .time-divider::before,
+        .time-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #333;
+        }
+        /* 小结 */
+        .summary {
+            background: rgba(16,185,129,0.06);
+            border: 1px solid rgba(16,185,129,0.15);
+            border-radius: 12px;
+            padding: 28px 30px;
+            margin: 40px 0;
+        }
+        .summary-title {
+            color: #10b981;
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .summary-text {
+            color: #a0a0a0;
+            font-size: 14px;
+            line-height: 1.9;
+        }
+        /* 提示 */
+        .tips {
+            background: rgba(245,158,11,0.06);
+            border: 1px solid rgba(245,158,11,0.15);
+            border-radius: 12px;
+            padding: 28px 30px;
+            margin: 30px 0;
+        }
+        .tips-title {
+            color: #f59e0b;
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+        .tips-text {
+            color: #a0a0a0;
+            font-size: 14px;
+            line-height: 1.9;
+        }
+        /* 话题标签 */
+        .hash-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+        }
+        .hash-tag {
+            color: #3b82f6;
+            font-size: 13px;
+        }
+        /* 底部 */
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #555;
+            font-size: 13px;
+            border-top: 1px solid #333;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-tag">📅 4月3日 周五</div>
+        <h1>4月3日（周五）竞彩13场赛事全解析<br>早场+夜场全覆盖，焦点对决一文读懂</h1>
+        <div class="header-sub">慈云小白说球 · 理性观赛 · 享受足球</div>
+    </div>
+
+    <div class="intro">
+        球迷朋友们，周五竞彩赛事全面来袭！结合竞彩官网、500彩票网最新赛程，今日共开售13场赛事，涵盖澳超、英冠、沙特联、法乙、法甲、西甲、葡超、荷乙，从下午16:35早场到深夜凌晨场，场次密集、看点十足，一文带你读懂所有赛事关键，理性观赛，享受足球乐趣～
+    </div>
+
+    <!-- 一、早场焦点 -->
+    <div class="section-title">
+        <div class="section-num">一</div>
+        <div class="section-name">早场焦点（16:35-19:30）</div>
+    </div>
+    <div style="color:#888;font-size:14px;margin-bottom:20px;">澳超独角戏 + 英冠冲超首战</div>
+
+    <div class="match-card">
+        <div class="match-header">
+            <span class="match-tag">周五001</span>
+            <span style="color:#3b82f6;font-weight:600;">澳超</span>
+            <span class="match-time">16:35</span>
+        </div>
+        <div class="match-teams">阿德莱德联 vs 奥克兰FC</div>
+        <div class="match-analysis">
+            主队阿德莱德联近期状态稳健，近6轮赛事保持不败，主场作战优势明显，核心前锋约万诺维奇近期进球效率极高，进攻端火力稳定。但球队也存在明显短板，主力中场古德温、后卫皮埃利亚斯均因伤缺阵，攻防两端衔接会受到一定影响。客队奥克兰FC目前高居联赛第2位，客场战力不俗，不过本场遭遇防线危机，三名主力后卫累计黄牌停赛，防线实力大幅下滑，大概率会采取保守防守反击战术。
+        </div>
+        <div class="match-result">
+            <span class="result-tag warn">倾向：主不败（胜/平）</span>
+            <span class="result-tag">参考：1-1、2-1</span>
+            <span class="result-tag warn">大概率小比分</span>
+        </div>
+    </div>
+
+    <div class="match-card">
+        <div class="match-header">
+            <span class="match-tag">周五002</span>
+            <span style="color:#3b82f6;font-weight:600;">英冠</span>
+            <span class="match-time">19:30</span>
+        </div>
+        <div class="match-teams">米德尔斯堡 vs 米尔沃尔</div>
+        <div class="match-analysis">
+            本场是英冠冲超关键六分战，两队目前分列积分榜第2位和第4位，积分差距仅3分，谁能拿下胜利，就能在冲超路上占据主动。米德尔斯堡主场防守韧性极强，近5个主场仅失2球，且历史交锋中对阵米尔沃尔占据明显优势；米尔沃尔则以客场韧性著称，近期客场不败率高达70%，反击战术高效，擅长抓住对手防守漏洞得分。两队实力接近、战意拉满，场面势必胶着。
+        </div>
+        <div class="match-result">
+            <span class="result-tag warn">倾向：分胜负、小球</span>
+            <span class="result-tag">主不败略占优势</span>
+            <span class="result-tag">参考：1-0、1-1</span>
+        </div>
+    </div>
+
+    <div class="time-divider">22:00 多场同步开打</div>
+
+    <!-- 二、晚间场次 -->
+    <div class="section-title">
+        <div class="section-num">二</div>
+        <div class="section-name">晚间场次（22:00）</div>
+    </div>
+    <div style="color:#888;font-size:14px;margin-bottom:20px;">英冠为主，多场关键战同步开打</div>
+
+    <div class="match-card">
+        <div class="match-header">
+            <span class="match-tag">周五003</span>
+            <span style="color:#3b82f6;font-weight:600;">英冠</span>
+            <span class="match-time">22:00</span>
+        </div>
+        <div class="match-teams">伯明翰 vs 布莱克本</div>
+        <div class="match-analysis">
+            伯明翰目前深陷保级区，距离安全区还有3分差距，主场抢分战意极为浓厚，近期主场状态有所回暖，近3个主场2胜1平保持不败。布莱克本则处于联赛中游，无欲无求，既无冲超希望，也无保级压力，且球队阵容遭遇伤病困扰，3名主力球员因伤缺阵，攻防实力受损。此消彼长之下，主场作战、战意拉满的伯明翰更具优势。
+        </div>
+        <div class="match-result">
+            <span class="result-tag">倾向：主胜</span>
+            <span class="result-tag">参考：1-0、2-0</span>
+        </div>
+    </div>
+
+    <div class="match-card">
+        <div class="match-header">
+            <span class="match-tag">周五004</span>
+            <span style="color:#3b82f6;font-weight:600;">英冠</span>
+            <span class="match-time">22:00</span>
+        </div>
+        <div class="match-teams">女王公园巡游者(QPR) vs 沃特福德</div>
+        <div class="match-analysis">
+            QPR近期状态火爆，上轮联赛以6-1大胜对手，进攻端火力全开，主场胜率接近五成，擅长利用主场优势压制对手。沃特福德则表现低迷，尤其是客场战力极差，本赛季客场仅取得1场胜利，异地作战时防守漏洞百出，进攻端也难以打开局面。
+        </div>
+        <div class="match-result">
+            <span class="result-tag warn">倾向：主不败（让胜）</span>
+            <span class="result-tag">参考：2-1、2-2</span>
+        </div>
+    </div>
+
+    <div class="match-card">
+        <div class="match-header">
+            <span class="match-tag">周五005</span>
+            <span style="color:#3b82f6;font-weight:600;">英冠</span>
+            <span class="match-time">22:00</span>
+        </div>
+        <div class="match-teams">诺维奇 vs 朴次茅斯</div>
+        <div class="match-analysis">
+            诺维奇近期状态堪称火爆，近10场联赛取得7场胜利，稳居积分榜前列，冲超希望极大，主场作战时进攻压制力极强，场均进球数达到2球以上。朴次茅斯则深陷降级泥潭，目前排名联赛垫底，客场胜率仅21%，攻防两端全面崩盘，近期多场比赛大比分失利。实力差距明显，诺维奇主场大概率取胜，甚至有望大胜。
+        </div>
+        <div class="match-result">
+            <span class="result-tag">倾向：主胜（大胜）</span>
+            <span class="result-tag">参考：2-0、3-1</span>
+        </div>
+    </div>
+
+    <div class="match-card">
+        <div class="match-header">
+            <span class="match-tag">周五006</span>
+            <span style="color:#3b82f6;font-weight:600;">英冠</span>
+            <span class="match-time">22:00</span>
+        </div>
+        <div class="match-teams">西布罗姆维奇 vs 雷克斯汉姆</div>
+        <div class="match-analysis">
+            西布罗姆维奇目前处于英冠中游，距离升级附加赛区仅差2分，主场抢分战意浓厚，近期主场取得2连胜，防守稳健、进攻高效。雷克斯汉姆则表现低迷，客场战力极差，近5个客场全败，防守漏洞突出。
+        </div>
+        <div class="match-result">
+            <span class="result-tag">倾向：主胜</span>
+            <span class="result-tag">参考：1-0、2-1</span>
+        </div>
+    </div>
+
+    <div class="match-card">
+        <div class="match-header">
+            <span class="match-tag">周五007</span>
+            <span style="color:#ef4444;font-weight:600;">沙特联</span>
+            <span class="match-time">22:00</span>
+        </div>
+        <div class="match-teams">吉达联合 vs 哈森姆</div>
+        <div class="match-analysis">
+            吉达联合作为沙特联豪门，主场统治力极强，本赛季主场未尝败绩，由本泽马领衔的进攻线火力凶猛，场均进球数达到2.5球。哈森姆则是联赛下游球队，堪称"客场虫"，客场战力极差，攻防两端均存在明显短板。
+        </div>
+        <div class="match-result">
+            <span class="result-tag">倾向：主胜（大胜）</span>
+            <span class="result-tag">参考：2-0、3-1</span>
+        </div>
+    </div>
+
+    <div class="match-card">
+        <div class="match-header">
+            <span class="match-tag">周五008</span>
+            <span style="color:#10b981;font-weight:600;">法乙</span>
+            <span class="match-time">22:00</span>
+        </div>
+        <div class="match-teams">红星 vs 拉瓦勒</div>
+        <div class="match-analysis">
+            红星目前处于法乙下游，存在一定保级压力，主场抢分意愿强烈，近期主场状态有所回暖，防守端表现有所提升。拉瓦勒则处于联赛中游，无欲无求，客场战力疲软，近期客场多场不胜，进攻端哑火严重。
+        </div>
+        <div class="match-result">
+            <span class="result-tag warn">倾向：主不败</span>
+            <span class="result-tag">参考：1-1、2-1</span>
+        </div>
+    </div>
+
+    <div class="match-card">
+        <div class="match-header">
+            <span class="match-tag">周五010</span>
+            <span style="color:#10b981;font-weight:600;">法甲</span>
+            <span class="match-time">22:00</span>
+        </div>
+        <div class="match-teams">巴黎圣日耳曼 vs 图卢兹</div>
+        <div class="match-analysis">
+            巴黎圣日耳曼作为法甲豪门，主场统治力毋庸置疑，近期状态稳健，主力后卫阿什拉夫伤愈复出，防线实力得到进一步提升，进攻端由姆巴佩、登贝莱领衔，火力十足。图卢兹则深陷困境，防线几乎瘫痪，多名主力后卫因伤停缺阵，客场作战时场均失球达到1.8球，难以抵挡巴黎的进攻火力。
+        </div>
+        <div class="match-result">
+            <span class="result-tag">倾向：主胜（让胜）</span>
+            <span class="result-tag">参考：3-0、4-0</span>
+        </div>
+    </div>
+
+    <div class="match-card">
+        <div class="match-header">
+            <span class="match-tag">周五011</span>
+            <span style="color:#3b82f6;font-weight:600;">英冠</span>
+            <span class="match-time">22:00</span>
+        </div>
+        <div class="match-teams">考文垂 vs 德比郡</div>
+        <div class="match-analysis">
+            考文垂目前高居英冠榜首，冲超希望极大，主场战力极为强劲，近10个主场取得8场胜利，攻防两端表现均衡。德比郡则处于联赛下游，客场战力极差，堪称"客场虫"，攻防全面落后于考文垂。
+        </div>
+        <div class="match-result">
+            <span class="result-tag">倾向：主胜</span>
+            <span class="result-tag">参考：2-0、2-1</span>
+        </div>
+    </div>
+
+    <div class="match-card">
+        <div class="match-header">
+            <span class="match-tag">周五012</span>
+            <span style="color:#f97316;font-weight:600;">西甲</span>
+            <span class="match-time">22:00</span>
+        </div>
+        <div class="match-teams">巴列卡诺 vs 埃尔切</div>
+        <div class="match-analysis">
+            巴列卡诺目前处于西甲中游，主场抢分意愿强烈，近期主场状态稳健，进攻端活跃，擅长利用主场氛围压制对手。埃尔切则深陷保级区，保级压力巨大，但客场战力疲软，近期客场多场不胜。
+        </div>
+        <div class="match-result">
+            <span class="result-tag warn">倾向：主不败</span>
+            <span class="result-tag">参考：1-1、2-1</span>
+        </div>
+    </div>
+
+    <div class="match-card">
+        <div class="match-header">
+            <span class="match-tag">周五013</span>
+            <span style="color:#ec4899;font-weight:600;">葡超</span>
+            <span class="match-time">22:00</span>
+        </div>
+        <div class="match-teams">葡萄牙体育 vs 圣克拉拉</div>
+        <div class="match-analysis">
+            葡萄牙体育目前处于葡超前列，仍有争冠希望，主场火力极为凶猛，场均进球数达到2.3球，进攻端压制力极强。圣克拉拉则排名联赛垫底，客场表现惨不忍睹，近期客场多场大比分惨败，攻防两端全面崩盘。
+        </div>
+        <div class="match-result">
+            <span class="result-tag">倾向：主胜（大胜）</span>
+            <span class="result-tag">参考：3-0、4-1</span>
+        </div>
+    </div>
+
+    <div class="time-divider">02:00 深夜收尾</div>
+
+    <!-- 三、深夜场次 -->
+    <div class="section-title">
+        <div class="section-num">三</div>
+        <div class="section-name">深夜场次（02:00）</div>
+    </div>
+    <div style="color:#888;font-size:14px;margin-bottom:20px;">荷乙独苗，混战格局</div>
+
+    <div class="match-card">
+        <div class="match-header">
+            <span class="match-tag">周五009</span>
+            <span style="color:#8b5cf6;font-weight:600;">荷乙</span>
+            <span class="match-time">04-04 02:00</span>
+        </div>
+        <div class="match-teams">多德勒支 vs 罗达JC</div>
+        <div class="match-analysis">
+            荷乙赛事节奏快、进球多，本场对阵双方实力差距不大。多德勒支主场表现稳健，近期主场不败率高达80%，进攻端状态稳定；罗达JC客场战力一般，胜率仅30%，近2轮赛事未尝胜绩，状态有所下滑。
+        </div>
+        <div class="match-result">
+            <span class="result-tag warn">倾向：主胜</span>
+            <span class="result-tag">参考：2-1、1-0</span>
+        </div>
+    </div>
+
+    <!-- 小结 -->
+    <div class="summary">
+        <div class="summary-title">📌 观赛小结</div>
+        <div class="summary-text">
+            今日13场赛事覆盖多联赛、多时段，早场澳超独角戏看点十足，晚间英冠、法甲、西甲等顶级赛事密集开打，深夜荷乙收尾，既有冲超、争冠关键战，也有保级生死战，变数与惊喜并存。建议大家理性看待每一场赛事，享受竞技足球带来的快乐，量力而行、文明观赛。
+        </div>
+    </div>
+
+    <div class="tips">
+        <div class="tips-title">📌 合规观赛温馨提示</div>
+        <div class="tips-text">
+            本文仅为足球赛事资讯与热点分享，不构成任何投注建议。请理性看待竞技体育变数，自觉前往线下正规体彩门店娱乐参与，量力而行，远离非法博彩，文明看球，快乐观赛。
+        </div>
+    </div>
+
+    <div class="hash-tags">
+        <span class="hash-tag">#4月3日足球赛事</span>
+        <span class="hash-tag">#竞彩赛事解析</span>
+        <span class="hash-tag">#今日足球看点</span>
+        <span class="hash-tag">#英冠</span>
+        <span class="hash-tag">#法甲</span>
+        <span class="hash-tag">#澳超</span>
+    </div>
+
+    <div class="footer">
+        慈云小白说球 · 理性观赛 · 享受足球
+    </div>
+</body>
+</html>
