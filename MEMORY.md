@@ -65,16 +65,21 @@
 - **项目背景**：基于 Claude Code 泄露源码（1,900文件/512K行TS），分3个Phase复刻核心架构
 
 #### Phase 1：工具系统重构
-- **状态**：进行中
+- **状态**：✅ **核心产出完成**（2026-04-05）
 - **目标**：创建 `claude-tool-interface` Skill，统一工具接口规范
 - **产出文件**：
-  - `skills/claude-tool-interface/SKILL.md` — 接口规范说明
-  - `skills/claude-tool-interface/SCHEMA.md` — TypeScript 接口定义
-  - `skills/claude-tool-interface/REGISTRY.md` — 工具注册规范
-  - `skills/claude-tool-interface/MIGRATION_GUIDE.md` — 迁移指南
-  - `skills/claude-tool-interface/TOOL_TEMPLATE.md` — 创建模板
-  - `D:\work\projects\claude-code-source/PHASE1_TOOL_SCHEMA.md` — 设计文档
-- **下一步**：迁移 context-manager + tavily-search
+  - `skills/claude-tool-interface/SKILL.md` — 接口规范说明 ✅
+  - `skills/claude-tool-interface/SCHEMA.md` — TypeScript 接口定义 ✅
+  - `skills/claude-tool-interface/REGISTRY.md` — 工具注册规范 ✅
+  - `skills/claude-tool-interface/MIGRATION_GUIDE.md` — 迁移指南 ✅
+  - `skills/claude-tool-interface/TOOL_TEMPLATE.md` — 创建模板 ✅
+  - `TOOL_REGISTRY.json` — 全局工具注册表 ✅ (2026-04-05 新增)
+- **已迁移 Skill**：
+  - ✅ context-manager — 完整 Claude Tool Interface (context-manager.js)
+  - ✅ tavily-search — 完整 Claude Tool Interface (tavily-search.js)
+  - ✅ wechat-publisher — 已有 claude_tool_interface 标记
+  - ✅ memory-manager — 完整 Claude Tool Interface (memory-manager.js, 2026-04-05)
+- **待补充**：工具发现流程集成（OpenClaw 启动时扫描 skills/*/SKILL.md）
 
 #### Phase 2：多Agent编排
 - **状态**：✅ **核心功能已完成**（2026-04-02）**+ 角色集成**（2026-04-04）
@@ -98,13 +103,14 @@
 - **下一步**：集成到 OpenClaw 工具系统，实现任务通知回调
 
 #### Phase 3：上下文与命令系统
-- **状态**：✅ **核心功能已完成**（2026-04-02）
+- **状态**：✅ **autoCompact 完成**（2026-04-05）
 - **目标**：autoCompact + slash-commands + 成本追踪
 - **产出**：
   - `skills/context-manager-1.0.0/compact/autoCompact.js` — **自动压缩引擎** ✅
-    - 触发阈值：180K tokens
-    - 压缩目标：40K tokens
-    - LLM 生成摘要
+    - 支持 action: check / summary / dry-run / compact
+    - 触发阈值：180K tokens（check）
+    - DeepSeek LLM 生成摘要，保存到 memory/YYYY-MM-DD.md
+    - 关键修复：sessions_history 返回 content[0].text 而非 content[0].content
   - `skills/slash-commands/` — **斜杠命令系统** ✅
     - `/help`, `/status`, `/context`, `/compact`
     - `/task`, `/model`, `/memory`, `/clear`
@@ -117,6 +123,7 @@
 2. **memory-manager** - 记忆管理
 3. **intent-confirm** - 意图确认
 4. **cross-model-memory** - 跨模型记忆
+5. **workflow-engine** - 工作流引擎（工具串联自动化）✅ (2026-04-05)
 5. **skill-vetter** - 安全检查
 6. **free-ride** - OpenRouter 免费模型管理
 7. **context-manager** - 上下文监控与管理 ✓ (v1.0.0 已部署)
@@ -129,11 +136,16 @@
 11. **agency-agents** - 专业Agent角色库 ⚠️ (2026-04-04 评估安装)
     - 描述：5个预设角色（前端/后端/增长/项目经理/测试）
     - 注意：ClawHub有 Warnings 警告，实际仅5个Agent（非宣称的61个）
-12. **cognee** - AI记忆引擎 ⚠️ (2026-04-04 评估+包装)
+12. **cognee** - AI记忆引擎 ✓ (2026-04-05 功能测试通过!)
     - 来源：topoteretes/cognee（14.9k stars）
     - 功能：文本→知识图谱，Agent长期记忆
     - ⚠️ Python 3.14 不兼容，必须用 Python 3.12（`py -3.12`）
-    - 状态：cognee 0.5.7 已装，litellm/lancedb 仍下载中
+    - 状态：✅ 已完成！Pipeline 全部任务通过（add_data_points、extract_graph_from_data、summarize_text）
+    - **关键修复**：
+      - HuggingFace 超时 → 使用 `HF_ENDPOINT=https://hf-mirror.com`
+      - 向量维度 3072 vs 384 → patch `cfg.embedding_dimensions = 384`
+      - LanceDB schema 冲突 → 删除 `.cognee_system/databases` 重新初始化
+    - 测试脚本：`test_cognee.py`（dataset: test_dataset_v4）
 
 ## 已知问题
 - OpenClaw CLI WebSocket 连接有问题（HTTP API 可用）
@@ -149,19 +161,16 @@
 6. 上下文管理 skill 开发完成：创建 context-manager-1.0.0，包含监控、总结、会话管理功能 ✓ (2026-03-31)
 7. Claude Code 源码进化计划启动：Phase 1 进行中，Phase 2/3 设计文档已完成 ✓ (2026-04-02)
 8. 生图生视频默认使用通义万相引擎 ✓ (2026-04-03)
-
-## 待办事项
+9. workflow-engine 工作流引擎：工具串联成自动流水线 ✓ (2026-04-05)
 - [x] 等公众号审核通过 ✅ 2026-03-25
 - [x] 发布首篇测试文章 ✅ 2026-03-26
 - [x] 发布国土比赛分析文章 ✅ 2026-03-31
-- [ ] Phase 1：迁移 context-manager 到新接口
-- [ ] Phase 1：迁移 tavily-search 到新接口
-- [ ] Phase 1：创建 TOOL_REGISTRY.json
-- [ ] Phase 2：实现 coordinator Skill
+- [x] **cognee 测试** ✅ 2026-04-05（Pipeline 功能验证通过）
+- [x] Phase 1：工具系统重构核心完成 ✅ 2026-04-05（TOOL_REGISTRY + 4个Skill迁移）
+- [ ] Phase 1：工具发现流程集成（OpenClaw 启动时自动扫描注册）
 - [ ] Phase 3：增强 context-manager（autoCompact）
 - [ ] 配置公众号自动回复和菜单栏
 - [ ] 每日更新竞彩数据 + 足球内容
-- [ ] **cognee 测试**（等待网络恢复）
 
 ## Cognee 安装记录 (2026-04-04)
 

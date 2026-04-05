@@ -1,52 +1,90 @@
 # TODOS.md - 任务跟踪
 
-## 当前项目：context-manager 技能开发
+## 当前项目：Phase 3 · context-manager 增强（autoCompact）
 
-### ✅ 已完成
-- [x] 创建技能文件结构 (SKILL.md, config.json, context-utils.js)
-- [x] 编写工具脚本和配置
-- [x] 测试工具脚本功能
-- [x] 生成上下文总结文件 (96% 压缩率)
-- [x] 更新 AGENTS.md 记录新技能
-- [x] 更新 MEMORY.md 记录新技能
+### 状态
+- Phase 1 ✅ 工具系统重构核心完成（2026-04-05）
+- Phase 2 ✅ 多Agent编排完成（2026-04-04）
+- Phase 3 🔄 进行中（autoCompact）
 
-### 🔄 进行中
-- [ ] 教用户使用新命令
-- [ ] 集成到 heartbeat 检查
-- [ ] 创建用户使用指南
-
-### 📋 待办事项
-- [ ] 测试完整工作流程（用户触发 → 总结 → 新会话）
-- [ ] 优化总结模板和内容提取
-- [ ] 添加自动清理旧总结功能
-- [ ] 创建技能使用示例文档
-
-## 其他项目
-
-### 公众号运营
-- [ ] 配置公众号自动回复和菜单栏
-- [ ] 每日更新竞彩数据 + 足球内容
-- [ ] 学习短视频动画制作
-
-### OpenClaw 维护
-- [ ] 解决 OpenClaw 升级问题
-- [ ] 优化模型切换体验
-- [ ] 完善备份策略
-
-## 技能集成计划
-
-### 优先级：高
-1. **context-manager** - 已完成开发，需要测试和集成
-2. **heartbeat 集成** - 将上下文监控加入定期检查
-
-### 优先级：中
-1. **cross-model-memory** - 确保跨模型记忆一致性
-2. **skill-vetter** - 安全检查技能完善
-
-### 优先级：低
-1. **free-ride** - OpenRouter 免费模型优化
-2. **tavily-search** - 搜索功能优化
+### Phase 3 目标
+- 当上下文使用率超过阈值时，自动触发压缩
+- 触发阈值：180K tokens
+- 压缩目标：40K tokens
+- LLM 生成摘要，保留关键上下文
 
 ---
-**最后更新**: 2026-03-31 01:00 (Asia/Shanghai)
-**状态**: context-manager 技能开发完成，进入测试和集成阶段
+
+## 公众号「绿茵有运」
+
+### ✅ 已完成
+- [x] 新账号注册（AppID: wxd45ed6706fa1547d）
+- [x] 首篇文章发布（2026-03-26）
+- [x] 竞彩早场文章发布（2026-04-05 001~005）
+- [x] 竞彩晚场文章发布（2026-04-05 晚场）
+- [x] 封面图生成（含AI水印）
+- [x] 晚场封面图 1280×500 + 水印 50%
+
+### 🔄 进行中
+- [ ] 配置公众号自动回复和菜单栏
+- [ ] 每日更新竞彩数据 + 足球内容（每日）
+
+---
+
+## OpenClaw 进化计划
+
+### ✅ Phase 1：工具系统重构（2026-04-05 完成）
+- [x] claude-tool-interface Skill 创建
+- [x] SCHEMA.md / REGISTRY.md / MIGRATION_GUIDE.md / TOOL_TEMPLATE.md
+- [x] TOOL_REGISTRY.json 全局注册表
+- [x] context-manager 迁移完成
+- [x] tavily-search 迁移完成
+- [x] wechat-publisher 已有接口标记
+- [x] memory-manager 新增 Claude Tool Interface
+
+### ✅ Phase 2：多Agent编排（2026-04-04 完成）
+- [x] coordinator Skill 创建
+- [x] spawn / list / send / stop / status 命令
+- [x] 角色加载器（agency-agents 集成）
+
+### 🔄 Phase 3：上下文与命令系统
+- [x] autoCompact 自动压缩引擎 ✅（2026-04-05）
+- [x] slash-commands 完善 ✅
+- [ ] 成本追踪 Skill
+
+---
+
+## 待办事项（按优先级）
+
+### 高优先级
+- [x] Phase 3 autoCompact 开发和集成 ✅
+- [x] workflow-engine 工作流引擎 ✅ (2026-04-05)
+- [ ] 公众号菜单栏配置（底部菜单 + 关键词自动回复）
+- [ ] OpenClaw 工具发现流程集成（启动时扫描 skills/*/SKILL.md）
+
+### 中优先级
+- [ ] 每日竞彩文章发布（早场 + 晚场）
+- [ ] 短视频内容制作（竞彩分析 / 足球资讯）
+- [ ] cross-model-memory 集成测试
+
+### 低优先级
+- [ ] OpenClaw 升级问题排查
+- [ ] free-ride OpenRouter 免费模型优化
+
+---
+
+## 技能清单（已完成）
+
+| 技能 | 版本 | 用途 |
+|------|------|------|
+| context-manager | 1.0.0 | 上下文监控与压缩 |
+| tavily-search | 1.1.0 | 网络搜索 |
+| wechat-publisher | 1.0.0 | 公众号发布 |
+| memory-manager | 1.0.0 | 记忆管理 |
+| coordinator | - | 多Agent编排 |
+| cognee | 0.5.7 | 知识图谱/长期记忆 |
+| tianshu-wan-video | - | 通义万相生图/视频 |
+
+---
+
+**最后更新**: 2026-04-05 17:18 (Asia/Shanghai)

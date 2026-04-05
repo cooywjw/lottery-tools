@@ -54,10 +54,49 @@ search()  →  查询记忆
 - **Python 3.10-3.13**（Python 3.14 不支持）
 - `pip install cognee`
 
-> ⚠️ **注意**：你的系统当前是 Python 3.14，需要用 Python 3.12 来安装：
+> ⚠️ **注意**：系统默认 Python 是 3.14，**必须用 Python 3.12** 运行：
 > ```bash
 > py -3.12 -m pip install cognee
+> py -3.12 scripts/cognee_cli.py ...
 > ```
+
+### 已安装状态（2026-04-04）
+
+**已装好（Python 3.12）：**
+- ✅ cognee 0.5.7
+- ✅ pydantic / pydantic-settings / sqlalchemy
+- ✅ fastapi / uvicorn / gunicorn
+- ✅ structlog / colorama / filetype / aiofiles
+- ✅ networkx / rdflib / pypdf / tenacity / jinja2
+- ✅ fastapi-users / python-multipart
+- ✅ tiktoken / fakeredis / diskcache / aiolimiter
+- ✅ instructor
+
+**未装好（网络问题）：**
+- ❌ litellm（15.6MB，下载超时，需重试）
+- ❌ lancedb（50MB）
+- ❌ kuzu（4.5MB）
+
+### 安装脚本
+
+遇到网络超时时，使用带重试的安装脚本：
+
+```bash
+py -3.12 skills/cognee/install_deps.py
+```
+
+### 手动补装缺失依赖
+
+```bash
+# litellm 是最大的一包（15.6MB），单独装
+py -3.12 -m pip install litellm --retries 5 --timeout 120
+
+# lancedb（50MB）
+py -3.12 -m pip install lancedb
+
+# kuzu（4.5MB）
+py -3.12 -m pip install kuzu
+```
 
 ### 可选（根据存储后端选择）
 ```bash

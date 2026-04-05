@@ -1,225 +1,59 @@
 {
-  "$schema": "https://openclaw.ai/schemas/tool-registry-v1.json",
+  "schema": "openclaw-tool-registry.v1",
   "version": "1.0.0",
-  "lastUpdated": "2026-04-03T16:18:00+08:00",
-  "description": "OpenClaw Tool Registry - Claude Tool Interface compatible tools",
-  
+  "updated": "2026-04-05",
   "tools": [
+    {
+      "name": "context_check",
+      "skill": "context-manager-1.0.0",
+      "capabilities": ["read"],
+      "trustLevel": "safe",
+      "readOnly": true,
+      "concurrencySafe": true,
+      "destructive": false,
+      "description": "检查当前对话上下文使用率，支持 summarize 和 reset 操作"
+    },
+    {
+      "name": "web_search",
+      "skill": "tavily-search",
+      "capabilities": ["read", "network"],
+      "trustLevel": "safe",
+      "readOnly": true,
+      "concurrencySafe": true,
+      "destructive": false,
+      "description": "使用 Tavily API 进行网络搜索，支持基础和深度搜索模式"
+    },
+    {
+      "name": "wechat_publish",
+      "skill": "wechat-publisher",
+      "capabilities": ["write", "notify"],
+      "trustLevel": "safe",
+      "readOnly": false,
+      "concurrencySafe": false,
+      "destructive": false,
+      "description": "将 Markdown 文章排版并发布到微信公众号草稿箱"
+    },
+    {
+      "name": "memory_save",
+      "skill": "memory-manager",
+      "capabilities": ["write"],
+      "trustLevel": "safe",
+      "readOnly": false,
+      "concurrencySafe": false,
+      "destructive": false,
+      "description": "管理和持久化对话记忆、用户偏好、重要信息到 memory/ 目录",
+      "migrated": true,
+      "version": "1.0.0"
+    },
     {
       "name": "tavily_search",
       "skill": "tavily-search",
-      "version": "1.1.0",
-      "entryPoint": "skills/tavily-search/tavily-search.js",
-      "exportName": "tool",
-      "aliases": ["web_search", "search"],
-      "searchHint": "search the web for current information",
-      
-      "capabilities": {
-        "read": true,
-        "write": false,
-        "network": true,
-        "filesystem": false
-      },
-      
-      "category": "search",
+      "capabilities": ["read", "network"],
       "trustLevel": "safe",
-      "maxResultSizeChars": 8000,
-      
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "query": { "type": "string", "minLength": 1 },
-          "maxResults": { "type": "number", "minimum": 1, "maximum": 10, "default": 5 },
-          "searchDepth": { "type": "string", "enum": ["basic", "advanced"], "default": "basic" },
-          "includeAnswer": { "type": "boolean", "default": true },
-          "includeImages": { "type": "boolean", "default": false },
-          "timeRange": { "type": "string", "enum": ["day", "week", "month", "year", "any"], "default": "any" }
-        },
-        "required": ["query"]
-      },
-      
-      "capabilityMarkers": {
-        "isConcurrencySafe": true,
-        "isReadOnly": true,
-        "isDestructive": false,
-        "isEnabled": true
-      }
-    },
-    
-    {
-      "name": "context_manager",
-      "skill": "context-manager",
-      "version": "1.1.0",
-      "entryPoint": "skills/context-manager-1.0.0/context-manager.js",
-      "exportName": "tool",
-      "aliases": ["check_context", "compact_context"],
-      "searchHint": "check or manage conversation context usage",
-      
-      "capabilities": {
-        "read": true,
-        "write": true,
-        "network": false,
-        "filesystem": true
-      },
-      
-      "category": "system",
-      "trustLevel": "safe",
-      "maxResultSizeChars": 5000,
-      
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "action": { "type": "string", "enum": ["check", "summarize", "reset", "compact"] },
-          "threshold": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.85 },
-          "force": { "type": "boolean", "default": false },
-          "sessionId": { "type": "string" },
-          "dryRun": { "type": "boolean", "default": false }
-        },
-        "required": ["action"]
-      },
-      
-      "capabilityMarkers": {
-        "isConcurrencySafe": "dynamic",
-        "isReadOnly": "dynamic",
-        "isDestructive": "dynamic",
-        "isEnabled": true
-      },
-      
-      "dynamicCapabilities": {
-        "description": "Returns different values based on action parameter",
-        "rules": {
-          "isConcurrencySafe": "action === 'check'",
-          "isReadOnly": "action === 'check'",
-          "isDestructive": "action === 'reset'"
-        }
-      }
-    },
-    
-    {
-      "name": "coordinator",
-      "skill": "coordinator",
-      "version": "1.1.0",
-      "entryPoint": "skills/coordinator/coordinator.js",
-      "exportName": "tool",
-      "aliases": ["agent_spawn", "agent_send", "agent_list", "agent_stop"],
-      "searchHint": "spawn and coordinate multiple AI agents for parallel tasks",
-      
-      "capabilities": {
-        "read": true,
-        "write": true,
-        "network": true,
-        "filesystem": false
-      },
-      
-      "category": "system",
-      "trustLevel": "normal",
-      "maxResultSizeChars": 10000,
-      
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "action": { 
-            "type": "string", 
-            "enum": ["spawn", "send", "list", "stop", "status"],
-            "description": "Action to perform"
-          },
-          "name": { 
-            "type": "string",
-            "description": "Agent name (required for spawn)"
-          },
-          "description": { 
-            "type": "string",
-            "description": "Short description 3-5 words (required for spawn)"
-          },
-          "prompt": { 
-            "type": "string",
-            "description": "Task details (required for spawn)"
-          },
-          "to": { 
-            "type": "string",
-            "description": "Target agent name (required for send)"
-          },
-          "message": { 
-            "type": "string",
-            "description": "Message to send (required for send)"
-          },
-          "task_id": { 
-            "type": "string",
-            "description": "Agent name or ID (required for stop)"
-          },
-          "team": { 
-            "type": "string",
-            "description": "Team name (optional)",
-            "default": "default"
-          },
-          "run_in_background": { 
-            "type": "boolean",
-            "description": "Run agent in background mode",
-            "default": false
-          },
-          "timeoutSeconds": { 
-            "type": "number",
-            "description": "Timeout in seconds",
-            "default": 600
-          }
-        },
-        "required": ["action"]
-      },
-      
-      "capabilityMarkers": {
-        "isConcurrencySafe": "dynamic",
-        "isReadOnly": "dynamic",
-        "isDestructive": "dynamic",
-        "isEnabled": true
-      },
-      
-      "dynamicCapabilities": {
-        "description": "Returns different values based on action parameter",
-        "rules": {
-          "isConcurrencySafe": "action === 'list' || action === 'status'",
-          "isReadOnly": "action === 'list' || action === 'status'",
-          "isDestructive": "action === 'stop'"
-        }
-      }
+      "readOnly": true,
+      "concurrencySafe": true,
+      "destructive": false,
+      "description": "tavily_search 别名"
     }
-  ],
-  
-  "categories": {
-    "search": {
-      "description": "Web search and information retrieval",
-      "icon": "🔍"
-    },
-    "system": {
-      "description": "System management and monitoring",
-      "icon": "⚙️"
-    },
-    "file": {
-      "description": "File system operations",
-      "icon": "📁"
-    },
-    "network": {
-      "description": "Network and API operations",
-      "icon": "🌐"
-    },
-    "media": {
-      "description": "Media generation and processing",
-      "icon": "🎬"
-    }
-  },
-  
-  "trustLevels": {
-    "safe": {
-      "description": "Read-only or low-risk operations",
-      "autoApprove": true
-    },
-    "normal": {
-      "description": "Standard operations with user confirmation",
-      "autoApprove": false
-    },
-    "dangerous": {
-      "description": "Destructive operations requiring explicit approval",
-      "autoApprove": false,
-      "requiresExplicitConfirmation": true
-    }
-  }
+  ]
 }

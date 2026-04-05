@@ -1,9 +1,49 @@
 ---
-name: memory-manager
-description: 管理和持久化对话记忆、用户偏好、重要信息。当需要记住用户说过的话、保存重要信息、回顾之前的对话内容、或者管理长期记忆时使用此技能。支持写入 memory/ 目录下的每日笔记和 MEMORY.md 长期记忆文件。
+claude_tool_interface: true
+name: memory_save
+skill: memory-manager
+version: "1.0.0"
+description: "管理和持久化对话记忆、用户偏好、重要信息。当需要记住用户说过的话、保存重要信息、回顾之前的对话内容、或者管理长期记忆时使用此技能。支持写入 memory/ 目录下的每日笔记和 MEMORY.md 长期记忆文件。"
+metadata:
+  emoji: "🧠"
+  category: "memory"
+  trustLevel: "safe"
 ---
 
 # Memory Manager - 记忆管理
+
+## Claude Tool Interface
+
+### Tool Identity
+
+```typescript
+{
+  name: 'memory_save',
+  aliases: ['save_memory', 'remember'],
+  searchHint: 'save information to memory or search memories',
+  version: '1.0.0'
+}
+```
+
+### Input Schema
+
+```typescript
+{
+  action: "save" | "search" | "append_daily" | "update_longterm",
+  content: string,          // 必填，要保存的内容
+  category?: string,       // 可选，分类标签
+  target?: string          // 可选，保存目标 "daily" | "longterm"
+}
+```
+
+### Capability Markers
+
+| 属性 | 值 | 说明 |
+|------|-----|------|
+| **并发安全** | ❌ false | 写入操作可能有冲突 |
+| **只读** | ❌ false | 会写入文件系统 |
+| **破坏性** | ❌ false | 仅追加，不删除 |
+| **最大内容** | 50000 字符 | 单次保存上限 |
 
 ## 功能
 

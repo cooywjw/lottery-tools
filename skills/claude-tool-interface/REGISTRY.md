@@ -56,7 +56,7 @@ version: 1.0.0
 
 | 工具名 | Skill | 能力 | 状态 |
 |--------|-------|------|------|
-| context_check | context-manager | read | 已迁移 |
-| web_search | tavily-search | read, network | 待迁移 |
-| wechat_publish | wechat-publisher | write, notify | 待迁移 |
-| memory_save | memory-manager | write, delete | 待迁移 |
+| context_check | context-manager | read | ✅ 已迁移 |
+| web_search | tavily-search | read, network | ✅ 已迁移 |
+| wechat_publish | wechat-publisher | write, notify | ✅ 已迁移 |
+| memory_save | memory-manager | write, delete | ✅ 已迁移 |
