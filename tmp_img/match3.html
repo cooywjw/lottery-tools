@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body {
+    width: 1280px;
+    height: 720px;
+    margin: 0;
+    background: linear-gradient(135deg, #c8102e 0%, #6b1e1e 50%, #1a1a2e 100%);
+    font-family: -apple-system, "PingFang SC", "Noto Sans SC", sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .stadium {
+    font-size: 100px;
+    margin-bottom: 20px;
+  }
+  .stadium-name {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  }
+  .city {
+    color: rgba(255,255,255,0.7);
+    font-size: 24px;
+    margin-top: 10px;
+    letter-spacing: 6px;
+  }
+  .match-info {
+    margin-top: 40px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 16px;
+    padding: 20px 50px;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+  }
+  .match-info .vs {
+    color: #ffd700;
+    font-size: 36px;
+    font-weight: 900;
+  }
+  .fans {
+    margin-top: 30px;
+    font-size: 60px;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
+  }
+  .footer {
+    position: absolute;
+    bottom: 20px;
+    color: rgba(255,255,255,0.4);
+    font-size: 16px;
+  }
+</style>
+</head>
+<body>
+  <div class="stadium">🏟️</div>
+  <div class="stadium-name">ALVALADE · 阿尔瓦拉德球场</div>
+  <div class="city">LISBON · 里斯本 · 葡萄牙</div>
+  <div class="match-info">
+    <div style="letter-spacing:3px;margin-bottom:8px;">周二 003 · 欧冠</div>
+    <div><span style="color:#fff;font-weight:bold;">里斯本竞技</span> <span class="vs">VS</span> <span style="color:#fff;font-weight:bold;">阿森纳</span></div>
+    <div style="font-size:20px;margin-top:8px;color:rgba(255,255,255,0.7);">03:00 开球</div>
+  </div>
+  <div class="fans">🔴⚪🔴⚪</div>
+  <div class="footer">主场胜率超 70% · 球迷氛围狂热</div>
+</body>
+</html>

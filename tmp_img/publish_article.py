@@ -1,0 +1,132 @@
+# -*- coding: utf-8 -*-
+import sys, os
+sys.path.insert(0, 'C:/Users/Administrator/.openclaw/workspace/skills/wechat-publisher/scripts')
+from publisher import WeChatPublisher
+
+publisher = WeChatPublisher()
+
+# 图片URL
+cover_url = "http://mmbiz.qpic.cn/mmbiz_png/CDOXpzGmicHDK2DgE26UmxiaGrcdIBHGZB2vKToN7QYcY0Ol1xQGbCt9IuYcibWwqxHbEJk8lMkfwH8Cvo81Xbv4ianGuU4X0iaFwFKnoln5JFLY/0?wx_fmt=png"
+match1_url = "http://mmbiz.qpic.cn/mmbiz_png/CDOXpzGmicHAdDyyCu5VDGXgoY5Rj8iceKLbUoYibP0ibekYduFox53AzPsT6fSokib4A55nQ9LgIct3kyqpicmVstjPPfs0Xrd0TMiblgKbmobhbE/0?wx_fmt=png"
+match2_url = "http://mmbiz.qpic.cn/sz_mmbiz_png/CDOXpzGmicHBM120ugeqQBdpMHKcXib3RpMCvqV7YaK06HFr2dFzxsLUo9vDb0z8EzZUBnPlhfI1Y28N9LOsiaEibBHJmzuwO8IYs1TWPia9mXS4/0?wx_fmt=png"
+match3_url = "http://mmbiz.qpic.cn/mmbiz_png/CDOXpzGmicHDW8RQSfcue6LMdekNF5ZgSAqIjxEqmibhEwcXAShAL0ic4dznlTicfKjDCQNQmGFu8XdYyUO7Z9O1MRpSHH53KY1KLGDSHiabzW6s/0?wx_fmt=png"
+match4_url = "http://mmbiz.qpic.cn/mmbiz_png/CDOXpzGmicHCKtFFZIM0FzO02YwIKptPYcNLzrUbpE82PBe77JLYxn17MyTI4M9tzcE8OjoWsswiaL8nENuHOck9tqiaLW4TlEPX3mjqh9M04g/0?wx_fmt=png"
+match5_url = "http://mmbiz.qpic.cn/sz_mmbiz_png/CDOXpzGmicHBWF7zoYLZqSv9q3IiahLuicJMZzicevWFhXWw3yjmD8BOaCibSIeK6bribJmWJqYg2FzbyZYozEUsazibbJJuKjCjCIT1Obo4nN7OLc/0?wx_fmt=png"
+match6_url = "http://mmbiz.qpic.cn/mmbiz_png/CDOXpzGmicHDibOvC5ULaLh9bcM1Whnia7pscxjJoTBDjNuaicOCiabyNEnuJYpHIDTwSS4GMOQSicgibUQ5lHWcRhU0RBUcMRAtC0f8RgS6cxTgvc/0?wx_fmt=png"
+
+html = f'''<p style="text-align:center;"><img src="{cover_url}" srcset="{cover_url} 2x" style="width:100%;max-width:640px;display:block;margin:0 auto;"/></p>
+
+<p style="text-align:center;color:#888;font-size:14px;margin-top:8px;">封面图：1280 × 500</p>
+
+<hr style="border:none;border-top:1px solid #eee;margin:20px 0;"/>
+
+<h2 style="color:#e94560;font-size:22px;font-weight:900;margin:0;">周二 001 澳超｜墨尔本城 vs 中央海岸水手（17:00）</h2>
+
+<p><img src="{match1_url}" srcset="{match1_url} 2x" style="width:100%;max-width:640px;display:block;margin:12px auto;"/></p>
+<p><img src="{match2_url}" srcset="{match2_url} 2x" style="width:100%;max-width:640px;display:block;margin:12px auto;"/></p>
+
+<h3 style="color:#333;font-size:17px;font-weight:bold;">📌 一句话速览</h3>
+<p style="color:#555;font-size:15px;line-height:1.8;">季后赛卡位六分之战，两队均遭严重伤病侵袭，墨尔本城主场残阵求胜，中央海岸客场反击偷鸡，防平局是关键。</p>
+
+<h3 style="color:#333;font-size:17px;font-weight:bold;">📊 详细基本面</h3>
+<p style="color:#555;font-size:15px;line-height:1.8;"><strong>墨尔本城（主，第 8）</strong></p>
+<p style="color:#555;font-size:15px;line-height:1.8;">• 状态：上轮 3-0 大胜回暖，近 4 场仅失 1 球，防守稳健<br/>
+• 伤停重创：尤尼斯（红牌停赛）、金森健志（伤缺）、莱基（伤缺）领衔，进攻核心与锋线主力集体缺席，近 5 场场均进球降至 0.8 球；主力门将奥森汉姆停赛，替补扑救率下滑<br/>
+• 战意：距季后赛区仅 2 分，主场抢分意愿拉满</p>
+
+<p style="color:#555;font-size:15px;line-height:1.8;"><strong>中央海岸水手（客，第 9）</strong></p>
+<p style="color:#555;font-size:15px;line-height:1.8;">• 状态：近 2 场得失球均超 3，场面大开大合<br/>
+• 伤停隐患：塞恩斯伯里（主力后卫伤缺）、麦卡蒙特（中场缺阵）导致防线转身慢、助攻能力下滑，近 3 客场均失 2.3 球<br/>
+• 战意：积 28 分距前四 1 分，客场抢分目标明确</p>
+
+<h3 style="color:#333;font-size:17px;font-weight:bold;">🔍 专业解析</h3>
+<p style="color:#555;font-size:15px;line-height:1.8;">• 交锋：近 10 次交手 3-4-3 平分秋色，近 3 次均为小比分僵局<br/>
+• 格局：两队均缺核心，墨尔本城主场战力占优但火力打折；中央海岸客场不稳但反击犀利，主胜＞平局＞客胜，优先防平<br/>
+• <strong style="color:#e94560;">比分参考：1-1、1-0、0-0</strong></p>
+
+<hr style="border:none;border-top:1px solid #eee;margin:20px 0;"/>
+
+<h2 style="color:#e94560;font-size:22px;font-weight:900;margin:0;">周二 003 欧冠｜里斯本竞技 vs 阿森纳（03:00）</h2>
+
+<p><img src="{match3_url}" srcset="{match3_url} 2x" style="width:100%;max-width:640px;display:block;margin:12px auto;"/></p>
+<p><img src="{match4_url}" srcset="{match4_url} 2x" style="width:100%;max-width:640px;display:block;margin:12px auto;"/></p>
+
+<h3 style="color:#333;font-size:17px;font-weight:bold;">📌 一句话速览</h3>
+<p style="color:#555;font-size:15px;line-height:1.8;">枪手伤病潮重创，里斯本竞技主场残阵抢分，主队不败格局清晰，防小胜。</p>
+
+<h3 style="color:#333;font-size:17px;font-weight:bold;">📊 详细基本面</h3>
+<p style="color:#555;font-size:15px;line-height:1.8;"><strong>里斯本竞技（主）</strong></p>
+<p style="color:#555;font-size:15px;line-height:1.8;">• 状态：联赛稳居中上游，主场传控 + 高位逼抢打法成熟，近 5 主不败<br/>
+• 伤停：路易斯・苏亚雷斯（头号射手，停赛）、尤尔曼德（中场核心，停赛）缺阵，进攻与中场硬度受损，但阵容框架完整<br/>
+• 主场优势：阿尔瓦拉德球场球迷氛围狂热，近 10 个欧冠主场胜率超 70%</p>
+
+<p style="color:#555;font-size:15px;line-height:1.8;"><strong>阿森纳（客）</strong></p>
+<p style="color:#555;font-size:15px;line-height:1.8;">• 状态：足总杯出局、联赛杯失利，欧冠成最后夺冠希望，战意拉满<br/>
+• 伤病噩梦：萨卡（缺阵）、加布里埃尔（后防核心，出战成疑）、厄德高（状态存疑）领衔，11 人伤停，后防与边路爆点集体缺席；客场面对高压逼抢，破密集防守手段单一<br/>
+• 历史劣势：从未在欧冠客场击败过葡萄牙球队</p>
+
+<h3 style="color:#333;font-size:17px;font-weight:bold;">🔍 专业解析</h3>
+<p style="color:#555;font-size:15px;line-height:1.8;">• 机构：主胜赔率持续下调，市场认可主队主场优势与客队伤病劣势<br/>
+• 格局：阿森纳残阵难抗主场冲击，里斯本竞技虽缺核心但主场战力更强，主胜优先，防平局<br/>
+• <strong style="color:#e94560;">比分参考：1-0、1-1、2-1</strong></p>
+
+<hr style="border:none;border-top:1px solid #eee;margin:20px 0;"/>
+
+<h2 style="color:#e94560;font-size:22px;font-weight:900;margin:0;">周二 004 欧冠｜皇家马德里 vs 拜仁慕尼黑（03:00）</h2>
+
+<p><img src="{match5_url}" srcset="{match5_url} 2x" style="width:100%;max-width:640px;display:block;margin:12px auto;"/></p>
+<p><img src="{match6_url}" srcset="{match6_url} 2x" style="width:100%;max-width:640px;display:block;margin:12px auto;"/></p>
+
+<h3 style="color:#333;font-size:17px;font-weight:bold;">📌 一句话速览</h3>
+<p style="color:#555;font-size:15px;line-height:1.8;">欧冠百年恩怨对决，皇马残阵守伯纳乌，拜仁全主力复仇冲首胜，客胜可博，防皇马偷鸡。</p>
+
+<h3 style="color:#333;font-size:17px;font-weight:bold;">📊 详细基本面</h3>
+<p style="color:#555;font-size:15px;line-height:1.8;"><strong>皇家马德里（主）</strong></p>
+<p style="color:#555;font-size:15px;line-height:1.8;">• 状态：联赛三连胜终结，2-1 负马洛卡，争冠希望渺茫，欧冠成唯一目标<br/>
+• 伤停 + 停赛：库尔图瓦（赛季报销）、罗德里戈（赛季报销）、门迪（出战成疑）重创后防与进攻；巴尔韦德（停赛）缺阵，中场硬度下滑<br/>
+• 历史优势：近 4 次欧冠淘汰赛淘汰拜仁，近 14 次对阵拜仁 10 胜 2 平 2 负，伯纳乌魔咒压制对手</p>
+
+<p style="color:#555;font-size:15px;line-height:1.8;"><strong>拜仁慕尼黑（客）</strong></p>
+<p style="color:#555;font-size:15px;line-height:1.8;">• 状态：近 10 场 9 胜 1 平，狂轰 35 球，火力恐怖，凯恩状态火热<br/>
+• 阵容完整：凯恩（伤愈复出）、诺伊尔（复出）领衔，攻击线（凯恩 + 穆西亚拉 + 萨内）豪华，客场 13 战 10 胜 3 平不败<br/>
+• 战意：9 年不胜皇马，渴望打破淘汰赛不胜魔咒，复仇决心强烈</p>
+
+<h3 style="color:#333;font-size:17px;font-weight:bold;">🔍 专业解析</h3>
+<p style="color:#555;font-size:15px;line-height:1.8;">• 交锋：皇马心理占优，但拜仁近期状态与阵容完整度远胜对手<br/>
+• 格局：皇马残阵难挡拜仁全主力冲击，拜仁客场战力强悍，客胜＞主胜＞平局，优先防客胜<br/>
+• <strong style="color:#e94560;">比分参考：1-2、0-2、1-1</strong></p>
+
+<hr style="border:none;border-top:1px solid #eee;margin:20px 0;"/>
+
+<h2 style="color:#333;font-size:18px;font-weight:900;text-align:center;">📋 速览版总结</h2>
+
+<p style="color:#555;font-size:15px;line-height:2;background:#f8f8f8;padding:16px;border-radius:8px;">
+• <strong>澳超卡位战：</strong>两队均残阵，墨尔本城主胜防平<br/>
+• <strong>欧冠里斯本 vs 阿森纳：</strong>枪手伤病重创，里斯本不败防小胜<br/>
+• <strong>欧冠皇马 vs 拜仁：</strong>拜仁全主力复仇，客胜可博防平
+</p>
+
+<hr style="border:none;border-top:1px solid #eee;margin:20px 0;"/>
+
+<p style="color:#999;font-size:13px;line-height:2;background:#fafafa;padding:16px;border-radius:8px;border-left:4px solid #e94560;">
+<strong style="color:#e94560;">⚠️ 免责声明</strong><br/>
+本文为赛事数据资讯分享，不构成任何投注建议。足球赛果受临场状态、伤病、战术、红黄牌等多重因素影响，存在极大不确定性。请理性观赛、量力而行，通过正规体彩门店参与，远离非法网络博彩。
+</p>'''
+
+# 保存HTML用于调试
+with open('C:/Users/Administrator/.openclaw/workspace/tmp_img/article.html', 'w', encoding='utf-8') as f:
+    f.write(html)
+
+print("HTML saved, now publishing to draft...")
+
+result = publisher.create_draft(
+    title="4 月 7 日重心赛事前瞻｜欧冠巅峰对决 + 澳超卡位战，3 场深度解析",
+    content=html,
+    author="绿茵有运",
+    thumb_media_id="",
+    digest="欧冠巅峰对决+澳超卡位战，3场深度解析奉上",
+    content_base_dir="C:/Users/Administrator/.openclaw/workspace/tmp_img"
+)
+
+print(f"Draft media_id: {result['media_id']}")
+print(f"SUCCESS! Draft published to WeChat!")

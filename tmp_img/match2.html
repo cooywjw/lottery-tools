@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body {
+    width: 1280px;
+    height: 720px;
+    margin: 0;
+    background: linear-gradient(180deg, #1a1a2e 0%, #0a0a1a 100%);
+    font-family: -apple-system, "PingFang SC", "Noto Sans SC", sans-serif;
+    overflow: hidden;
+  }
+  .header {
+    background: #e94560;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 40px;
+    letter-spacing: 3px;
+  }
+  .content {
+    padding: 30px 40px;
+  }
+  .subtitle {
+    color: #e94560;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1a1a2e;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  th {
+    background: #e94560;
+    color: white;
+    padding: 14px 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  td {
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+  }
+  tr.highlight td {
+    background: rgba(233,69,96,0.2);
+    color: #e94560;
+    font-weight: bold;
+  }
+  .note {
+    color: #888;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="header">📊 澳超积分榜（实时）</div>
+  <div class="content">
+    <div class="subtitle">季后赛席位争夺 · 仅差2分</div>
+    <table>
+      <tr><th>排名</th><th>球队</th><th>场次</th><th>积分</th><th>备注</th></tr>
+      <tr class="highlight"><td>7</td><td>惠灵顿凤凰</td><td>26</td><td>38</td><td>季后赛区</td></tr>
+      <tr class="highlight"><td style="background:rgba(233,69,96,0.3);color:#e94560;font-weight:bold;">8</td><td style="color:#e94560;font-weight:bold;">🏆 墨尔本城</td><td>26</td><td style="color:#e94560;font-weight:bold;">36</td><td>距前四仅差2分</td></tr>
+      <tr class="highlight"><td style="background:rgba(233,69,96,0.3);color:#e94560;font-weight:bold;">9</td><td style="color:#e94560;font-weight:bold;">⚓ 中央海岸水手</td><td>26</td><td style="color:#e94560;font-weight:bold;">28</td><td>距前四仅差1分</td></tr>
+    </table>
+    <div class="note">* 标注为本日参赛队伍 · 数据截止4月7日</div>
+  </div>
+</body>
+</html>

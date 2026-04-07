@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body {
+    width: 1280px;
+    height: 720px;
+    margin: 0;
+    background: linear-gradient(135deg, #063672 0%, #02315e 100%);
+    font-family: -apple-system, "PingFang SC", "Noto Sans SC", sans-serif;
+    overflow: hidden;
+  }
+  .header {
+    background: #e94560;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 40px;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content {
+    padding: 30px 40px;
+  }
+  .alert {
+    background: rgba(233,69,96,0.2);
+    border: 2px solid #e94560;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .alert-title {
+    color: #e94560;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .injury-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .injury-item {
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 12px 20px;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .injury-item .name {
+    font-weight: bold;
+  }
+  .injury-item .status {
+    color: #e94560;
+    font-size: 16px;
+  }
+  .summary {
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-top: 10px;
+  }
+  .summary-text {
+    color: #ffd700;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .footer {
+    position: absolute;
+    bottom: 15px;
+    left: 40px;
+    color: rgba(255,255,255,0.3);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <span>🔴 阿森纳赛前训练 · 伤病名单</span>
+    <span>周二 003 · 欧冠</span>
+  </div>
+  <div class="content">
+    <div class="alert">
+      <div class="alert-title">⚠️ 伤病潮重创 · 11人伤停</div>
+      <div class="injury-list">
+        <div class="injury-item"><span class="name">🟠 萨卡</span><span class="status">缺阵</span></div>
+        <div class="injury-item"><span class="name">🟠 加布里埃尔</span><span class="status">出战成疑</span></div>
+        <div class="injury-item"><span class="name">🟠 厄德高</span><span class="status">状态存疑</span></div>
+        <div class="injury-item"><span class="name">🔴 后防核心</span><span class="status">集体缺席</span></div>
+        <div class="injury-item"><span class="name">🔴 边路爆点</span><span class="status">集体缺席</span></div>
+        <div class="injury-item"><span class="name">🔴 豪华11人</span><span class="status">伤停名单</span></div>
+      </div>
+    </div>
+    <div class="summary">
+      <div class="summary-text">⚠️ 客场面对高压逼抢，破密集防守手段单一</div>
+    </div>
+  </div>
+  <div class="footer">数据来源：球队官方训练课 · 截止4月7日</div>
+</body>
+</html>

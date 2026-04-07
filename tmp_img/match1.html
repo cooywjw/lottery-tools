@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body {
+    width: 1280px;
+    height: 720px;
+    margin: 0;
+    background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%);
+    font-family: -apple-system, "PingFang SC", "Noto Sans SC", sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .match-header {
+    color: #e94560;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+  }
+  .teams {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .team-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+  }
+  .team-name {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .vs {
+    color: #e94560;
+    font-size: 48px;
+    font-weight: 900;
+  }
+  .match-info {
+    margin-top: 40px;
+    background: rgba(233,69,96,0.15);
+    border: 2px solid #e94560;
+    border-radius: 12px;
+    padding: 16px 40px;
+    color: white;
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+  .match-info span {
+    color: #e94560;
+    font-weight: bold;
+  }
+  .footer {
+    position: absolute;
+    bottom: 20px;
+    color: #555;
+    font-size: 16px;
+  }
+</style>
+</head>
+<body>
+  <div class="match-header">周二 001 · 澳超 · 17:00</div>
+  <div class="teams">
+    <div class="team">
+      <div class="team-logo" style="background:#1e5fa8;color:#fff;">🏟️</div>
+      <div class="team-name">墨尔本城</div>
+    </div>
+    <div class="vs">VS</div>
+    <div class="team">
+      <div class="team-logo" style="background:#f5a623;color:#fff;">⚓</div>
+      <div class="team-name">中央海岸水手</div>
+    </div>
+  </div>
+  <div class="match-info">
+    季后赛卡位<span>六分之战</span> · 双方均遭严重伤病侵袭
+  </div>
+  <div class="footer">绿茵有运 · 赛前海报</div>
+</body>
+</html>

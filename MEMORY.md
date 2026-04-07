@@ -29,6 +29,11 @@
 - 切换模型后 skill 仍然可用（前提是同一工作区）
 - 不同模型的 tool use 能力有差异，需要主动提示使用 skill
 
+### 模型优先级（当前会话）
+- 默认：minimax/MiniMax-M2.7（速度快，但图片理解能力不可用）
+- 图片理解：需换用其他模型（见下）
+- ⚠️ **MiniMax 模型不支持 image 工具**，遇到图片分析任务需换模型
+
 ### 媒体生成配置
 - **默认引擎：通义万相** (Tianshu Wan Xiang 2.6)
 - **适用范围**：所有生图、生视频任务
@@ -36,11 +41,21 @@
 - **技能位置**：`~/.openclaw/workspace/skills/tianshu-wan-video/`
 - **API状态**：✅ 已配置，key 有效（更新了 endpoint 和请求格式）
 
+### 图片生成工作流（2026-04-07 新总结）
+- **配图策略**（用户确定）：
+  - 每场 2 张图
+  - 首选项：两队代表性球员真实照片
+  - 次选项：比赛经典镜头 / 整队合照
+- **真实球员照片获取**：困难（Wikipedia 429限速，Getty 等商业图库无法直接爬）
+- **可稳定执行**：HTML → Chrome 截图生成数据对比图（完全可行）
+- **用户建议**：用户发参考图给我，我负责上传 + 排版（效率最高）
+
 ### API Keys（已配置）
 - Moonshot (Kimi)
 - DeepSeek (V3/R1)
 - Tavily（网络搜索）
 - 飞书机器人
+- 微信公众号 AppID: `wxfb1dc014e68f77a6`
 
 ### 飞书集成
 - 用户ID：`ou_1b35a7e08c18ad9df24f0491eb2f06e6`
@@ -48,7 +63,19 @@
 
 ## 进行中的项目
 
-### 公众号「绿茵有运」
+### OpenNana 提示词采集 (2026-04-07)
+- **网址**：https://opennana.com/awesome-prompt-gallery
+- **总数**：3613 条提示词
+- **API**：`https://api.opennana.com/api/prompts?page=N&limit=50`（无需认证，只能拿列表）
+- **详情**：需要登录态，CDP 浏览器自动化方案成功
+- **采集方式**：Chrome 远程调试 + CDP Python 客户端（websocket-client）
+- **Chrome 启动**：`--remote-debugging-port=9222 --user-data-dir=TestProfile --remote-allow-origins=*`
+- **进度文件**：`G:\opennana_prompts\scraped_detail.json`（每20条自动保存）
+- **脚本**：`C:\Users\Administrator\.openclaw\workspace\tmp_img\cdp_full.py`
+- **状态**：运行中（2026-04-07 ~18:52 开始，约3-4小时完成3613条）
+- **已知问题**：详情 API 需要登录，切换到 CDP 浏览器自动化方案
+
+## 公众号「绿茵有运」
 - **名称**：绿茵有运
 - **定位**：竞彩数据 + 足球资讯 + 彩票店引流
 - **状态**：原账号「慈云小白说球」已被永久封禁，新账号启用
@@ -124,19 +151,19 @@
 3. **intent-confirm** - 意图确认
 4. **cross-model-memory** - 跨模型记忆
 5. **workflow-engine** - 工作流引擎（工具串联自动化）✅ (2026-04-05)
-5. **skill-vetter** - 安全检查
-6. **free-ride** - OpenRouter 免费模型管理
-7. **context-manager** - 上下文监控与管理 ✓ (v1.0.0 已部署)
-8. **claude-tool-interface** - 统一工具接口规范 ✓ (v1.0.0 新建，2026-04-02)
-9. **cli-anything** - CLI 生成工具 ✓ (v0.1.0 新安装，2026-04-03)
-   - 用途：将 GUI 应用转换为 AI 可用的命令行接口
-10. **coordinator** - 多Agent编排引擎 ✓ (2026-04-02，含角色集成，2026-04-04)
+6. **skill-vetter** - 安全检查
+7. **free-ride** - OpenRouter 免费模型管理
+8. **context-manager** - 上下文监控与管理 ✓ (v1.0.0 已部署)
+9. **claude-tool-interface** - 统一工具接口规范 ✓ (v1.0.0 新建，2026-04-02)
+10. **cli-anything** - CLI 生成工具 ✓ (v0.1.0 新安装，2026-04-03)
+    - 用途：将 GUI 应用转换为 AI 可用的命令行接口
+11. **coordinator** - 多Agent编排引擎 ✓ (2026-04-02，含角色集成，2026-04-04)
     - 新增：支持 `--role` 参数加载 agency-agents 专业角色
     - 角色库：`roles/engineering/`, `roles/marketing/`, `roles/project-management/`, `roles/testing/`
-11. **agency-agents** - 专业Agent角色库 ⚠️ (2026-04-04 评估安装)
+12. **agency-agents** - 专业Agent角色库 ⚠️ (2026-04-04 评估安装)
     - 描述：5个预设角色（前端/后端/增长/项目经理/测试）
     - 注意：ClawHub有 Warnings 警告，实际仅5个Agent（非宣称的61个）
-12. **cognee** - AI记忆引擎 ✓ (2026-04-05 功能测试通过!)
+13. **cognee** - AI记忆引擎 ✓ (2026-04-05 功能测试通过!)
     - 来源：topoteretes/cognee（14.9k stars）
     - 功能：文本→知识图谱，Agent长期记忆
     - ⚠️ Python 3.14 不兼容，必须用 Python 3.12（`py -3.12`）
@@ -151,6 +178,8 @@
 - OpenClaw CLI WebSocket 连接有问题（HTTP API 可用）
 - OpenClaw 升级失败（命令行和界面都报错）
 - 浏览器自动化被反爬虫拦截（京东、淘宝、机票查询）
+- Wikipedia 下载图片 429 限速（真实球员照片获取困难）
+- MiniMax 模型不支持 image 工具（图片分析需换用其他模型）
 
 ## 重要决策
 1. 使用 GitHub 备份 OpenClaw 配置 ✓
@@ -162,15 +191,21 @@
 7. Claude Code 源码进化计划启动：Phase 1 进行中，Phase 2/3 设计文档已完成 ✓ (2026-04-02)
 8. 生图生视频默认使用通义万相引擎 ✓ (2026-04-03)
 9. workflow-engine 工作流引擎：工具串联成自动流水线 ✓ (2026-04-05)
+10. **公众号配图策略确定** ✓ (2026-04-07)
+    - 每场2张：首选项球员照，次选项经典镜头/整队合照
+    - 真实球员照片：用户发给我，我上传+排版（效率最高）
+    - 数据对比图：HTML + Chrome 截图（完全可自动执行）
 - [x] 等公众号审核通过 ✅ 2026-03-25
 - [x] 发布首篇测试文章 ✅ 2026-03-26
 - [x] 发布国土比赛分析文章 ✅ 2026-03-31
 - [x] **cognee 测试** ✅ 2026-04-05（Pipeline 功能验证通过）
 - [x] Phase 1：工具系统重构核心完成 ✅ 2026-04-05（TOOL_REGISTRY + 4个Skill迁移）
+- [x] 公众号配图策略确定 ✅ 2026-04-07
 - [ ] Phase 1：工具发现流程集成（OpenClaw 启动时自动扫描注册）
 - [ ] Phase 3：增强 context-manager（autoCompact）
 - [ ] 配置公众号自动回复和菜单栏
 - [ ] 每日更新竞彩数据 + 足球内容
+- [ ] **下一个大活**（用户即将启动）
 
 ## Cognee 安装记录 (2026-04-04)
 

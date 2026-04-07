@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body {
+    width: 1280px;
+    height: 720px;
+    margin: 0;
+    background: linear-gradient(135deg, #dc052d 0%, #8b0000 50%, #1a1a2e 100%);
+    font-family: -apple-system, "PingFang SC", "Noto Sans SC", sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .badge {
+    background: rgba(255,255,255,0.15);
+    border: 2px solid rgba(255,255,255,0.4);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .badge-icon {
+    font-size: 120px;
+  }
+  .team-name {
+    color: white;
+    font-size: 52px;
+    font-weight: 900;
+    letter-spacing: 6px;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  }
+  .subtitle {
+    color: rgba(255,255,255,0.7);
+    font-size: 24px;
+    margin-top: 12px;
+    letter-spacing: 4px;
+  }
+  .players {
+    display: flex;
+    gap: 16px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .player {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 12px;
+    padding: 14px 24px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .status {
+    background: #4caf50;
+    color: white;
+    font-size: 14px;
+    padding: 2px 8px;
+    border-radius: 10px;
+  }
+  .record {
+    margin-top: 30px;
+    background: rgba(255,215,0,0.2);
+    border: 1px solid #ffd700;
+    border-radius: 30px;
+    padding: 12px 30px;
+    color: #ffd700;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .footer {
+    position: absolute;
+    bottom: 20px;
+    color: rgba(255,255,255,0.3);
+    font-size: 16px;
+  }
+</style>
+</head>
+<body>
+  <div class="badge"><div class="badge-icon">🔴</div></div>
+  <div class="team-name">拜仁慕尼黑</div>
+  <div class="subtitle">FC BAYERN MÜNCHEN · 全主力阵容</div>
+  <div class="players">
+    <div class="player">🔥 凯恩 <span class="status">伤愈复出</span></div>
+    <div class="player">🧤 诺伊尔 <span class="status">复出</span></div>
+    <div class="player">⚡ 穆西亚拉 <span class="status">主力</span></div>
+    <div class="player">⚡ 萨内 <span class="status">主力</span></div>
+  </div>
+  <div class="record">客场 13 战 10 胜 3 平 · 10场狂轰35球 · 近10场9胜1平</div>
+  <div class="footer">周二 004 · 欧冠 · 皇马 vs 拜仁 · 绿茵有运</div>
+</body>
+</html>
