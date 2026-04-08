@@ -63,17 +63,24 @@
 
 ## 进行中的项目
 
-### OpenNana 提示词采集 (2026-04-07)
+### OpenNana 提示词采集 (2026-04-07 ✅ 完成)
 - **网址**：https://opennana.com/awesome-prompt-gallery
 - **总数**：3613 条提示词
-- **API**：`https://api.opennana.com/api/prompts?page=N&limit=50`（无需认证，只能拿列表）
-- **详情**：需要登录态，CDP 浏览器自动化方案成功
 - **采集方式**：Chrome 远程调试 + CDP Python 客户端（websocket-client）
 - **Chrome 启动**：`--remote-debugging-port=9222 --user-data-dir=TestProfile --remote-allow-origins=*`
-- **进度文件**：`G:\opennana_prompts\scraped_detail.json`（每20条自动保存）
-- **脚本**：`C:\Users\Administrator\.openclaw\workspace\tmp_img\cdp_full.py`
-- **状态**：运行中（2026-04-07 ~18:52 开始，约3-4小时完成3613条）
-- **已知问题**：详情 API 需要登录，切换到 CDP 浏览器自动化方案
+- **脚本**：`C:\Users\Administrator\.openclaw\workspace\tmp_img\cdp_full.py` → `merge_data.py`
+- **采集结果（2026-04-07 完成）**：
+  - 3613 条全部采集完成
+  - 中文提示词：1914 条（59.6%）
+  - 英文提示词：3598 条（99.6%）
+  - 有标签：3063 条（84.8%）
+  - 分类 CSV：387 个分类
+- **G 盘文件**：
+  - `prompts_full.json`（11MB）- 完整数据含提示词
+  - `prompts_total.csv`（10MB）- 完整数据 CSV
+  - `prompts_total.csv`（旧版，无提示词）- 可删除
+  - `分类_*.csv`（387个）- 按标签分类
+  - `分类索引.json` - 分类统计
 
 ## 公众号「绿茵有运」
 - **名称**：绿茵有运
