@@ -1,18 +1,18 @@
 {
-  "lastCheck": 1775748720,
-  "lastContextCheck": 1775748720,
-  "lastWechatCheck": 1775748720,
-  "lastSystemCheck": 1775748720,
-  "lastHeartbeat": 1775748720,
-  "lastHeartbeatCheck": 1775748720,
-  "lastContextUsageCheck": 1775748720,
-  "lastWechatContentCheck": 1775748720,
-  "lastSystemHealthCheck": 1775748720,
-  "lastTodoCheck": 1775748720,
+  "lastCheck": 1775849282,
+  "lastContextCheck": 1775849282,
+  "lastWechatCheck": 1775849282,
+  "lastSystemCheck": 1775849282,
+  "lastHeartbeat": 1775849282,
+  "lastHeartbeatCheck": 1775849282,
+  "lastContextUsageCheck": 1775849282,
+  "lastWechatContentCheck": 1775849282,
+  "lastSystemHealthCheck": 1775849282,
+  "lastTodoCheck": 1775849282,
   "contextCleanup": {
     "lastCleanup": 1775236320,
     "reason": "End of day",
     "note": "Context at 77%, normal. User going to rest."
   },
-  "notes": "2026-04-09 19:52: 系统正常。上下文27%状态良好。今日公众号草稿：3篇已发（足坛战报x2 + 竞彩分析x1）。明天10点飞书推送待触发。"
+  "notes": "2026-04-10 19:28: 上下文使用率104%超限，建议立即清理。系统运行正常，公众号token已过期需刷新。微信发消息任务测试成功。"
 }

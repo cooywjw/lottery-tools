@@ -41,6 +41,12 @@
 - **技能位置**：`~/.openclaw/workspace/skills/tianshu-wan-video/`
 - **API状态**：✅ 已配置，key 有效（更新了 endpoint 和请求格式）
 
+### Computer Use Skill（2026-04-10 已删除）
+**原因**: 用户反馈"不好用"，已彻底删除
+**原目录**: `~/.openclaw/workspace/skills/computer-use/`
+**删除时间**: 2026-04-10 19:34
+**状态**: ❌ 已移除
+
 ### 图片生成工作流（2026-04-07 新总结）
 - **配图策略**（用户确定）：
   - 每场 2 张图
