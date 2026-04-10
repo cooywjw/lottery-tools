@@ -1,0 +1,8 @@
+{
+  "concurrency": 1,
+  "llmProvider": "deepseek",
+  "llmModel": "deepseek/deepseek-chat",
+  "fallbackEnabled": true,
+  "confidenceThreshold": 0.7,
+  "defaultAgent": "general-assistant"
+}

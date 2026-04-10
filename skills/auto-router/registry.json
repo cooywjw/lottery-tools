@@ -1,0 +1,14 @@
+{
+  "name": "auto-router",
+  "version": "1.0.0",
+  "description": "智能 Agent 路由引擎 - 关键词匹配 + LLM 兜底",
+  "author": "OpenClaw",
+  "entry": "router.js",
+  "keywords": ["agent", "routing", "coordinator", "llm"],
+  "config": {
+    "concurrency": 1,
+    "llmProvider": "deepseek",
+    "llmModel": "deepseek/deepseek-chat",
+    "fallbackEnabled": true
+  }
+}
