@@ -179,7 +179,11 @@
     - 使用方式：`/agent <角色名>` 或 Coordinator `--role` 参数
     - 定时同步：每日 03:00 自动增量更新
     - 注册表：`skills/agency-sync/registry.json`
-13. **cognee** - AI记忆引擎 ✓ (2026-04-05 功能测试通过!)
+13. **auto-router** - 智能路由引擎 ✓ (2026-04-10 新建)
+    - 关键词匹配：60+ 规则覆盖营销/工程/测试/产品
+    - LLM 兜底：未知任务自动判断合适 Agent
+    - 调用：`node skills/auto-router/router.js route "<消息>"`
+14. **cognee** - AI记忆引擎 ✓ (2026-04-05 功能测试通过!)
     - 来源：topoteretes/cognee（14.9k stars）
     - 功能：文本→知识图谱，Agent长期记忆
     - ⚠️ Python 3.14 不兼容，必须用 Python 3.12（`py -3.12`）
@@ -218,6 +222,7 @@
 - [x] Phase 1：工具系统重构核心完成 ✅ 2026-04-05（TOOL_REGISTRY + 4个Skill迁移）
 - [x] 公众号配图策略确定 ✅ 2026-04-07
 - [x] **agency-agents 全量同步** ✅ 2026-04-10（151 Agent，37 部门）
+- [x] **auto-router 智能路由** ✅ 2026-04-10（关键词+LLM 双引擎）
 - [ ] Phase 1：工具发现流程集成（OpenClaw 启动时自动扫描注册）
 - [ ] Phase 3：增强 context-manager（autoCompact）
 - [ ] 配置公众号自动回复和菜单栏
