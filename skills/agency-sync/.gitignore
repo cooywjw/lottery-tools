@@ -1,0 +1,2 @@
+# 临时克隆的上游仓库（可随时重新 git clone）
+.upstream_clone/

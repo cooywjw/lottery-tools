@@ -116,7 +116,7 @@
 - **待补充**：工具发现流程集成（OpenClaw 启动时扫描 skills/*/SKILL.md）
 
 #### Phase 2：多Agent编排
-- **状态**：✅ **核心功能已完成**（2026-04-02）**+ 角色集成**（2026-04-04）
+- **状态**：✅ **核心功能已完成**（2026-04-02）**+ 角色集成**（2026-04-04）**+ 151 Agent 全量同步**（2026-04-10）
 - **目标**：实现 Coordinator Mode + agent_spawn/list/send/stop
 - **产出**：
   - `D:\work\projects\claude-code-source/PHASE2_COORDINATOR_DESIGN.md` — 设计文档
@@ -126,13 +126,16 @@
   - `skills/coordinator/team-state.js` — Agent 注册表
   - `skills/coordinator/team-state.json` — 持久化状态
   - `skills/coordinator/roles/role-loader.js` — **角色加载器** ✅（2026-04-04新增）
+  - `skills/agency-sync/` — **上游同步 Skill** ✅（2026-04-10新增）
+    - 151 个 Agent 同步自 msitarzewski/agency-agents（69.6k stars）
+    - 覆盖 37 个专业部门
 - **已实现功能**：
   - `spawn` — 创建并行 Worker Agent（最多3个并发）
   - `send` — 向运行中的 Agent 发送消息
   - `list` — 列出团队所有 Agent
   - `stop` — 停止运行中的 Agent
   - `status` — 查看团队整体状态
-  - `--role` 参数 — 加载 agency-agents 专业角色人设（2026-04-04新增）
+  - `--role` 参数 — 加载 agency-agents 专业角色人设
 - **Gateway API**：通过 `/tools/invoke` 调用 `sessions_spawn/sessions_send`
 - **下一步**：集成到 OpenClaw 工具系统，实现任务通知回调
 
@@ -167,9 +170,15 @@
 11. **coordinator** - 多Agent编排引擎 ✓ (2026-04-02，含角色集成，2026-04-04)
     - 新增：支持 `--role` 参数加载 agency-agents 专业角色
     - 角色库：`roles/engineering/`, `roles/marketing/`, `roles/project-management/`, `roles/testing/`
-12. **agency-agents** - 专业Agent角色库 ⚠️ (2026-04-04 评估安装)
-    - 描述：5个预设角色（前端/后端/增长/项目经理/测试）
-    - 注意：ClawHub有 Warnings 警告，实际仅5个Agent（非宣称的61个）
+12. **agency-agents** - ✅ 已完全集成 (2026-04-10 完成)
+    - 来源：msitarzewski/agency-agents (69.6k stars, MIT)
+    - 本地路径：`skills/coordinator/roles/`
+    - 同步方式：`skills/agency-sync/sync.js`
+    - **Agent 数量：151 个**（覆盖 37 个部门）
+    - 主要部门：engineering(52), marketing(15+), testing(13), design(8), 等
+    - 使用方式：`/agent <角色名>` 或 Coordinator `--role` 参数
+    - 定时同步：每日 03:00 自动增量更新
+    - 注册表：`skills/agency-sync/registry.json`
 13. **cognee** - AI记忆引擎 ✓ (2026-04-05 功能测试通过!)
     - 来源：topoteretes/cognee（14.9k stars）
     - 功能：文本→知识图谱，Agent长期记忆
@@ -208,6 +217,7 @@
 - [x] **cognee 测试** ✅ 2026-04-05（Pipeline 功能验证通过）
 - [x] Phase 1：工具系统重构核心完成 ✅ 2026-04-05（TOOL_REGISTRY + 4个Skill迁移）
 - [x] 公众号配图策略确定 ✅ 2026-04-07
+- [x] **agency-agents 全量同步** ✅ 2026-04-10（151 Agent，37 部门）
 - [ ] Phase 1：工具发现流程集成（OpenClaw 启动时自动扫描注册）
 - [ ] Phase 3：增强 context-manager（autoCompact）
 - [ ] 配置公众号自动回复和菜单栏
