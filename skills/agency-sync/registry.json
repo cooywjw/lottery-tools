@@ -119,6 +119,12 @@
     "color": "cyan",
     "description": "engineering-code-reviewer"
   },
+  "engineering/engineering-codebase-onboarding-engineer": {
+    "path": "engineering/engineering-codebase-onboarding-engineer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-codebase-onboarding-engineer"
+  },
   "engineering/engineering-data-engineer": {
     "path": "engineering/engineering-data-engineer.md",
     "department": "engineering",
@@ -179,6 +185,12 @@
     "color": "cyan",
     "description": "engineering-incident-response-commander"
   },
+  "engineering/engineering-minimal-change-engineer": {
+    "path": "engineering/engineering-minimal-change-engineer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-minimal-change-engineer"
+  },
   "engineering/engineering-mobile-app-builder": {
     "path": "engineering/engineering-mobile-app-builder.md",
     "department": "engineering",
@@ -233,11 +245,47 @@
     "color": "cyan",
     "description": "engineering-threat-detection-engineer"
   },
+  "engineering/engineering-voice-ai-integration-engineer": {
+    "path": "engineering/engineering-voice-ai-integration-engineer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-voice-ai-integration-engineer"
+  },
   "engineering/engineering-wechat-mini-program-developer": {
     "path": "engineering/engineering-wechat-mini-program-developer.md",
     "department": "engineering",
     "color": "cyan",
     "description": "engineering-wechat-mini-program-developer"
+  },
+  "finance/finance-bookkeeper-controller": {
+    "path": "finance/finance-bookkeeper-controller.md",
+    "department": "finance",
+    "color": "cyan",
+    "description": "finance-bookkeeper-controller"
+  },
+  "finance/finance-financial-analyst": {
+    "path": "finance/finance-financial-analyst.md",
+    "department": "finance",
+    "color": "cyan",
+    "description": "finance-financial-analyst"
+  },
+  "finance/finance-fpa-analyst": {
+    "path": "finance/finance-fpa-analyst.md",
+    "department": "finance",
+    "color": "cyan",
+    "description": "finance-fpa-analyst"
+  },
+  "finance/finance-investment-researcher": {
+    "path": "finance/finance-investment-researcher.md",
+    "department": "finance",
+    "color": "cyan",
+    "description": "finance-investment-researcher"
+  },
+  "finance/finance-tax-strategist": {
+    "path": "finance/finance-tax-strategist.md",
+    "department": "finance",
+    "color": "cyan",
+    "description": "finance-tax-strategist"
   },
   "game/game-audio-engineer": {
     "path": "game/game-audio-engineer.md",
@@ -268,6 +316,12 @@
     "department": "technical",
     "color": "cyan",
     "description": "technical-artist"
+  },
+  "marketing/marketing-agentic-search-optimizer": {
+    "path": "marketing/marketing-agentic-search-optimizer.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-agentic-search-optimizer"
   },
   "marketing/marketing-ai-citation-strategist": {
     "path": "marketing/marketing-ai-citation-strategist.md",
@@ -677,6 +731,12 @@
     "color": "cyan",
     "description": "corporate-training-designer"
   },
+  "customer/customer-service": {
+    "path": "customer/customer-service.md",
+    "department": "customer",
+    "color": "cyan",
+    "description": "customer-service"
+  },
   "data/data-consolidation-agent": {
     "path": "data/data-consolidation-agent.md",
     "department": "data",
@@ -689,11 +749,29 @@
     "color": "cyan",
     "description": "government-digital-presales-consultant"
   },
+  "healthcare/healthcare-customer-service": {
+    "path": "healthcare/healthcare-customer-service.md",
+    "department": "healthcare",
+    "color": "cyan",
+    "description": "healthcare-customer-service"
+  },
   "healthcare/healthcare-marketing-compliance": {
     "path": "healthcare/healthcare-marketing-compliance.md",
     "department": "healthcare",
     "color": "cyan",
     "description": "healthcare-marketing-compliance"
+  },
+  "hospitality/hospitality-guest-services": {
+    "path": "hospitality/hospitality-guest-services.md",
+    "department": "hospitality",
+    "color": "cyan",
+    "description": "hospitality-guest-services"
+  },
+  "hr/hr-onboarding": {
+    "path": "hr/hr-onboarding.md",
+    "department": "hr",
+    "color": "cyan",
+    "description": "hr-onboarding"
   },
   "identity/identity-graph-operator": {
     "path": "identity/identity-graph-operator.md",
@@ -701,11 +779,47 @@
     "color": "cyan",
     "description": "identity-graph-operator"
   },
+  "language/language-translator": {
+    "path": "language/language-translator.md",
+    "department": "language",
+    "color": "cyan",
+    "description": "language-translator"
+  },
+  "legal/legal-billing-time-tracking": {
+    "path": "legal/legal-billing-time-tracking.md",
+    "department": "legal",
+    "color": "gray",
+    "description": "legal-billing-time-tracking"
+  },
+  "legal/legal-client-intake": {
+    "path": "legal/legal-client-intake.md",
+    "department": "legal",
+    "color": "gray",
+    "description": "legal-client-intake"
+  },
+  "legal/legal-document-review": {
+    "path": "legal/legal-document-review.md",
+    "department": "legal",
+    "color": "gray",
+    "description": "legal-document-review"
+  },
+  "loan/loan-officer-assistant": {
+    "path": "loan/loan-officer-assistant.md",
+    "department": "loan",
+    "color": "cyan",
+    "description": "loan-officer-assistant"
+  },
   "lsp/lsp-index-engineer": {
     "path": "lsp/lsp-index-engineer.md",
     "department": "lsp",
     "color": "cyan",
     "description": "lsp-index-engineer"
+  },
+  "real/real-estate-buyer-seller": {
+    "path": "real/real-estate-buyer-seller.md",
+    "department": "real",
+    "color": "cyan",
+    "description": "real-estate-buyer-seller"
   },
   "recruitment/recruitment-specialist": {
     "path": "recruitment/recruitment-specialist.md",
@@ -719,11 +833,29 @@
     "color": "cyan",
     "description": "report-distribution-agent"
   },
+  "retail/retail-customer-returns": {
+    "path": "retail/retail-customer-returns.md",
+    "department": "retail",
+    "color": "cyan",
+    "description": "retail-customer-returns"
+  },
   "sales/sales-data-extraction-agent": {
     "path": "sales/sales-data-extraction-agent.md",
     "department": "sales",
     "color": "red",
     "description": "sales-data-extraction-agent"
+  },
+  "sales/sales-outreach": {
+    "path": "sales/sales-outreach.md",
+    "department": "sales",
+    "color": "red",
+    "description": "sales-outreach"
+  },
+  "specialized/specialized-chief-of-staff": {
+    "path": "specialized/specialized-chief-of-staff.md",
+    "department": "specialized",
+    "color": "orange",
+    "description": "specialized-chief-of-staff"
   },
   "specialized/specialized-civil-engineer": {
     "path": "specialized/specialized-civil-engineer.md",
