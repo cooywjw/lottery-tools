@@ -11,19 +11,39 @@ const https = require('https');
 
 const TAVILY_KEY = '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';
 
+async function tavilySearchWithRetry(query, maxResults = 8, retries = 2) {
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const result = await tavilySearch(query, maxResults);
+      if (result.error || (result.status && result.status !== 'success')) {
+        throw new Error(result.error || `Tavily status: ${result.status}`);
+      }
+      return result;
+    } catch (err) {
+      if (attempt < retries && (err.message.includes('400') || err.message.includes('429') || err.message.includes('timeout') || err.message.includes('ECONNRESET'))) {
+        console.log(`[Tavily] 第${attempt + 1}次失败，重试中... (${err.message})`);
+        await new Promise(r => setTimeout(r, 2000 * (attempt + 1)));
+        continue;
+      }
+      throw err;
+    }
+  }
+}
+
 function tavilySearch(query, maxResults = 8) {
   return new Promise((resolve, reject) => {
     const body = JSON.stringify({
       api_key: TAVILY_KEY,
       query,
-      search_depth: 'advanced',
+      search_depth: 'basic',
       max_results: maxResults,
-      include_answer: true
+      include_answer: false
     });
     const req = https.request({
       hostname: 'api.tavily.com', port: 443, path: '/search',
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(body) }
+      headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(body) },
+      timeout: 15000
     }, res => {
       let data = '';
       res.on('data', c => data += c);
@@ -32,6 +52,7 @@ function tavilySearch(query, maxResults = 8) {
         catch (e) { reject(e); }
       });
     });
+    req.on('timeout', () => { req.destroy(); reject(new Error('Tavily request timeout')); });
     req.on('error', reject);
     req.write(body);
     req.end();
@@ -71,8 +92,8 @@ async function main() {
 
   const [bilibili, douyinSearch, kuaishouSearch] = await Promise.all([
     scrapeBilibili(browser),
-    tavilySearch('抖音热门视频排行 2026年4月 爆款'),
-    tavilySearch('快手热门视频排行 2026 点赞最高')
+    tavilySearchWithRetry('抖音热门视频排行 2026年4月 爆款'),
+    tavilySearchWithRetry('快手热门视频排行 2026 点赞最高')
   ]);
 
   await browser.close();
