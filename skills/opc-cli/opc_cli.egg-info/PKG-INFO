@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: opc-cli
+Version: 0.2.0
+Summary: OPC TTS & ASR CLI Tool with AirPlay/DLNA support
+Requires-Python: <3.14,>=3.10
+Requires-Dist: edge-tts
+Requires-Dist: rich
+Requires-Dist: pyatv
+Requires-Dist: async-upnp-client
+Requires-Dist: soundfile
+Requires-Dist: numpy
+Requires-Dist: flask
+Requires-Dist: flask-cors
+Requires-Dist: modelscope
+Requires-Dist: huggingface_hub
+Requires-Dist: torch<2.10.0,>=2.5.0; sys_platform == "linux"
+Requires-Dist: torchaudio<2.10.0,>=2.5.0; sys_platform == "linux"
+Requires-Dist: qwen-tts; sys_platform == "linux"
+Requires-Dist: qwen-asr; sys_platform == "linux"
+Requires-Dist: mlx-audio[stt,tts]>=0.4.0; sys_platform == "darwin"

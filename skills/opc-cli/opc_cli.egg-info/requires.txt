@@ -1,0 +1,19 @@
+edge-tts
+rich
+pyatv
+async-upnp-client
+soundfile
+numpy
+flask
+flask-cors
+modelscope
+huggingface_hub
+
+[:sys_platform == "darwin"]
+mlx-audio[stt,tts]>=0.4.0
+
+[:sys_platform == "linux"]
+torch<2.10.0,>=2.5.0
+torchaudio<2.10.0,>=2.5.0
+qwen-tts
+qwen-asr

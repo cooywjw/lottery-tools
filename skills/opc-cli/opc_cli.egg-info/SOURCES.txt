@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+opc_cli.egg-info/PKG-INFO
+opc_cli.egg-info/SOURCES.txt
+opc_cli.egg-info/dependency_links.txt
+opc_cli.egg-info/entry_points.txt
+opc_cli.egg-info/requires.txt
+opc_cli.egg-info/top_level.txt
+scripts/opc.py
