@@ -16,6 +16,10 @@
     "frontend-design-3": {
       "version": "0.1.0",
       "installedAt": 1776433082001
+    },
+    "hermes-agent-v2": {
+      "version": "2.1.1",
+      "installedAt": 1776589635849
     }
   }
 }
