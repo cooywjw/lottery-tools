@@ -1,83 +1,62 @@
-const https = require('https');
+const http = require('http');
 
-async function main() {
-  // Get token
-  const tokenBody = JSON.stringify({
-    app_id: "cli_a938c99e30791cef",
-    app_secret: "CSG8xDGnEXnITGZ26hnUQg2jiR81zoSe"
-  });
-  
-  const tokenReq = https.request({
-    hostname: 'open.feishu.cn',
-    path: '/open-apis/auth/v3/tenant_access_token/internal',
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'Content-Length': tokenBody.length }
-  }, (res) => {
-    let data = '';
-    res.on('data', chunk => data += chunk);
-    res.on('end', () => {
-      const tokenResp = JSON.parse(data);
-      const token = tokenResp.tenant_access_token;
-      console.log('Token:', token);
-      sendMessage(token);
-    });
-  });
-  tokenReq.write(tokenBody);
-  tokenReq.end();
-
-  function sendMessage(token) {
-    const msg = {
-      receive_id: "ou_1b35a7e08c18ad9df24f0491eb2f06e6",
-      receive_id_type: "open_id",
-      msg_type: "text",
-      content: JSON.stringify({
+const payload = {
+    chat_id: "ou_1b35a7e08c18ad9df24f0491eb2f06e6",
+    msg_type: "text",
+    content: {
         text: `【📊 每日爆款视频】今日各平台热门参考
 
-😄 阿伟，今天的热门视频给你整理好了，看看有没有灵感！
+🔥 B站热门
+1. 《崩坏：星穹铁道》银狼LV.999角色PV——「我独自满级」
+2. 口技表演《三打白骨精》
+3. 「每次生日许的愿 其实都与你有关」2.0
+4. 见面5秒开始战斗
+5. 洛天依 原创《告死鸟》
+6. 当你穿进老钱班22
+7. 刘巳道重拍《哭声》：怀疑即有罪，神明皆恶鬼
+8. 重庆|如画一般
+9. 《异环》公测PV丨Play on！
+10. 【奇迹男孩1998】我的最新作品
 
-━━━━━━ B站热门 ━━━━━━
-1. 【苏新皓｜4K直拍】Talk WORTHY? Talk DIRTY! 直拍｜浪漫主义·演唱会
-2. 《崩坏：星穹铁道》即兴巡演PV：「新手指南」
-3. 短片《榜样》·致敬雷锋
-4. 一个人如果一辈子都在玩游戏，会留下什么？
-5. 凭实力单身
-6. 【网站】当观测既是存在，你能忍住不看吗
-7. 最后的30分钟，你愿怎样度过？
-8. 印度指定有点说法
-9. 终于看到正常的菲比二创了
-10. 盘点嘎子直播带货名场面！
+🎵 抖音热点
+1. 首条视频破播放量3000万，3月榜单现象级新人
+2. 2026年抖音涨粉排行榜前十名
+3. 4月份抖音热榜
+4. 2026爆款音乐合集
 
-━━━━━━ 抖音热门 ━━━━━━
-今日以音乐类内容为主，老歌翻红较热～
+📱 快手热门
+1. 快手短视频主播排行榜2026前十名
+2. 2026快手搜索排名置顶技巧
+3. 口播类视频平均获赞5w+
 
-━━━━━━ 快手热门 ━━━━━━
-今日以平台榜单类内容为主～
+选好后告诉我，我帮你生成拍摄脚本和素材方案 🎬`
+    }
+};
 
-━━━━━━
-选好后告诉我，我帮你生成拍摄脚本和素材方案！ 🎬`
-      })
-    };
-    
-    const msgStr = JSON.stringify(msg);
-    const req = https.request({
-      hostname: 'open.feishu.cn',
-      path: '/open-apis/im/v1/messages?receive_id_type=open_id',
-      method: 'POST',
-      headers: { 
-        'Authorization': 'Bearer ' + token,
+const data = JSON.stringify(payload);
+
+const options = {
+    hostname: 'localhost',
+    port: 3000,
+    path: '/api/chat',
+    method: 'POST',
+    headers: {
         'Content-Type': 'application/json',
-        'Content-Length': Buffer.byteLength(msgStr)
-      }
-    }, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => {
-        console.log('Response:', data);
-      });
-    });
-    req.write(msgStr);
-    req.end();
-  }
-}
+        'Content-Length': Buffer.byteLength(data)
+    }
+};
 
-main().catch(console.error);
+const req = http.request(options, (res) => {
+    let body = '';
+    res.on('data', (chunk) => body += chunk);
+    res.on('end', () => {
+        console.log('Response:', res.statusCode, body);
+    });
+});
+
+req.on('error', (e) => {
+    console.error('Error:', e.message);
+});
+
+req.write(data);
+req.end();

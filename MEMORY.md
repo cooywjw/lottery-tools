@@ -1,18 +1,16 @@
-# MEMORY.md - 长期记忆
+﻿# MEMORY.md - 长期记忆
 
 ## 用户档案
 - **姓名**：小白大叔
 - **昵称**：阿伟
-- **身份**：彩票店业主 / 自由职业
 - **位置**：苏州市吴江区
 - **工作时段**：每天 12:00~22:00
 - **技术能力**：有一定电脑基础，会安装软件、改配置、排错
 
-## 当前目标
-1. 熟练使用 OpenClaw 连接各类 AI 模型
-2. 稳定运行本地大模型
-3. 用 AI 提升学习/工作效率
-4. 为彩票店引流获客（公众号、短视频）
+## 当前目标（2026-04-23 更新）
+1. **带货方向**：在各大平台做带货（抖音、小红书等）
+2. 熟练使用 OpenClaw 连接各类 AI 模型
+3. 用 AI 提升内容创作和运营效率
 
 ## 重要配置
 
@@ -111,16 +109,9 @@
   - `分类_*.csv`（387个）- 按标签分类
   - `分类索引.json` - 分类统计
 
-## 公众号「绿茵有运」
+### 公众号「绿茵有运」
 - **名称**：绿茵有运
-- **定位**：竞彩数据 + 足球资讯 + 彩票店引流
-- **状态**：原账号「慈云小白说球」已被永久封禁，新账号启用
-- **AppID**：`wxd45ed6706fa1547d`（同原账号）
-- **运营计划**：
-  - 内容方向：每日竞彩推荐、赛事分析、足球资讯
-  - 更新频率：每日1-2篇
-  - 互动方式：评论区互动、菜单栏引导到店
-  - 变现路径：内容引流 → 关注公众号 → 到店购彩
+- **定位**：~~竞彩数据 + 足球资讯 + 彩票店引流~~ → **已停更（目标转向带货）**
 
 ### OpenClaw 进化计划（Claude Code 源码复刻）
 - **启动时间**：2026-04-02
@@ -254,8 +245,8 @@
 - [x] **auto-router 智能路由** ✅ 2026-04-10（关键词+LLM 双引擎）
 - [ ] Phase 1：工具发现流程集成（OpenClaw 启动时自动扫描注册）
 - [ ] Phase 3：增强 context-manager（autoCompact）
-- [ ] 配置公众号自动回复和菜单栏
-- [ ] 每日更新竞彩数据 + 足球内容
+- [x] ~~配置公众号自动回复和菜单栏~~ → 公众号已停更
+- [x] ~~每日更新竞彩数据 + 足球内容~~ → 目标转向带货
 - [ ] **下一个大活**（用户即将启动）
 
 ## Cognee 安装记录 (2026-04-04)
@@ -298,3 +289,29 @@ python test_cognee.py
 - 简洁、直接、步骤清晰
 - 不喜欢：绕弯子、模糊不清、长篇大论
 - **流式回复需求**：用户希望在AI执行任务时能看到实时进度，不用干等。建议：长时间任务前先说"好的，收到，马上开始"，执行中定期发进度消息告知进展
+
+## Promoted From Short-Term Memory (2026-04-22)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-04-15.md:5:5 -->
+- ### 备注 - role-loader.js 未找到，跳过自动更新 - 后续为增量同步，可对比 registry.json.bak ## Light Sleep <!-- openclaw:dreaming:light:start --> - Candidate: agency-sync 首次全量同步: 时间：2026-04-15 11:45 (UTC 03:45) [score=0.845 recalls=0 avg=0.620 source=memory/2026-04-15.md:27-34]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-15.md:7:10 -->
+- ## Light Sleep <!-- openclaw:dreaming:light:start --> - Candidate: agency-sync 首次全量同步: 时间：2026-04-15 11:45 (UTC 03:45) - confidence: 0.00 - evidence: memory/2026-04-15.md:5-5 - recalls: 0 - status: staged - Candidate: agency-sync 首次全量同步: 同步模式：首次全量克隆（无历史备份）; 同步数量：**173 agents**; 来源：msitarzewski/agency-agents 上游仓库; 输出目录：`skills/agency-sync/coordinator/roles/` [score=0.845 recalls=0 avg=0.620 source=memory/2026-04-15.md:32-39]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-15.md:11:11 -->
+- - recalls: 0 - status: staged - Candidate: agency-sync 首次全量同步: 同步模式：首次全量克隆（无历史备份）; 同步数量：**173 agents**; 来源：msitarzewski/agency-agents 上游仓库; 输出目录：`skills/agency-sync/coordinator/roles/` - confidence: 0.00 - evidence: memory/2026-04-15.md:7-10 - recalls: 0 - status: staged - Candidate: agency-sync 首次全量同步: Registry：`skills/agency-sync/registry.json` [score=0.845 recalls=0 avg=0.620 source=memory/2026-04-15.md:37-44]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-15.md:14:17 -->
+- - recalls: 0 - status: staged - Candidate: agency-sync 首次全量同步: Registry：`skills/agency-sync/registry.json` - confidence: 0.00 - evidence: memory/2026-04-15.md:11-11 - recalls: 0 - status: staged - Candidate: 部门分布: engineering: 24; marketing: 26; sales: 9; testing: 8 [score=0.845 recalls=0 avg=0.620 source=memory/2026-04-15.md:42-49]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-15.md:18:21 -->
+- - recalls: 0 - status: staged - Candidate: 部门分布: engineering: 24; marketing: 26; sales: 9; testing: 8 - confidence: 0.00 - evidence: memory/2026-04-15.md:14-17 - recalls: 0 - status: staged - Candidate: 部门分布: specialized: 12; product: 5; support: 6; finance: 5 [score=0.845 recalls=0 avg=0.620 source=memory/2026-04-15.md:47-54]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-16.md:338:338 -->
+- - Candidate: Possible Lasting Truths: No strong candidate truths surfaced. [score=0.838 recalls=0 avg=0.620 source=memory/2026-04-16.md:13-13]
+
+## Promoted From Short-Term Memory (2026-04-23)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-04-16.md:348:348 -->
+- **【对话摘要】** [score=0.867 recalls=0 avg=0.620 source=memory/2026-04-16.md:348-348]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-17.md:188:188 -->
+- - Candidate: Possible Lasting Truths: - Candidate: Assistant: **飞书插件状态正常：** - ✅ 配置完整（channels.feishu + plugins.entries.feishu） - ✅ 已安装（extensions/feishu） - ✅ Gateway 运行正常 - ✅ 历史日志显示飞书连接正常（之前测试过） 之前出现的警告： - `duplicate plugin id detected` — 只是警告，飞书功能不受影响 - `qwen-portal-auth not found` — 已清理，不影响 [score=0.861 recalls=0 avg=0.620 source=memory/2026-04-17.md:13-13]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-17.md:192:194 -->
+- - Candidate: 2026-04-17 12:48 (Asia/Shanghai): 文章整体不错，但编号与场次的球队对应不上。; 五001应为墨尔本胜利vs纽卡斯尔喷气机，而不是塞尔塔vs弗赖堡。; 场次信息需要去竞彩官网搜索确认。 - confidence: 0.00 - evidence: memory/2026-04-17.md:277-279 [score=0.861 recalls=0 avg=0.620 source=memory/2026-04-17.md:18-20]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-17.md:196:196 -->
+- - Candidate: 2026-04-17 13:10 (Asia/Shanghai): 用户发送了一个问号，表示可能有疑问或需要进一步的确认。 [score=0.861 recalls=0 avg=0.620 source=memory/2026-04-17.md:23-23]
