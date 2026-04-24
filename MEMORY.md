@@ -315,3 +315,18 @@ python test_cognee.py
 - - Candidate: 2026-04-17 12:48 (Asia/Shanghai): 文章整体不错，但编号与场次的球队对应不上。; 五001应为墨尔本胜利vs纽卡斯尔喷气机，而不是塞尔塔vs弗赖堡。; 场次信息需要去竞彩官网搜索确认。 - confidence: 0.00 - evidence: memory/2026-04-17.md:277-279 [score=0.861 recalls=0 avg=0.620 source=memory/2026-04-17.md:18-20]
 <!-- openclaw-memory-promotion:memory:memory/2026-04-17.md:196:196 -->
 - - Candidate: 2026-04-17 13:10 (Asia/Shanghai): 用户发送了一个问号，表示可能有疑问或需要进一步的确认。 [score=0.861 recalls=0 avg=0.620 source=memory/2026-04-17.md:23-23]
+
+## Promoted From Short-Term Memory (2026-04-24)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-04-17.md:199:200 -->
+- - Candidate: 2026-04-17 13:23 (Asia/Shanghai): 刚才断网了，现在已经恢复。; 询问是否可以继续之前的任务。 - confidence: 0.00 [score=0.885 recalls=0 avg=0.620 source=memory/2026-04-17.md:28-29]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-18.md:5:8 -->
+- ## 备注 - 当前环境可能无法直接访问 GitHub - 如需同步，可能需要配置代理或使用镜像源 ## Light Sleep <!-- openclaw:dreaming:light:start --> - Candidate: Agency Sync 任务: **时间**: 2026-04-18 11:06; **状态**: ❌ 失败; **原因**: 网络无法连接 github.com (port 443 timeout after 21s); **操作**: 同步脚本尝试更新 upstream clone 失败，无法拉取最新代码 [score=0.879 recalls=0 avg=0.620 source=memory/2026-04-18.md:9-16]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-18.md:11:12 -->
+- ## Light Sleep <!-- openclaw:dreaming:light:start --> - Candidate: Agency Sync 任务: **时间**: 2026-04-18 11:06; **状态**: ❌ 失败; **原因**: 网络无法连接 github.com (port 443 timeout after 21s); **操作**: 同步脚本尝试更新 upstream clone 失败，无法拉取最新代码 - confidence: 0.00 - evidence: memory/2026-04-18.md:5-8 - recalls: 0 - status: staged - Candidate: 备注: 当前环境可能无法直接访问 GitHub; 如需同步，可能需要配置代理或使用镜像源 [score=0.879 recalls=0 avg=0.620 source=memory/2026-04-18.md:14-21]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-18.md:341:344 -->
+- - Candidate: Reflections: Theme: `assistant` kept surfacing across 681 memories.; confidence: 1.00; evidence: memory/.dreams/session-corpus/2026-04-12.txt:2-2, memory/.dreams/session-corpus/2026-04-12.txt:4-4, memory/.dreams/session-corpus/2026-04-12.txt:5-5; note: reflection - confidence: 0.00 - evidence: memory/2026-04-18.md:346-349 - recalls: 0 [score=0.879 recalls=0 avg=0.620 source=memory/2026-04-18.md:26-29]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-18.md:345:348 -->
+- - Candidate: Reflections: Theme: `user` kept surfacing across 523 memories.; confidence: 0.81; evidence: memory/.dreams/session-corpus/2026-04-12.txt:1-1, memory/.dreams/session-corpus/2026-04-12.txt:3-3, memory/.dreams/session-corpus/2026-04-12.txt:6-6; note: reflection - confidence: 0.00 - evidence: memory/2026-04-18.md:350-353 - recalls: 0 [score=0.879 recalls=0 avg=0.620 source=memory/2026-04-18.md:31-34]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-18.md:351:353 -->
+- - Candidate: Possible Lasting Truths: - Candidate: Assistant: **飞书插件状态正常：** - ✅ 配置完整（channels.feishu + plugins.entries.feishu） - ✅ 已安装（extensions/feishu） - ✅ Gateway 运行正常 - ✅ 历史日志显示飞书连接正常（之前测试过） 之前出现的警告： - `duplicate plugin id detected` — 只是警告，飞书功能不受影响 - `qwen-portal-auth not found` — 已清理，不影响 - confidence: 0.00 - evidence: memory/2026-04-18.md:356-358 [score=0.879 recalls=0 avg=0.620 source=memory/2026-04-18.md:36-38]

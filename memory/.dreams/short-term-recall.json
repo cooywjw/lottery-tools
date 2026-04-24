@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-22T23:19:44.582Z",
+  "updatedAt": "2026-04-24T03:27:44.002Z",
   "entries": {
     "memory:memory/2026-04-14.md:5:8": {
       "key": "memory:memory/2026-04-14.md:5:8",
@@ -19083,10 +19083,6 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "2026/4/16",
-        "会话",
-        "agent:main:main",
-        "autocompact",
         "对话",
         "摘要"
       ],
@@ -31813,12 +31809,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 597 memories.; confidence: 1.00; evidence: memory/.dreams/session-corpus/2026-04-12.txt:2-2, memory/.dreams/session-corpus/2026-04-12.txt:4-4, memory/.dreams/session-corpus/2026-04-12.txt:5-5; note: reflection",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T15:30:02.339Z",
-      "lastRecalledAt": "2026-04-22T23:19:44.582Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "500c0eda9949"
       ],
@@ -31827,7 +31823,8 @@
         "2026-04-20",
         "2026-04-21",
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-24"
       ],
       "conceptTags": [
         "1.00",
@@ -31848,12 +31845,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 448 memories.; confidence: 0.80; evidence: memory/.dreams/session-corpus/2026-04-12.txt:1-1, memory/.dreams/session-corpus/2026-04-12.txt:3-3, memory/.dreams/session-corpus/2026-04-12.txt:6-6; note: reflection",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T15:30:02.339Z",
-      "lastRecalledAt": "2026-04-22T23:19:44.582Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "500c0eda9949"
       ],
@@ -31862,7 +31859,8 @@
         "2026-04-20",
         "2026-04-21",
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-24"
       ],
       "conceptTags": [
         "0.80",
@@ -31878,17 +31876,17 @@
     "memory:memory/2026-04-17.md:188:188": {
       "key": "memory:memory/2026-04-17.md:188:188",
       "path": "memory/2026-04-17.md",
-      "startLine": 13,
-      "endLine": 13,
+      "startLine": 188,
+      "endLine": 188,
       "source": "memory",
-      "snippet": "- Candidate: Possible Lasting Truths: - Candidate: Assistant: **飞书插件状态正常：** - ✅ 配置完整（channels.feishu + plugins.entries.feishu） - ✅ 已安装（extensions/feishu） - ✅ Gateway 运行正常 - ✅ 历史日志显示飞书连接正常（之前测试过） 之前出现的警告： - `duplicate plugin id detected` — 只是警告，飞书功能不受影响 - `qwen-portal-auth not found` — 已清理，不影响",
+      "snippet": "Possible Lasting Truths: - Candidate: Assistant: **飞书插件状态正常：** - ✅ 配置完整（channels.feishu + plugins.entries.feishu） - ✅ 已安装（extensions/feishu） - ✅ Gateway 运行正常 - ✅ 历史日志显示飞书连接正常（之前测试过） 之前出现的警告： - `duplicate plugin id detected` — 只是警告，飞书功能不受影响 - `qwen-portal-auth not found` — 已清理，不影响",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T15:30:02.339Z",
-      "lastRecalledAt": "2026-04-22T23:19:44.582Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "500c0eda9949"
       ],
@@ -31897,7 +31895,8 @@
         "2026-04-20",
         "2026-04-21",
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-24"
       ],
       "conceptTags": [
         "gateway",
@@ -31914,17 +31913,17 @@
     "memory:memory/2026-04-17.md:192:194": {
       "key": "memory:memory/2026-04-17.md:192:194",
       "path": "memory/2026-04-17.md",
-      "startLine": 18,
-      "endLine": 20,
+      "startLine": 192,
+      "endLine": 194,
       "source": "memory",
-      "snippet": "- Candidate: 2026-04-17 12:48 (Asia/Shanghai): 文章整体不错，但编号与场次的球队对应不上。; 五001应为墨尔本胜利vs纽卡斯尔喷气机，而不是塞尔塔vs弗赖堡。; 场次信息需要去竞彩官网搜索确认。 - confidence: 0.00 - evidence: memory/2026-04-17.md:277-279",
+      "snippet": "2026-04-17 12:48 (Asia/Shanghai): 文章整体不错，但编号与场次的球队对应不上。; 五001应为墨尔本胜利vs纽卡斯尔喷气机，而不是塞尔塔vs弗赖堡。; 场次信息需要去竞彩官网搜索确认。",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T15:30:02.339Z",
-      "lastRecalledAt": "2026-04-22T23:19:44.582Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "500c0eda9949"
       ],
@@ -31933,7 +31932,8 @@
         "2026-04-20",
         "2026-04-21",
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-24"
       ],
       "conceptTags": [
         "asia/shanghai",
@@ -31950,17 +31950,17 @@
     "memory:memory/2026-04-17.md:196:196": {
       "key": "memory:memory/2026-04-17.md:196:196",
       "path": "memory/2026-04-17.md",
-      "startLine": 23,
-      "endLine": 23,
+      "startLine": 196,
+      "endLine": 196,
       "source": "memory",
-      "snippet": "- Candidate: 2026-04-17 13:10 (Asia/Shanghai): 用户发送了一个问号，表示可能有疑问或需要进一步的确认。",
+      "snippet": "2026-04-17 13:10 (Asia/Shanghai): 用户发送了一个问号，表示可能有疑问或需要进一步的确认。",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T15:30:02.339Z",
-      "lastRecalledAt": "2026-04-22T23:19:44.582Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "500c0eda9949"
       ],
@@ -31969,7 +31969,8 @@
         "2026-04-20",
         "2026-04-21",
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-24"
       ],
       "conceptTags": [
         "asia/shanghai",
@@ -31986,17 +31987,17 @@
     "memory:memory/2026-04-17.md:199:200": {
       "key": "memory:memory/2026-04-17.md:199:200",
       "path": "memory/2026-04-17.md",
-      "startLine": 199,
-      "endLine": 200,
+      "startLine": 28,
+      "endLine": 29,
       "source": "memory",
-      "snippet": "2026-04-17 13:23 (Asia/Shanghai): 刚才断网了，现在已经恢复。; 询问是否可以继续之前的任务。",
+      "snippet": "- Candidate: 2026-04-17 13:23 (Asia/Shanghai): 刚才断网了，现在已经恢复。; 询问是否可以继续之前的任务。 - confidence: 0.00",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T15:30:02.339Z",
-      "lastRecalledAt": "2026-04-22T23:19:44.582Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "500c0eda9949"
       ],
@@ -32005,7 +32006,8 @@
         "2026-04-20",
         "2026-04-21",
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-24"
       ],
       "conceptTags": [
         "asia/shanghai",
@@ -32016,7 +32018,8 @@
         "已经",
         "恢复",
         "询问"
-      ]
+      ],
+      "promotedAt": "2026-04-24T03:27:44.002Z"
     },
     "memory:memory/.dreams/session-corpus/2026-04-16.txt:237:237": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-16.txt:237:237",
@@ -36494,17 +36497,17 @@
     "memory:memory/2026-04-18.md:5:8": {
       "key": "memory:memory/2026-04-18.md:5:8",
       "path": "memory/2026-04-18.md",
-      "startLine": 5,
-      "endLine": 8,
+      "startLine": 9,
+      "endLine": 16,
       "source": "memory",
-      "snippet": "Agency Sync 任务: **时间**: 2026-04-18 11:06; **状态**: ❌ 失败; **原因**: 网络无法连接 github.com (port 443 timeout after 21s); **操作**: 同步脚本尝试更新 upstream clone 失败，无法拉取最新代码",
+      "snippet": "## 备注 - 当前环境可能无法直接访问 GitHub - 如需同步，可能需要配置代理或使用镜像源 ## Light Sleep <!-- openclaw:dreaming:light:start --> - Candidate: Agency Sync 任务: **时间**: 2026-04-18 11:06; **状态**: ❌ 失败; **原因**: 网络无法连接 github.com (port 443 timeout after 21s); **操作**: 同步脚本尝试更新 upstream clone 失败，无法拉取最新代码",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-18T06:13:07.405Z",
-      "lastRecalledAt": "2026-04-22T23:19:44.582Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
@@ -36513,7 +36516,8 @@
         "2026-04-19",
         "2026-04-21",
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-24"
       ],
       "conceptTags": [
         "网络",
@@ -36524,22 +36528,23 @@
         "时间",
         "状态",
         "失败"
-      ]
+      ],
+      "promotedAt": "2026-04-24T03:27:44.002Z"
     },
     "memory:memory/2026-04-18.md:11:12": {
       "key": "memory:memory/2026-04-18.md:11:12",
       "path": "memory/2026-04-18.md",
-      "startLine": 11,
-      "endLine": 12,
+      "startLine": 14,
+      "endLine": 21,
       "source": "memory",
-      "snippet": "备注: 当前环境可能无法直接访问 GitHub; 如需同步，可能需要配置代理或使用镜像源",
+      "snippet": "## Light Sleep <!-- openclaw:dreaming:light:start --> - Candidate: Agency Sync 任务: **时间**: 2026-04-18 11:06; **状态**: ❌ 失败; **原因**: 网络无法连接 github.com (port 443 timeout after 21s); **操作**: 同步脚本尝试更新 upstream clone 失败，无法拉取最新代码 - confidence: 0.00 - evidence: memory/2026-04-18.md:5-8 - recalls: 0 - status: staged - Candidate: 备注: 当前环境可能无法直接访问 GitHub; 如需同步，可能需要配置代理或使用镜像源",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-18T06:13:07.405Z",
-      "lastRecalledAt": "2026-04-22T23:19:44.582Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
@@ -36548,7 +36553,8 @@
         "2026-04-19",
         "2026-04-21",
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-24"
       ],
       "conceptTags": [
         "备注",
@@ -36559,7 +36565,8 @@
         "直接",
         "访问",
         "github"
-      ]
+      ],
+      "promotedAt": "2026-04-24T03:27:44.002Z"
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:255:255": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:255:255",
@@ -38482,17 +38489,17 @@
     "memory:memory/2026-04-18.md:341:344": {
       "key": "memory:memory/2026-04-18.md:341:344",
       "path": "memory/2026-04-18.md",
-      "startLine": 341,
-      "endLine": 344,
+      "startLine": 26,
+      "endLine": 29,
       "source": "memory",
-      "snippet": "Reflections: Theme: `assistant` kept surfacing across 681 memories.; confidence: 1.00; evidence: memory/.dreams/session-corpus/2026-04-12.txt:2-2, memory/.dreams/session-corpus/2026-04-12.txt:4-4, memory/.dreams/session-corpus/2026-04-12.txt:5-5; note: reflection",
+      "snippet": "- Candidate: Reflections: Theme: `assistant` kept surfacing across 681 memories.; confidence: 1.00; evidence: memory/.dreams/session-corpus/2026-04-12.txt:2-2, memory/.dreams/session-corpus/2026-04-12.txt:4-4, memory/.dreams/session-corpus/2026-04-12.txt:5-5; note: reflection - confidence: 0.00 - evidence: memory/2026-04-18.md:346-349 - recalls: 0",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-18T06:42:58.677Z",
-      "lastRecalledAt": "2026-04-22T23:19:44.582Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
@@ -38501,7 +38508,8 @@
         "2026-04-19",
         "2026-04-21",
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-24"
       ],
       "conceptTags": [
         "1.00",
@@ -38512,22 +38520,23 @@
         "theme",
         "assistant",
         "kept"
-      ]
+      ],
+      "promotedAt": "2026-04-24T03:27:44.002Z"
     },
     "memory:memory/2026-04-18.md:345:348": {
       "key": "memory:memory/2026-04-18.md:345:348",
       "path": "memory/2026-04-18.md",
-      "startLine": 345,
-      "endLine": 348,
+      "startLine": 31,
+      "endLine": 34,
       "source": "memory",
-      "snippet": "Reflections: Theme: `user` kept surfacing across 523 memories.; confidence: 0.81; evidence: memory/.dreams/session-corpus/2026-04-12.txt:1-1, memory/.dreams/session-corpus/2026-04-12.txt:3-3, memory/.dreams/session-corpus/2026-04-12.txt:6-6; note: reflection",
+      "snippet": "- Candidate: Reflections: Theme: `user` kept surfacing across 523 memories.; confidence: 0.81; evidence: memory/.dreams/session-corpus/2026-04-12.txt:1-1, memory/.dreams/session-corpus/2026-04-12.txt:3-3, memory/.dreams/session-corpus/2026-04-12.txt:6-6; note: reflection - confidence: 0.00 - evidence: memory/2026-04-18.md:350-353 - recalls: 0",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-18T06:42:58.677Z",
-      "lastRecalledAt": "2026-04-22T23:19:44.582Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
@@ -38536,7 +38545,8 @@
         "2026-04-19",
         "2026-04-21",
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-24"
       ],
       "conceptTags": [
         "0.81",
@@ -38547,22 +38557,23 @@
         "theme",
         "user",
         "kept"
-      ]
+      ],
+      "promotedAt": "2026-04-24T03:27:44.002Z"
     },
     "memory:memory/2026-04-18.md:351:353": {
       "key": "memory:memory/2026-04-18.md:351:353",
       "path": "memory/2026-04-18.md",
-      "startLine": 351,
-      "endLine": 353,
+      "startLine": 36,
+      "endLine": 38,
       "source": "memory",
-      "snippet": "Possible Lasting Truths: - Candidate: Assistant: **飞书插件状态正常：** - ✅ 配置完整（channels.feishu + plugins.entries.feishu） - ✅ 已安装（extensions/feishu） - ✅ Gateway 运行正常 - ✅ 历史日志显示飞书连接正常（之前测试过） 之前出现的警告： - `duplicate plugin id detected` — 只是警告，飞书功能不受影响 - `qwen-portal-auth not found` — 已清理，不影响",
+      "snippet": "- Candidate: Possible Lasting Truths: - Candidate: Assistant: **飞书插件状态正常：** - ✅ 配置完整（channels.feishu + plugins.entries.feishu） - ✅ 已安装（extensions/feishu） - ✅ Gateway 运行正常 - ✅ 历史日志显示飞书连接正常（之前测试过） 之前出现的警告： - `duplicate plugin id detected` — 只是警告，飞书功能不受影响 - `qwen-portal-auth not found` — 已清理，不影响 - confidence: 0.00 - evidence: memory/2026-04-18.md:356-358",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-18T06:42:58.677Z",
-      "lastRecalledAt": "2026-04-22T23:19:44.582Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
@@ -38571,7 +38582,8 @@
         "2026-04-19",
         "2026-04-21",
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-24"
       ],
       "conceptTags": [
         "gateway",
@@ -38582,7 +38594,8 @@
         "possible",
         "lasting",
         "truths"
-      ]
+      ],
+      "promotedAt": "2026-04-24T03:27:44.002Z"
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:279:279": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:279:279",
@@ -39603,12 +39616,12 @@
       "source": "memory",
       "snippet": "agency-sync 增量同步: **时间**: 03:15 UTC (11:15 CST); **结果**: ❌ 失败; **原因**: GitHub 网络连接被重置 (`Recv failure: Connection was reset`); **影响**: 无新增/变更记录，下次自动重试",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-19T03:35:42.570Z",
-      "lastRecalledAt": "2026-04-22T23:19:44.582Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "21faa0df9302"
       ],
@@ -39616,7 +39629,8 @@
         "2026-04-19",
         "2026-04-20",
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-24"
       ],
       "conceptTags": [
         "网络",
@@ -41402,12 +41416,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 712 memories.; confidence: 1.00; evidence: memory/.dreams/session-corpus/2026-04-12.txt:2-2, memory/.dreams/session-corpus/2026-04-12.txt:4-4, memory/.dreams/session-corpus/2026-04-12.txt:5-5; note: reflection",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-19T04:35:00.896Z",
-      "lastRecalledAt": "2026-04-22T23:19:44.582Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "21faa0df9302"
       ],
@@ -41415,7 +41429,8 @@
         "2026-04-19",
         "2026-04-20",
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-24"
       ],
       "conceptTags": [
         "1.00",
@@ -41436,12 +41451,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 551 memories.; confidence: 0.81; evidence: memory/.dreams/session-corpus/2026-04-12.txt:1-1, memory/.dreams/session-corpus/2026-04-12.txt:3-3, memory/.dreams/session-corpus/2026-04-12.txt:6-6; note: reflection",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-19T04:35:00.896Z",
-      "lastRecalledAt": "2026-04-22T23:19:44.582Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "21faa0df9302"
       ],
@@ -41449,7 +41464,8 @@
         "2026-04-19",
         "2026-04-20",
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-24"
       ],
       "conceptTags": [
         "0.81",
@@ -41470,12 +41486,12 @@
       "source": "memory",
       "snippet": "Possible Lasting Truths: - Candidate: Assistant: **飞书插件状态正常：** - ✅ 配置完整（channels.feishu + plugins.entries.feishu） - ✅ 已安装（extensions/feishu） - ✅ Gateway 运行正常 - ✅ 历史日志显示飞书连接正常（之前测试过） 之前出现的警告： - `duplicate plugin id detected` — 只是警告，飞书功能不受影响 - `qwen-portal-auth not found` — 已清理，不影响",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-19T04:35:00.896Z",
-      "lastRecalledAt": "2026-04-22T23:19:44.582Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "21faa0df9302"
       ],
@@ -41483,7 +41499,8 @@
         "2026-04-19",
         "2026-04-20",
         "2026-04-22",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-24"
       ],
       "conceptTags": [
         "gateway",
@@ -44079,18 +44096,19 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 829 memories.; confidence: 1.00; evidence: memory/.dreams/session-corpus/2026-04-12.txt:2-2, memory/.dreams/session-corpus/2026-04-12.txt:4-4, memory/.dreams/session-corpus/2026-04-12.txt:5-5; note: reflection",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-20T03:55:05.669Z",
-      "lastRecalledAt": "2026-04-21T05:33:03.447Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "511fd8111b88"
       ],
       "recallDays": [
         "2026-04-20",
-        "2026-04-21"
+        "2026-04-21",
+        "2026-04-24"
       ],
       "conceptTags": [
         "1.00",
@@ -44111,18 +44129,19 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 728 memories.; confidence: 0.88; evidence: memory/.dreams/session-corpus/2026-04-12.txt:1-1, memory/.dreams/session-corpus/2026-04-12.txt:3-3, memory/.dreams/session-corpus/2026-04-12.txt:6-6; note: reflection",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-20T03:55:05.669Z",
-      "lastRecalledAt": "2026-04-21T05:33:03.447Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "511fd8111b88"
       ],
       "recallDays": [
         "2026-04-20",
-        "2026-04-21"
+        "2026-04-21",
+        "2026-04-24"
       ],
       "conceptTags": [
         "0.88",
@@ -44143,18 +44162,19 @@
       "source": "memory",
       "snippet": "Possible Lasting Truths: - Candidate: Assistant: **飞书插件状态正常：** - ✅ 配置完整（channels.feishu + plugins.entries.feishu） - ✅ 已安装（extensions/feishu） - ✅ Gateway 运行正常 - ✅ 历史日志显示飞书连接正常（之前测试过） 之前出现的警告： - `duplicate plugin id detected` — 只是警告，飞书功能不受影响 - `qwen-portal-auth not found` — 已清理，不影响",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-20T03:55:05.669Z",
-      "lastRecalledAt": "2026-04-21T05:33:03.447Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "511fd8111b88"
       ],
       "recallDays": [
         "2026-04-20",
-        "2026-04-21"
+        "2026-04-21",
+        "2026-04-24"
       ],
       "conceptTags": [
         "gateway",
@@ -53508,17 +53528,18 @@
       "source": "memory",
       "snippet": "项目概述: **项目名称**: AI文案生成工具; **目标**: 数字产品带货文案生成，零库存、高利润、易复制; **技术栈**: Python FastAPI + SQLite + OpenAI/DeepSeek API; **仓库**: https://github.com/cooywjw/ai-copywriter",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-22T03:15:49.845Z",
-      "lastRecalledAt": "2026-04-22T03:15:49.845Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "f52400c81d76"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-24"
       ],
       "conceptTags": [
         "openai",
@@ -53539,17 +53560,18 @@
       "source": "memory",
       "snippet": "第一周成果（超额完成！）: **天哥（向天哥/我）负责后端：**",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-22T03:15:49.845Z",
-      "lastRecalledAt": "2026-04-22T03:15:49.845Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "f52400c81d76"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-24"
       ],
       "conceptTags": [
         "向天哥/我",
@@ -53568,17 +53590,18 @@
       "source": "memory",
       "snippet": "第一周成果（超额完成！）: ✅ FastAPI 后端框架（4个API端点）; ✅ AI客户端（支持 OpenAI/DeepSeek 双引擎）; ✅ 12种产品×平台组合专业化提示词; digital × 3平台：零库存/种草/私域",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-22T03:15:49.845Z",
-      "lastRecalledAt": "2026-04-22T03:15:49.845Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "f52400c81d76"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-24"
       ],
       "conceptTags": [
         "openai",
@@ -53599,17 +53622,18 @@
       "source": "memory",
       "snippet": "第一周成果（超额完成！）: physical × 3平台：开箱/体验/口碑; service × 3平台：专业/体验/咨询; course × 3平台：成果/心得/会员; ✅ 数据库索引优化（查询性能）",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-22T03:15:49.845Z",
-      "lastRecalledAt": "2026-04-22T03:15:49.845Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "f52400c81d76"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-24"
       ],
       "conceptTags": [
         "开箱/体验/口碑",
@@ -53630,17 +53654,18 @@
       "source": "memory",
       "snippet": "第一周成果（超额完成！）: ⏳ GitHub推送（网络问题，commit暂存本地）",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-22T03:15:49.845Z",
-      "lastRecalledAt": "2026-04-22T03:15:49.845Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "f52400c81d76"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-24"
       ],
       "conceptTags": [
         "网络",
@@ -53661,17 +53686,18 @@
       "source": "memory",
       "snippet": "第一周成果（超额完成！）: **卡修斯负责前端：**",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-22T03:15:49.845Z",
-      "lastRecalledAt": "2026-04-22T03:15:49.845Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
       "queryHashes": [
         "f52400c81d76"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-24"
       ],
       "conceptTags": [
         "一周",
@@ -58186,6 +58212,2880 @@
         "assistant",
         "静默",
         "完成"
+      ]
+    },
+    "memory:memory/2026-04-24.md:4:7": {
+      "key": "memory:memory/2026-04-24.md:4:7",
+      "path": "memory/2026-04-24.md",
+      "startLine": 4,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "agency-sync 增量同步: **执行时间**: 2026-04-24 11:22 (Asia/Shanghai); **执行命令**: `node C:/Users/Administrator/.openclaw/workspace/skills/agency-sync/sync.js update`; **同步结果**: 成功（exit code = 0）; **Agent 总数**: 173（与昨日持平，无新增/变更）",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "409c33906af9"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "agency-sync",
+        "asia/shanghai",
+        "users/administrator",
+        "无新增/变更",
+        "agency",
+        "sync",
+        "增量",
+        "同步"
+      ]
+    },
+    "memory:memory/2026-04-24.md:8:10": {
+      "key": "memory:memory/2026-04-24.md:8:10",
+      "path": "memory/2026-04-24.md",
+      "startLine": 8,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "agency-sync 增量同步: **同步目标**: msitarzewski/agency-agents 上游仓库（具体 commit 未记录）; **同步目录**: skills/agency-sync/coordinator/roles/; **Registry 备份**: 已保存至 registry.json.bak",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "409c33906af9"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "备份",
+        "agency-sync",
+        "msitarzewski/agency-agents",
+        "registry.json.bak",
+        "agency",
+        "sync",
+        "增量",
+        "同步"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "User: [Bootstrap pending] Please read BOOTSTRAP.md from the workspace and follow it before replying normally. If this run can complete the BOOTSTRAP.md workflow, do so. If it cannot, explain the blocker briefly, continue with any bootstrap steps that are still possible here, and",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "bootstrap.md",
+        "user",
+        "bootstrap",
+        "pending",
+        "please",
+        "read",
+        "the",
+        "follow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: 嘿，我刚上线了。 看起来这个工作区已经有了一些设置（IDENTITY.md、USER.md、SOUL.md 都存在），但 BOOTSTRAP.md 说要从零开始认识自己。 那我先问几个简单的问题，帮我确认一下身份： 1. **名字**：之前叫我「向天哥」，这个还是你的首选吗？还是想换一个？ 2. **性格**：你喜欢我怎样说话——随性一点，还是正经一点？ 3. **风格**：简洁直接？还是带点幽默感？ 4. **日常场景**：主要是帮你处理彩票店的事，还是也会聊点别的？ 回复我，我这边确认完就更新文件，然后删掉 BOOTSTRAP.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "identity.md",
+        "user.md",
+        "soul.md",
+        "bootstrap.md",
+        "assistant",
+        "上线",
+        "看起来",
+        "这个"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "User: [Bootstrap pending] Please read BOOTSTRAP.md from the workspace and follow it before replying normally. If this run can complete the BOOTSTRAP.md workflow, do so. If it cannot, explain the blocker briefly, continue with any bootstrap steps that are still possible here, and",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "bootstrap.md",
+        "user",
+        "bootstrap",
+        "pending",
+        "please",
+        "read",
+        "the",
+        "follow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: 收到，这个是群聊@不响应的问题。 先排查一下——有几个可能的原因： **1. 权限问题** 飞书机器人需要在开发者后台开通「接收群聊中机器人@机器人的消息」权限： - 路径：飞书开发者后台 → 应用功能 → 机器人 → 权限管理 - 需要：`im:message.group_at_msg:readonly` **2. @方式问题** 群里@我的时候，必须用飞书原生的<at>标签，而不是明文@向天哥。明文@目前是不会触发的。 **3. 群聊没有开启机器人** 机器人需要被添加到群里，并且被@才能响应。 --- 你方便告诉我： - 是在",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "message.group-at-msg",
+        "assistant",
+        "收到",
+        "这个",
+        "响应",
+        "问题",
+        "一下",
+        "几个"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "User: [Bootstrap pending] Please read BOOTSTRAP.md from the workspace and follow it before replying normally. If this run can complete the BOOTSTRAP.md workflow, do so. If it cannot, explain the blocker briefly, continue with any bootstrap steps that are still possible here, and",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "bootstrap.md",
+        "user",
+        "bootstrap",
+        "pending",
+        "please",
+        "read",
+        "the",
+        "follow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: 收到，信息确认完毕。现在更新文件：",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "收到",
+        "信息",
+        "确认",
+        "完毕",
+        "现在",
+        "更新",
+        "文件"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: Now let me also update the TODOs to reflect the new direction:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "now",
+        "let",
+        "update",
+        "the",
+        "todos",
+        "reflect",
+        "new"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: 搞定！Bootstrap 完成，文件已更新： **已更新：** - `IDENTITY.md` → 定位改为「随性、直接、靠谱」 - `USER.md` → 移除彩票，目标改为带货方向 - `MEMORY.md` → 用户档案更新 + 公众号标注停更 + TODOs 更新 - `BOOTSTRAP.md` → 已删除 --- **身份确认：** 我是向天哥，随性但不敷衍，简洁但能干活。 **当前方向：** 带货（抖音、小红书等平台） --- 关于群里@我没回复的问题——你先确认一下：在群里@我的时候，是用飞书原生 <at> 机器人",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "identity.md",
+        "user.md",
+        "memory.md",
+        "bootstrap.md",
+        "assistant",
+        "搞定",
+        "bootstrap",
+        "完成"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "User: [message_id: om_x100b51a8e189e0b8b26ea6d6f4717f9] ou_1b35a7e08c18ad9df24f0491eb2f06e6: 你说的权限问题我去看看",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "message-id",
+        "user",
+        "说的",
+        "权限",
+        "问题",
+        "我去",
+        "看看"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: 好，去看看吧。 飞书开发者后台 → 找你的机器人应用 → **应用功能 → 机器人 → 权限管理**，确认有 `im:message.group_at_msg:readonly` 这个权限。 有问题再发我，没问题的话群里试试 <at> 我能不能触发。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "message.group-at-msg",
+        "assistant",
+        "看看",
+        "开发",
+        "后台",
+        "你的",
+        "机器",
+        "应用"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "User: [message_id: om_x100b51a8bea104acb204cc8aa727921] ou_1b35a7e08c18ad9df24f0491eb2f06e6: 事件名称 订阅类型 所需权限（开通以下任一权限即可） 操作 用户进入与机器人的会话 v2.0 im.chat.access_event.bot_p2p_chat_entered_v1 应用身份 - 机器人进群 v2.0 im.chat.member.bot.added_v1 应用身份 获取群组信息 已开通 订阅机器人进、出群事件 已开通 机器人被移出群 v2.0 im.c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "message-id",
+        "v2.0",
+        "im.chat.member.bot.added-v1",
+        "im.c",
+        "user",
+        "事件",
+        "名称",
+        "订阅"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: 权限看起来没问题，都开通了。 几个可能的原因： **1. 机器人还没被加进群** 在群里点右上角 → 添加成员 → 搜索机器人名字 → 把「向天哥」加进去 **2. 开发者后台没配置事件订阅** 飞书开发者后台 → 应用功能 → 机器人 → **事件订阅** - 订阅方式选「使用长连接接收事件」（推荐） - 或者配一个公网 Webhook 地址 **3. 检查一下群里能不能@其他机器人** 试试在群里 <at> 一下那个「阿特洛」机器人（如果有的话），看它能不能响应。如果连另一个现成的机器人都@不响应，那说明是群的权限配置问题，不是",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "权限",
+        "看起来",
+        "问题",
+        "开通",
+        "几个",
+        "可能",
+        "原因"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "User: [message_id: om_x100b51a9a609ac90b2d974f6acf1e40] ou_1b35a7e08c18ad9df24f0491eb2f06e6: 我在测试，你只需回答收到",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "message-id",
+        "user",
+        "我在",
+        "测试",
+        "只需",
+        "回答",
+        "收到"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: 收到",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "收到"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 17:47:55 GMT+8] Feishu[xtg_bot] DM | ou_1b35a7e08c18ad9df24f0491eb2f06e6 [msg:om_x100b51aae50c68acb4c5edc88e6e528] 我在测试，你只需回答收到",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "xtg-bot",
+        "user",
+        "system",
+        "gmt",
+        "feishu",
+        "我在",
+        "测试",
+        "只需"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: 收到",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "收到"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "User: [cron:f7cdf18d-dd87-4dc0-8a54-10b5af6467de 每日爆款视频推送] 请执行以下操作： 1. 运行脚本：`node C:\\Users\\Administrator\\.openclaw\\workspace\\skills\\workflow-engine\\scripts\\scrape_trends.js` 2. 读取输出结果（保存路径：C:\\Users\\Administrator\\.openclaw\\workspace\\memory\\daily-trends.md） 3. 将结果整理成以下格式，通过飞书消息发送给用",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "workflow-engine",
+        "scrape-trends.js",
+        "daily-trends.md",
+        "user",
+        "cron:f7cdf18d",
+        "dd87",
+        "4dc0",
+        "8a54"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: ✅ 今日爆款推送完成 - 脚本执行成功，数据已保存至 `memory/daily-trends.md` - 飞书消息已发送给用户，消息ID：`om_x100b51af23477cb8b279ede377dad1a`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "memory/daily-trends.md",
+        "assistant",
+        "今日",
+        "推送",
+        "完成",
+        "脚本",
+        "执行",
+        "成功"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "Assistant: 【📊 每日爆款视频】今日各平台热门参考 下午好～给你整理了今天的各平台热门，一起看看有没有能蹭上热度的！😄 🔥 B站热门 1. 《崩坏：星穹铁道》动画短片：「这游戏还能不能玩了？」 2. 【奇迹男孩1998】我的最新作品，快来一睹为快！ 3. 见面5秒开始战斗 4. 唱着山歌来买瓜 5. 洛天依 原创《告死鸟》 6. 美国伊朗真乃卧龙凤雏 7. \"至此，神性已成！！！\" 8. 我这辈子最爱的，是戴着头盔的你 9. 曾经在不同地方逛地下商场的感觉一下子就涌上心头了不？ 10. 口技表演《三打白骨精》 📱 抖音热门 1. 202",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "每日",
+        "视频",
+        "今日",
+        "平台",
+        "热门",
+        "参考",
+        "下午"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 17:56:01 GMT+8] Feishu[default] DM | ou_c39372ba89a8e0bf16ddbfcd7b17f395 [msg:om_x100b51aa85f9e0a8b48b83dc82c64cb] 你是谁 [Bootstrap truncation warning] Some workspace bootstrap files were truncated before injection. Treat Project Context as partial and rea",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user",
+        "system",
+        "gmt",
+        "feishu",
+        "你是",
+        "bootstrap",
+        "truncation",
+        "warning"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] 我是向天哥，你的 AI 助手。 专业、简洁、靠谱，有事说事，我来帮你搞定。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "assistant",
+        "我是",
+        "你的",
+        "助手",
+        "专业",
+        "简洁",
+        "有事"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "User: [cron:cfbb96da-6433-4ed9-86cf-3f92adc2e173 daily-session-cleanup] 请清理 OpenClaw 的旧子会话。具体操作：1. 用 sessions_list 列出所有会话，找出所有状态为 done 且超过 24 小时的 subagent 会话。2. 删除这些旧的子会话 transcript 文件（在 agents/main/sessions/ 目录下对应的 .jsonl 文件）。3. 重要：不要删除当前正在运行的会话，只删除已结束的旧会话。如果有正在运行的子会话，不要动它。完成后输出",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "daily-session-cleanup",
+        "sessions-list",
+        "agents/main/sessions",
+        "user",
+        "cron:cfbb96da",
+        "4ed9",
+        "86cf",
+        "3f92adc2e173"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Assistant: 当前只有一个子会话在运行（就是我自己这个 cron 任务）。现在来分析那些 .jsonl 文件： - `9837a118...` ~ 24h 前 ✅ 可删 - `9420a664...` ~ 24h 前 ✅ 可删 - `3cbab327...` ~ 24h 前 ✅ 可删 - `090bebc7...` ~ 24h 前 ✅ 可删 - `aed229d5...` ~ 24h 前 ✅ 可删 - `221095e6...` ~ 3h 前 ❌ 保留 - `62c2fbb5...` ~ 2h 前 ❌ 保留 - `5be81628...` ~ 1",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "当前",
+        "只有",
+        "一个",
+        "会话",
+        "运行",
+        "就是",
+        "自己"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file C:/Users/Administrator/.openclaw/workspace/HEARTBEAT.md (",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "heartbeat-ok",
+        "users/administrator",
+        "openclaw/workspace/heartbeat.md",
+        "user",
+        "read",
+        "exists",
+        "context"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT_OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "User: System (untrusted): [2026-04-23 07:47:22 GMT+8] Exec completed (lucky-fo, code 0) :: Service: Scheduled Task (registered) File logs: \\tmp\\openclaw\\openclaw-2026-04-23.log Command: C:\\Program Files\\nodejs\\node.exe C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_mod… An async",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "lucky-fo",
+        "openclaw-2026-04-23.log",
+        "node.exe",
+        "node-mod",
+        "user",
+        "system",
+        "untrusted",
+        "gmt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "User: [Bootstrap pending] Please read BOOTSTRAP.md from the workspace and follow it before replying normally. If this run can complete the BOOTSTRAP.md workflow, do so. If it cannot, explain the blocker briefly, continue with any bootstrap steps that are still possible here, and",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "bootstrap.md",
+        "user",
+        "bootstrap",
+        "pending",
+        "please",
+        "read",
+        "the",
+        "follow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] 在的！刚看到你的消息 👋 我注意到 BOOTSTRAP.md 还在，但 workspace 里已经有 IDENTITY.md、USER.md、SOUL.MD 这些文件了——看起来之前已经做过初始化了？ 所以我就不走那个\"你是谁我是谁\"的流程了，直接正常聊。你找我什么事？",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "bootstrap.md",
+        "identity.md",
+        "user.md",
+        "soul.md",
+        "assistant",
+        "看到",
+        "你的"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "User: [Bootstrap pending] Please read BOOTSTRAP.md from the workspace and follow it before replying normally. If this run can complete the BOOTSTRAP.md workflow, do so. If it cannot, explain the blocker briefly, continue with any bootstrap steps that are still possible here, and",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "bootstrap.md",
+        "user",
+        "bootstrap",
+        "pending",
+        "please",
+        "read",
+        "the",
+        "follow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Assistant: 找到问题了！日志里看得很清楚，有**两个问题**： --- **问题1：飞书私聊完全失败** ``` feishu[xtg_bot]: failed to dispatch message: TypeError: (0 , _feishu.createScopedPairingAccess) is not a function ``` 飞书插件内部报错，`createScopedPairingAccess` 函数不存在。这是 **Feishu 插件的 bug**，跟 `dmPolicy: \"pairing\"` 配置冲突有关。 **问",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "xtg-bot",
+        "feishu.createscopedpairingaccess",
+        "assistant",
+        "找到",
+        "问题",
+        "日志",
+        "得很",
+        "清楚"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file C:/Users/Administrator/.openclaw/workspace/HEARTBEAT.md (",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "heartbeat-ok",
+        "users/administrator",
+        "openclaw/workspace/heartbeat.md",
+        "user",
+        "read",
+        "exists",
+        "context"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT_OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:41:41": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:41:41",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "User: [Bootstrap pending] Please read BOOTSTRAP.md from the workspace and follow it before replying normally. If this run can complete the BOOTSTRAP.md workflow, do so. If it cannot, explain the blocker briefly, continue with any bootstrap steps that are still possible here, and",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "bootstrap.md",
+        "user",
+        "bootstrap",
+        "pending",
+        "please",
+        "read",
+        "the",
+        "follow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:42:42": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:42:42",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "Assistant: 好，改配置。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "配置"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:43:43": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:43:43",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 43,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "Assistant: 直接改了配置文件，现在重启 Gateway 生效。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "assistant",
+        "直接",
+        "改了",
+        "配置",
+        "文件",
+        "现在",
+        "生效"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:44:44": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:44:44",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "Assistant: 配置已改好，Gateway 正在重启。 不过说实话，之前日志里还有个更根本的问题： ``` feishu[xtg_bot]: failed to dispatch message: TypeError: (0 , _feishu.createScopedPairingAccess) is not a function ``` 这个 `createScopedPairingAccess is not a function` 的错误才是导致飞书完全没响应的原因——即便把 `dmPolicy` 改成 `open`，如果这个 bug 还在，",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "xtg-bot",
+        "feishu.createscopedpairingaccess",
+        "assistant",
+        "配置",
+        "正在",
+        "不过",
+        "实话"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:45:45": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:45:45",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 14:25:06 GMT+8] Gateway restart restart ok (gateway.restart) System: 飞书 dmPolicy 已改为 open，重启后私聊应该能正常响应了。 System: Run: openclaw doctor --non-interactive Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tas",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "gateway.restart",
+        "non-interactive",
+        "heartbeat.md",
+        "user",
+        "system",
+        "gmt",
+        "restart"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:46:46": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:46:46",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 46,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] 飞书插件已经注册成功了，`allowFrom` 也改成了 `[\"*\"]`。 但日志里有个持续的超时错误： ``` AxiosError: timeout of 10000ms exceeded url: 'https://open.feishu.cn/open-apis/bot/v3/info' ``` 这是 **Feishu 服务器 API 调用超时**——你的电脑访问 `open.feishu.cn` 超时了（10秒没响应），说明网络连接受限。 **可能的原因：** 1. 防火墙拦截了到",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "网络",
+        "reply-to-current",
+        "open.feishu.cn",
+        "assistant",
+        "已经",
+        "注册",
+        "成功",
+        "allowfrom"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:47:47": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:47:47",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 47,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "User: [Bootstrap pending] Please read BOOTSTRAP.md from the workspace and follow it before replying normally. If this run can complete the BOOTSTRAP.md workflow, do so. If it cannot, explain the blocker briefly, continue with any bootstrap steps that are still possible here, and",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "bootstrap.md",
+        "user",
+        "bootstrap",
+        "pending",
+        "please",
+        "read",
+        "the",
+        "follow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:48:48": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:48:48",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 48,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "User: [Bootstrap pending] Please read BOOTSTRAP.md from the workspace and follow it before replying normally. If this run can complete the BOOTSTRAP.md workflow, do so. If it cannot, explain the blocker briefly, continue with any bootstrap steps that are still possible here, and",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "bootstrap.md",
+        "user",
+        "bootstrap",
+        "pending",
+        "please",
+        "read",
+        "the",
+        "follow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:49:49": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:49:49",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 49,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 17:50:52 GMT+8] Feishu[xtg_bot] group oc_70904ea74eb95f5ca240a0950991a886 | ou_1b35a7e08c18ad9df24f0491eb2f06e6 [msg:om_x100b51aaf92804a8b10ba7651ee3772, @bot] System: [2026-04-23 17:51:28 GMT+8] Feishu[xtg_bot] group oc_70904ea74eb95f5ca240a0950991a886",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "xtg-bot",
+        "user",
+        "system",
+        "gmt",
+        "feishu",
+        "group",
+        "bot"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:50:50": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:50:50",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 50,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "Assistant: 收到！",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "收到"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:51:51": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:51:51",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 51,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 17:58:46 GMT+8] Feishu[xtg_bot] group oc_70904ea74eb95f5ca240a0950991a886 | ou_1b35a7e08c18ad9df24f0491eb2f06e6 [msg:om_x100b51aa9bb774a8b3f5747bc318d60, @bot] 你现在用这ID给发一条测试信息给卡修斯，ou_249b56fc02cc8972401282fc68e6195f",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "xtg-bot",
+        "user",
+        "system",
+        "gmt",
+        "feishu",
+        "group",
+        "bot",
+        "现在"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:52:52": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:52:52",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 52,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "Assistant: 发送失败，缺少权限：`application:application:self_manage` 这需要管理员在飞书开放平台给机器人开通这个权限，才能以用户身份发送消息。 你可以让管理员到 **飞书开放平台 → 应用权限** 中开通此权限后再试。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "self-manage",
+        "assistant",
+        "发送",
+        "失败",
+        "缺少",
+        "权限",
+        "需要",
+        "管理"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:53:53": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:53:53",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 53,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 18:03:23 GMT+8] Feishu[xtg_bot] group oc_70904ea74eb95f5ca240a0950991a886 | ou_1b35a7e08c18ad9df24f0491eb2f06e6 [msg:om_x100b51aaa803ecb4b3b1a04496777dc, @bot] 开通，再试一下",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "xtg-bot",
+        "user",
+        "system",
+        "gmt",
+        "feishu",
+        "group",
+        "bot",
+        "开通"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:54:54": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:54:54",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 54,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "Assistant: 还是权限不足，缺少： - `im:message.send_as_user` - `offline_access` 还需要管理员继续开通这两个权限。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "message.send-as-user",
+        "offline-access",
+        "assistant",
+        "还是",
+        "权限",
+        "不足",
+        "缺少",
+        "im:message.send-as-user"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:55:55": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:55:55",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 55,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 18:05:45 GMT+8] Feishu[xtg_bot] group oc_70904ea74eb95f5ca240a0950991a886 | ou_1b35a7e08c18ad9df24f0491eb2f06e6 [msg:om_x100b51aaa1673504b20422034339040, @bot] 已开通，再试一下",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "xtg-bot",
+        "user",
+        "system",
+        "gmt",
+        "feishu",
+        "group",
+        "bot",
+        "开通"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:56:56": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:56:56",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 56,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "Assistant: 仍然失败，提示 `need_user_authorization`。这意味着用户（卡修斯）需要重新授权。 请让卡修斯点击授权链接，重新授权应用发送消息的权限。授权完成后告诉我，我再重试。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "need-user-authorization",
+        "assistant",
+        "仍然",
+        "失败",
+        "提示",
+        "意味",
+        "用户",
+        "需要"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:57:57": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:57:57",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 57,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 18:08:50 GMT+8] Feishu[xtg_bot] group oc_70904ea74eb95f5ca240a0950991a886 | ou_1b35a7e08c18ad9df24f0491eb2f06e6 [msg:om_x100b51aab5f420a0b3ddaf86b753fcd, @bot] 卡修斯是机器人，我要怎么做？",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "xtg-bot",
+        "user",
+        "system",
+        "gmt",
+        "feishu",
+        "group",
+        "bot",
+        "机器"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:58:58": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:58:58",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 58,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "Assistant: 如果卡修斯是机器人，那 `feishu_im_user_message`（以用户身份发消息）不适用 — 这个工具是为用户与用户之间的通信设计的，机器人不支持这种 OAuth 授权流程。 **两个选择：** 1. **在群里发消息** — 如果卡修斯也在这个群里，直接在群里 @ 它发送测试内容即可 2. **换个思路** — 如果你需要让两个机器人互动，可能需要用机器人 API 直接发消息，而不是走「以用户身份」的渠道 你想怎么操作？",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "feishu-im-user-message",
+        "assistant",
+        "如果",
+        "机器",
+        "用户",
+        "身份",
+        "消息",
+        "适用"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:59:59": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:59:59",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 59,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 18:22:23 GMT+8] Feishu[xtg_bot] group oc_70904ea74eb95f5ca240a0950991a886 | ou_1b35a7e08c18ad9df24f0491eb2f06e6 [msg:om_x100b51ab63195500b2db8e41561336d, @bot] 我现已设置好，你用这ID发一条测试信息@卡修斯：ou_249b56fc02cc8972401282fc68e6195f",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "xtg-bot",
+        "user",
+        "system",
+        "gmt",
+        "feishu",
+        "group",
+        "bot",
+        "设置"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:60:60": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:60:60",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 60,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "Assistant: <at user_id=\"ou_249b56fc02cc8972401282fc68e6195f\">卡修斯</at> 测试消息，来自向天哥",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user-id",
+        "assistant",
+        "测试",
+        "消息",
+        "来自"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:61:61": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:61:61",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 61,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "Assistant: 发送成功！在群里 @ 了卡修斯发送了测试消息。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "发送",
+        "成功",
+        "测试",
+        "消息"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:62:62": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:62:62",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 62,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 18:28:06 GMT+8] Feishu[xtg_bot] group oc_70904ea74eb95f5ca240a0950991a886 | ou_1b35a7e08c18ad9df24f0491eb2f06e6 [msg:om_x100b51ab0db3eca0b25dd30a7a3cbb6, @bot] 你再用@加上他的名字卡修斯，再@他一次",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "xtg-bot",
+        "user",
+        "system",
+        "gmt",
+        "feishu",
+        "group",
+        "bot",
+        "加上"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:63:63": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:63:63",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 63,
+      "endLine": 63,
+      "source": "memory",
+      "snippet": "Assistant: <at user_id=\"ou_249b56fc02cc8972401282fc68e6195f\">卡修斯</at> 测试消息，来自向天哥",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user-id",
+        "assistant",
+        "测试",
+        "消息",
+        "来自"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:64:64": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:64:64",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 64,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "Assistant: 已发送，这次带了名字「卡修斯」。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "发送",
+        "这次",
+        "名字"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:65:65": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:65:65",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 65,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 18:29:49 GMT+8] Feishu[xtg_bot] group oc_70904ea74eb95f5ca240a0950991a886 | ou_1b35a7e08c18ad9df24f0491eb2f06e6 [msg:om_x100b51ab073bc4b0b353ac32cb254a7, @bot] 不是这样了，不要用ID了，用@加名字",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "xtg-bot",
+        "user",
+        "system",
+        "gmt",
+        "feishu",
+        "group",
+        "bot",
+        "不是"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:66:66": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:66:66",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 66,
+      "endLine": 66,
+      "source": "memory",
+      "snippet": "Assistant: @卡修斯 测试消息，来自向天哥",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "测试",
+        "消息",
+        "来自"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-24.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-24.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-04-24.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: [cron:e4264589-c988-44ef-ac82-6d7ecf138fc7 agency-agents-daily-sync] 执行 agency-sync 增量同步： 1. 运行 `node C:/Users/Administrator/.openclaw/workspace/skills/agency-sync/sync.js update` 2. 同步完成后，检查是否成功（exit code = 0） 3. 如果有新增/变更的 Agent，记录到 memory/YYYY-MM-DD.md 4. 返回同步结果摘要（新增数量、变更",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "c2c2313ce194"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "agency-agents-daily-sync",
+        "agency-sync",
+        "users/administrator",
+        "如果有新增/变更的",
+        "memory/yyyy-mm-dd.md",
+        "user",
+        "cron:e4264589",
+        "c988"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-24.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-24.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-04-24.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: 同步成功，Agent 数量与昨日持平（173个），无可记录的新增/变更。保存 registry 备份并记录日志。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "c2c2313ce194"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "备份",
+        "无可记录的新增/变更",
+        "assistant",
+        "同步",
+        "成功",
+        "数量",
+        "昨日",
+        "持平"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-24.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-24.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-04-24.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: **静默完成** — 同步成功，Agent 总数 173 与昨日持平，无新增/变更。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "c2c2313ce194"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "无新增/变更",
+        "assistant",
+        "静默",
+        "完成",
+        "同步",
+        "成功",
+        "总数",
+        "昨日"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:67:67": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:67:67",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 67,
+      "endLine": 67,
+      "source": "memory",
+      "snippet": "Assistant: 看到了，问题很明显。 **你已经装了这个插件**，但有两个问题： 1. **`feishu-bot-chat` 依赖 `@larksuite/openclaw-lark`，你没装** 2. **飞书插件重复加载冲突**（日志里有 `duplicate plugin id detected` 警告） --- 根据那篇文章，需要这样做： **第一步：安装依赖** ``` npx -y @larksuite/openclaw-lark ``` **第二步：修复飞书配置** 文档说要关闭流式输出，不然群内 @ 机器人会失效。在配置里加： `",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "feishu-bot-chat",
+        "larksuite/openclaw-lark",
+        "assistant",
+        "看到",
+        "问题",
+        "明显",
+        "已经",
+        "这个"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:68:68": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:68:68",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 68,
+      "endLine": 68,
+      "source": "memory",
+      "snippet": "User: [Bootstrap pending] Please read BOOTSTRAP.md from the workspace and follow it before replying normally. If this run can complete the BOOTSTRAP.md workflow, do so. If it cannot, explain the blocker briefly, continue with any bootstrap steps that are still possible here, and",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "bootstrap.md",
+        "user",
+        "bootstrap",
+        "pending",
+        "please",
+        "read",
+        "the",
+        "follow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:69:69": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:69:69",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 69,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "Assistant: 好，我检查一下当前状态。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "检查",
+        "一下",
+        "当前",
+        "状态"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:70:70": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:70:70",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 70,
+      "endLine": 70,
+      "source": "memory",
+      "snippet": "Assistant: 问题定位到了。 **根本原因：** `feishu` 插件在调用 `createScopedPairingAccess` 时出错，这个函数来自 OpenClaw 的 plugin SDK，但版本不匹配。`feishu-bot-chat` 需要 `minGatewayVersion: 2026.3.24-beta.2`，但你装的 `@openclaw/feishu` 是 `2026.3.13`。 **解决方案：升级 `@openclaw/feishu`** 文章里说的 `@larksuite/openclaw-lark` 是旧版依赖，",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "feishu-bot-chat",
+        "2026.3.24-beta.2",
+        "openclaw/feishu",
+        "2026.3.13",
+        "larksuite/openclaw-lark",
+        "assistant",
+        "问题"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:71:71": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:71:71",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 71,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "Assistant: 找到根本原因了。 **问题：`plugins.entries.feishu` 配置导致本地插件覆盖了 OpenClaw 内置的飞书插件** - 内置插件：OpenClaw 2026.4.21 自带 - 本地插件：`extensions/feishu` 是旧版 2026.3.13，缺少 `createScopedPairingAccess` **解决方案：删除或禁用本地的旧版 feishu 扩展，让 OpenClaw 用内置版本。**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "plugins.entries.feishu",
+        "2026.4.21",
+        "extensions/feishu",
+        "2026.3.13",
+        "assistant",
+        "找到",
+        "根本",
+        "原因"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:72:72": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:72:72",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 72,
+      "endLine": 72,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]] 已修复。问题是：**你手动安装的 feishu 扩展（2026.3.13）太旧了，覆盖了 OpenClaw 内置的新版飞书插件（2026.4.21）**，导致 `createScopedPairingAccess` 函数缺失。 **已执行的操作：** 1. ✅ 删除了 `extensions/feishu` 旧版扩展 2. ✅ 从 `plugins.entries` 移除了旧版 feishu 配置 3. ✅ Gateway 正在重启，将使用内置新版飞书插件 重启后（约10秒），飞书私聊和群聊",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "reply-to-current",
+        "2026.3.13",
+        "2026.4.21",
+        "extensions/feishu",
+        "plugins.entries",
+        "assistant",
+        "修复"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:73:73": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:73:73",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 73,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "User: System (untrusted): [2026-04-23 14:46:36 GMT+8] Exec completed (vivid-va, code 0) :: goryInfo : NotSpecified: (Usage: feishu-p...ions] [command]:String) [], RemoteException + FullyQualifiedErrorId : NativeCommandError CLI for managing Feishu official plugin for Op… System (",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "vivid-va",
+        "feishu-p",
+        "user",
+        "system",
+        "untrusted",
+        "gmt",
+        "exec",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:74:74": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:74:74",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 74,
+      "endLine": 74,
+      "source": "memory",
+      "snippet": "User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file C:/Users/Administrator/.openclaw/workspace/HEARTBEAT.md (",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "heartbeat-ok",
+        "users/administrator",
+        "openclaw/workspace/heartbeat.md",
+        "user",
+        "read",
+        "exists",
+        "context"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:75:75": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:75:75",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 75,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT_OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:76:76": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:76:76",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 76,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file C:/Users/Administrator/.openclaw/workspace/HEARTBEAT.md (",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "heartbeat-ok",
+        "users/administrator",
+        "openclaw/workspace/heartbeat.md",
+        "user",
+        "read",
+        "exists",
+        "context"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:77:77": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:77:77",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 77,
+      "endLine": 77,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT_OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:78:78": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:78:78",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 78,
+      "endLine": 78,
+      "source": "memory",
+      "snippet": "User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file C:/Users/Administrator/.openclaw/workspace/HEARTBEAT.md (",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "heartbeat-ok",
+        "users/administrator",
+        "openclaw/workspace/heartbeat.md",
+        "user",
+        "read",
+        "exists",
+        "context"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:79:79": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:79:79",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 79,
+      "endLine": 79,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT_OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:80:80": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:80:80",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 80,
+      "endLine": 80,
+      "source": "memory",
+      "snippet": "User: 我现在把feishu-bot-chat插件删除了，群里的你还是收不到。目前私聊是可以的。你现在帮我研究一下openclaw-lark插件，文档在https://bytedance.larkoffice.com/docx/MFK7dDFLFoVlOGxWCv5cTXKmnMh",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "我现在把feishu-bot-chat插件删除了",
+        "你现在帮我研究一下openclaw-lark插件",
+        "user",
+        "现在",
+        "feishu",
+        "bot",
+        "chat",
+        "删除"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:81:81": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:81:81",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 81,
+      "endLine": 81,
+      "source": "memory",
+      "snippet": "Assistant: `@larksuite/openclaw-lark` 没装。当前飞书能私聊但群不行，让我先看看群里消息的日志。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "larksuite/openclaw-lark",
+        "assistant",
+        "larksuite",
+        "openclaw",
+        "lark",
+        "当前",
+        "不行",
+        "我先"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:82:82": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:82:82",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 82,
+      "endLine": 82,
+      "source": "memory",
+      "snippet": "Assistant: 找到问题了！日志显示： ``` feishu[xtg_bot]: group oc_70904ea74eb95f5ca240a0950991a886 not in groupAllowFrom (groupPolicy=allowlist) ``` **群消息被拦截了**——`groupPolicy` 还是 `allowlist`（白名单模式），你的群不在里面。之前只改了 `dmPolicy`，没改群策略。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "xtg-bot",
+        "assistant",
+        "找到",
+        "问题",
+        "日志",
+        "显示",
+        "feishu",
+        "group"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:83:83": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:83:83",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 83,
+      "endLine": 83,
+      "source": "memory",
+      "snippet": "Assistant: 已发送，这次直接用 `@卡修斯` 名字发送。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "发送",
+        "这次",
+        "直接",
+        "名字"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:84:84": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:84:84",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 84,
+      "endLine": 84,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 18:42:54 GMT+8] Feishu[xtg_bot] group oc_70904ea74eb95f5ca240a0950991a886 | ou_5bc3dccefe3098a944cb6bd78ffef5ec [msg:om_x100b51ab35cd08acb20d4f7c66835f7, @bot] 好的，我用飞书原生 @ 格式发一条消息到群里 。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "xtg-bot",
+        "user",
+        "system",
+        "gmt",
+        "feishu",
+        "group",
+        "bot",
+        "好的"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:85:85": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:85:85",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 85,
+      "endLine": 85,
+      "source": "memory",
+      "snippet": "Assistant: <at user_id=\"ou_3bfa4b84edf7c4f9bb18bdb394afb0e3\">天哥</at> 你好",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user-id",
+        "assistant",
+        "你好"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:86:86": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:86:86",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 86,
+      "endLine": 86,
+      "source": "memory",
+      "snippet": "Assistant: 已发送，用 `ou_3bfa4b84edf7c4f9bb18bdb394afb0e3` @ 了天哥。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "发送"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:87:87": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:87:87",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 87,
+      "endLine": 87,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 18:43:42 GMT+8] Feishu[xtg_bot] group oc_70904ea74eb95f5ca240a0950991a886 | ou_5bc3dccefe3098a944cb6bd78ffef5ec [msg:om_x100b51ab35da34a0b364fdfeb2a1541, @bot] </at> 测试 @——卡修斯通过 Bot ID 直接 @ 你，收到请回复。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "xtg-bot",
+        "user",
+        "system",
+        "gmt",
+        "feishu",
+        "group",
+        "bot",
+        "测试"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:88:88": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:88:88",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 88,
+      "endLine": 88,
+      "source": "memory",
+      "snippet": "Assistant: 收到，卡修斯！Bot ID 直接 @ 测试成功 ✅",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "收到",
+        "bot",
+        "直接",
+        "测试",
+        "成功"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:89:89": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:89:89",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 89,
+      "endLine": 89,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 18:48:07 GMT+8] Feishu[xtg_bot] group oc_70904ea74eb95f5ca240a0950991a886 | ou_1b35a7e08c18ad9df24f0491eb2f06e6 [msg:om_x100b51abc04ad8a8b351deb2b9bdd4c, @bot] 机器人卡修斯他发的信息你能收到，但你发他的信息他收不到，你分析一下，是不是＠的方式不对，他用的就是ＩＤ。你回复他时＠自己了",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "xtg-bot",
+        "user",
+        "system",
+        "gmt",
+        "feishu",
+        "group",
+        "bot",
+        "机器"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:90:90": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:90:90",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 90,
+      "endLine": 90,
+      "source": "memory",
+      "snippet": "Assistant: 明白了！问题在于我之前一直 @ 的是天哥（`ou_3bfa4b84edf7c4f9bb18bdb394afb0e3`），而不是卡修斯。 现在正确 @ 卡修斯：",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "assistant",
+        "明白",
+        "问题",
+        "在于",
+        "之前",
+        "一直",
+        "的是",
+        "而不是"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:91:91": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:91:91",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 91,
+      "endLine": 91,
+      "source": "memory",
+      "snippet": "Assistant: <at user_id=\"ou_249b56fc02cc8972401282fc68e6195f\">卡修斯</at> 你好，我是向天哥，收到请回复",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user-id",
+        "assistant",
+        "你好",
+        "我是",
+        "收到",
+        "回复"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:92:92": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:92:92",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 92,
+      "endLine": 92,
+      "source": "memory",
+      "snippet": "Assistant: 分析一下可能的原因： **消息流是这样的：** - 卡修斯 bot 发消息 → 我能收到 ✅ - 我回复 @卡修斯 → 卡修斯收不到 ❌ **可能问题：** 1. **Bot 只监听私聊**：卡修斯 bot 可能只处理直接发给它的私聊消息，不处理群里的 @ 消息 2. **消息格式问题**：我发的 `<at user_id=\"ou_249b56fc02cc8972401282fc68e6195f\">卡修斯</at>` 在群里，卡修斯 bot 收到时可能解析不出这个 @ 标签 3. **权限问题**：两个 bot 之间在群里的 @ 通",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user-id",
+        "assistant",
+        "分析",
+        "一下",
+        "可能",
+        "原因",
+        "消息",
+        "这样"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:93:93": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:93:93",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 93,
+      "endLine": 93,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 18:53:26 GMT+8] Feishu[xtg_bot] group oc_70904ea74eb95f5ca240a0950991a886 | ou_5bc3dccefe3098a944cb6bd78ffef5ec [msg:om_x100b51abecbbb8a4b3470fb8c76efdd, post, @bot] 你说得对，这确实有问题。让我重新查一下： 天哥用的 **Bot ID 是 ou_3bfa4b84edf7c4f9bb18bdb394afb0e3**，但这是**天哥的 Bot",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "xtg-bot",
+        "user",
+        "system",
+        "gmt",
+        "feishu",
+        "group",
+        "post",
+        "bot"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:94:94": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:94:94",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 94,
+      "endLine": 94,
+      "source": "memory",
+      "snippet": "Assistant: 明白了，问题在于： - 我用 `ou_249b56fc02cc8972401282fc68e6195f` @ 卡修斯，但这个 ID 可能不是卡修斯/Hermes 的真实 Bot ID - 所以飞书显示 \"Hermes 不在这个会话中\" **需要确认：** 让卡修斯查一下他自己真实的 Open ID 或 Bot ID 是多少。 可以用这个方式查询： 在卡修斯的机器上调用飞书 API 获取自己的 user info： - Open ID：`ou_` 开头 - 或者查 `open_id` 这样才能确认卡修斯真实的 ID，确保 @ 能正确投",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "可能不是卡修斯/hermes",
+        "open-id",
+        "assistant",
+        "明白",
+        "问题",
+        "在于",
+        "这个",
+        "可能"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:95:95": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:95:95",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 95,
+      "endLine": 95,
+      "source": "memory",
+      "snippet": "User: [Queued messages while agent was busy] --- Queued #1 (from ou_5bc3dccefe3098a944cb6bd78ffef5ec) System: [2026-04-23 18:53:48 GMT+8] Feishu[xtg_bot] group oc_70904ea74eb95f5ca240a0950991a886 | ou_5bc3dccefe3098a944cb6bd78ffef5ec [msg:om_x100b51abec24b488b32eb2f0e084f6d, repl",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "xtg-bot",
+        "user",
+        "queued",
+        "messages",
+        "while",
+        "was",
+        "busy",
+        "system"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:96:96": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:96:96",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 96,
+      "endLine": 96,
+      "source": "memory",
+      "snippet": "Assistant: 卡修斯分析得对！原因是： **天哥的 Bot（ou_3bfa4b84edf7c4f9bb18bdb394afb0e3）没有加入这个群** 所以群里 @ 卡修斯时，飞书提示 \"hermes不在这个会话中\"。 **解决方法：** 让群主/管理员把天哥的 Bot `ou_3bfa4b84edf7c4f9bb18bdb394afb0e3` 拉进群里，这样两个 bot 就能在群里正常互相 @ 了。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "让群主/管理员把天哥的",
+        "assistant",
+        "分析",
+        "原因",
+        "bot",
+        "没有",
+        "加入",
+        "这个"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:97:97": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:97:97",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 97,
+      "endLine": 97,
+      "source": "memory",
+      "snippet": "User: System: [2026-04-23 19:06:27 GMT+8] Feishu[xtg_bot] group oc_70904ea74eb95f5ca240a0950991a886 | ou_1b35a7e08c18ad9df24f0491eb2f06e6 [msg:om_x100b51ab9d83eca0b36df53dff1eb60, @bot] 你用ou_249b56fc02cc8972401282fc68e6195f再试一下",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "xtg-bot",
+        "user",
+        "system",
+        "gmt",
+        "feishu",
+        "group",
+        "bot",
+        "再试一下"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-23.txt:98:98": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:98:98",
+      "path": "memory/.dreams/session-corpus/2026-04-23.txt",
+      "startLine": 98,
+      "endLine": 98,
+      "source": "memory",
+      "snippet": "Assistant: <at user_id=\"ou_249b56fc02cc8972401282fc68e6195f\">卡修斯</at> 测试消息，来自向天哥，收到请回复",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-24T03:27:44.002Z",
+      "lastRecalledAt": "2026-04-24T03:27:44.002Z",
+      "queryHashes": [
+        "104ad850261a"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "user-id",
+        "assistant",
+        "测试",
+        "消息",
+        "来自",
+        "收到",
+        "回复"
       ]
     }
   }

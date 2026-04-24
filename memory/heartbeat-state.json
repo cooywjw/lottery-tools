@@ -1,12 +1,13 @@
 {
-    "lastContextCheck": 1776946560,
-    "lastCheck": 1776946560,
-    "lastHeartbeat": 1776946560,
-    "lastHeartbeatCheck": 1776946560,
-    "lastSystemCheck": 1776946560,
-    "lastWechatCheck": 1775890926,
-    "lastContextUsageCheck": 1776946560,
-    "lastSystemHealthCheck": 1776946560,
-    "lastWechatContentCheck": 1775890926,
-    "lastTodoCheck": 1776946560
+  "lastContextCheck": 1745475120,
+  "lastCheck": 1745475120,
+  "lastHeartbeat": 1745475120,
+  "lastHeartbeatCheck": 1745475120,
+  "lastSystemCheck": 1745475120,
+  "lastWechatCheck": 1775890926,
+  "lastContextUsageCheck": 1745475120,
+  "lastSystemHealthCheck": 1745475120,
+  "lastWechatContentCheck": 1775890926,
+  "lastTodoCheck": 1745475120,
+  "doctorRunAt": 1745475120
 }

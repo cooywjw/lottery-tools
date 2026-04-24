@@ -1,0 +1,1040 @@
+{
+  "unknown/PULL_REQUEST_TEMPLATE": {
+    "path": "unknown/PULL_REQUEST_TEMPLATE.md",
+    "department": "unknown",
+    "color": "cyan",
+    "description": "PULL_REQUEST_TEMPLATE"
+  },
+  "academic/academic-anthropologist": {
+    "path": "academic/academic-anthropologist.md",
+    "department": "academic",
+    "color": "cyan",
+    "description": "academic-anthropologist"
+  },
+  "academic/academic-geographer": {
+    "path": "academic/academic-geographer.md",
+    "department": "academic",
+    "color": "cyan",
+    "description": "academic-geographer"
+  },
+  "academic/academic-historian": {
+    "path": "academic/academic-historian.md",
+    "department": "academic",
+    "color": "cyan",
+    "description": "academic-historian"
+  },
+  "academic/academic-narratologist": {
+    "path": "academic/academic-narratologist.md",
+    "department": "academic",
+    "color": "cyan",
+    "description": "academic-narratologist"
+  },
+  "academic/academic-psychologist": {
+    "path": "academic/academic-psychologist.md",
+    "department": "academic",
+    "color": "cyan",
+    "description": "academic-psychologist"
+  },
+  "design/design-brand-guardian": {
+    "path": "design/design-brand-guardian.md",
+    "department": "design",
+    "color": "pink",
+    "description": "design-brand-guardian"
+  },
+  "design/design-image-prompt-engineer": {
+    "path": "design/design-image-prompt-engineer.md",
+    "department": "design",
+    "color": "pink",
+    "description": "design-image-prompt-engineer"
+  },
+  "design/design-inclusive-visuals-specialist": {
+    "path": "design/design-inclusive-visuals-specialist.md",
+    "department": "design",
+    "color": "pink",
+    "description": "design-inclusive-visuals-specialist"
+  },
+  "design/design-ui-designer": {
+    "path": "design/design-ui-designer.md",
+    "department": "design",
+    "color": "pink",
+    "description": "design-ui-designer"
+  },
+  "design/design-ux-architect": {
+    "path": "design/design-ux-architect.md",
+    "department": "design",
+    "color": "pink",
+    "description": "design-ux-architect"
+  },
+  "design/design-ux-researcher": {
+    "path": "design/design-ux-researcher.md",
+    "department": "design",
+    "color": "pink",
+    "description": "design-ux-researcher"
+  },
+  "design/design-visual-storyteller": {
+    "path": "design/design-visual-storyteller.md",
+    "department": "design",
+    "color": "pink",
+    "description": "design-visual-storyteller"
+  },
+  "design/design-whimsy-injector": {
+    "path": "design/design-whimsy-injector.md",
+    "department": "design",
+    "color": "pink",
+    "description": "design-whimsy-injector"
+  },
+  "engineering/engineering-ai-data-remediation-engineer": {
+    "path": "engineering/engineering-ai-data-remediation-engineer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-ai-data-remediation-engineer"
+  },
+  "engineering/engineering-ai-engineer": {
+    "path": "engineering/engineering-ai-engineer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-ai-engineer"
+  },
+  "engineering/engineering-autonomous-optimization-architect": {
+    "path": "engineering/engineering-autonomous-optimization-architect.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-autonomous-optimization-architect"
+  },
+  "engineering/engineering-backend-architect": {
+    "path": "engineering/engineering-backend-architect.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-backend-architect"
+  },
+  "engineering/engineering-cms-developer": {
+    "path": "engineering/engineering-cms-developer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-cms-developer"
+  },
+  "engineering/engineering-code-reviewer": {
+    "path": "engineering/engineering-code-reviewer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-code-reviewer"
+  },
+  "engineering/engineering-codebase-onboarding-engineer": {
+    "path": "engineering/engineering-codebase-onboarding-engineer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-codebase-onboarding-engineer"
+  },
+  "engineering/engineering-data-engineer": {
+    "path": "engineering/engineering-data-engineer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-data-engineer"
+  },
+  "engineering/engineering-database-optimizer": {
+    "path": "engineering/engineering-database-optimizer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-database-optimizer"
+  },
+  "engineering/engineering-devops-automator": {
+    "path": "engineering/engineering-devops-automator.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-devops-automator"
+  },
+  "engineering/engineering-email-intelligence-engineer": {
+    "path": "engineering/engineering-email-intelligence-engineer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-email-intelligence-engineer"
+  },
+  "engineering/engineering-embedded-firmware-engineer": {
+    "path": "engineering/engineering-embedded-firmware-engineer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-embedded-firmware-engineer"
+  },
+  "engineering/engineering-feishu-integration-developer": {
+    "path": "engineering/engineering-feishu-integration-developer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-feishu-integration-developer"
+  },
+  "engineering/engineering-filament-optimization-specialist": {
+    "path": "engineering/engineering-filament-optimization-specialist.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-filament-optimization-specialist"
+  },
+  "engineering/engineering-frontend-developer": {
+    "path": "engineering/engineering-frontend-developer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-frontend-developer"
+  },
+  "engineering/engineering-git-workflow-master": {
+    "path": "engineering/engineering-git-workflow-master.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-git-workflow-master"
+  },
+  "engineering/engineering-incident-response-commander": {
+    "path": "engineering/engineering-incident-response-commander.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-incident-response-commander"
+  },
+  "engineering/engineering-minimal-change-engineer": {
+    "path": "engineering/engineering-minimal-change-engineer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-minimal-change-engineer"
+  },
+  "engineering/engineering-mobile-app-builder": {
+    "path": "engineering/engineering-mobile-app-builder.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-mobile-app-builder"
+  },
+  "engineering/engineering-rapid-prototyper": {
+    "path": "engineering/engineering-rapid-prototyper.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-rapid-prototyper"
+  },
+  "engineering/engineering-security-engineer": {
+    "path": "engineering/engineering-security-engineer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-security-engineer"
+  },
+  "engineering/engineering-senior-developer": {
+    "path": "engineering/engineering-senior-developer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-senior-developer"
+  },
+  "engineering/engineering-software-architect": {
+    "path": "engineering/engineering-software-architect.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-software-architect"
+  },
+  "engineering/engineering-solidity-smart-contract-engineer": {
+    "path": "engineering/engineering-solidity-smart-contract-engineer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-solidity-smart-contract-engineer"
+  },
+  "engineering/engineering-sre": {
+    "path": "engineering/engineering-sre.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-sre"
+  },
+  "engineering/engineering-technical-writer": {
+    "path": "engineering/engineering-technical-writer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-technical-writer"
+  },
+  "engineering/engineering-threat-detection-engineer": {
+    "path": "engineering/engineering-threat-detection-engineer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-threat-detection-engineer"
+  },
+  "engineering/engineering-voice-ai-integration-engineer": {
+    "path": "engineering/engineering-voice-ai-integration-engineer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-voice-ai-integration-engineer"
+  },
+  "engineering/engineering-wechat-mini-program-developer": {
+    "path": "engineering/engineering-wechat-mini-program-developer.md",
+    "department": "engineering",
+    "color": "cyan",
+    "description": "engineering-wechat-mini-program-developer"
+  },
+  "finance/finance-bookkeeper-controller": {
+    "path": "finance/finance-bookkeeper-controller.md",
+    "department": "finance",
+    "color": "cyan",
+    "description": "finance-bookkeeper-controller"
+  },
+  "finance/finance-financial-analyst": {
+    "path": "finance/finance-financial-analyst.md",
+    "department": "finance",
+    "color": "cyan",
+    "description": "finance-financial-analyst"
+  },
+  "finance/finance-fpa-analyst": {
+    "path": "finance/finance-fpa-analyst.md",
+    "department": "finance",
+    "color": "cyan",
+    "description": "finance-fpa-analyst"
+  },
+  "finance/finance-investment-researcher": {
+    "path": "finance/finance-investment-researcher.md",
+    "department": "finance",
+    "color": "cyan",
+    "description": "finance-investment-researcher"
+  },
+  "finance/finance-tax-strategist": {
+    "path": "finance/finance-tax-strategist.md",
+    "department": "finance",
+    "color": "cyan",
+    "description": "finance-tax-strategist"
+  },
+  "game/game-audio-engineer": {
+    "path": "game/game-audio-engineer.md",
+    "department": "game",
+    "color": "cyan",
+    "description": "game-audio-engineer"
+  },
+  "game/game-designer": {
+    "path": "game/game-designer.md",
+    "department": "game",
+    "color": "cyan",
+    "description": "game-designer"
+  },
+  "level/level-designer": {
+    "path": "level/level-designer.md",
+    "department": "level",
+    "color": "cyan",
+    "description": "level-designer"
+  },
+  "narrative/narrative-designer": {
+    "path": "narrative/narrative-designer.md",
+    "department": "narrative",
+    "color": "cyan",
+    "description": "narrative-designer"
+  },
+  "technical/technical-artist": {
+    "path": "technical/technical-artist.md",
+    "department": "technical",
+    "color": "cyan",
+    "description": "technical-artist"
+  },
+  "marketing/marketing-agentic-search-optimizer": {
+    "path": "marketing/marketing-agentic-search-optimizer.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-agentic-search-optimizer"
+  },
+  "marketing/marketing-ai-citation-strategist": {
+    "path": "marketing/marketing-ai-citation-strategist.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-ai-citation-strategist"
+  },
+  "marketing/marketing-app-store-optimizer": {
+    "path": "marketing/marketing-app-store-optimizer.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-app-store-optimizer"
+  },
+  "marketing/marketing-baidu-seo-specialist": {
+    "path": "marketing/marketing-baidu-seo-specialist.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-baidu-seo-specialist"
+  },
+  "marketing/marketing-bilibili-content-strategist": {
+    "path": "marketing/marketing-bilibili-content-strategist.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-bilibili-content-strategist"
+  },
+  "marketing/marketing-book-co-author": {
+    "path": "marketing/marketing-book-co-author.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-book-co-author"
+  },
+  "marketing/marketing-carousel-growth-engine": {
+    "path": "marketing/marketing-carousel-growth-engine.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-carousel-growth-engine"
+  },
+  "marketing/marketing-china-ecommerce-operator": {
+    "path": "marketing/marketing-china-ecommerce-operator.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-china-ecommerce-operator"
+  },
+  "marketing/marketing-china-market-localization-strategist": {
+    "path": "marketing/marketing-china-market-localization-strategist.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-china-market-localization-strategist"
+  },
+  "marketing/marketing-content-creator": {
+    "path": "marketing/marketing-content-creator.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-content-creator"
+  },
+  "marketing/marketing-cross-border-ecommerce": {
+    "path": "marketing/marketing-cross-border-ecommerce.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-cross-border-ecommerce"
+  },
+  "marketing/marketing-douyin-strategist": {
+    "path": "marketing/marketing-douyin-strategist.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-douyin-strategist"
+  },
+  "marketing/marketing-growth-hacker": {
+    "path": "marketing/marketing-growth-hacker.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-growth-hacker"
+  },
+  "marketing/marketing-instagram-curator": {
+    "path": "marketing/marketing-instagram-curator.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-instagram-curator"
+  },
+  "marketing/marketing-kuaishou-strategist": {
+    "path": "marketing/marketing-kuaishou-strategist.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-kuaishou-strategist"
+  },
+  "marketing/marketing-linkedin-content-creator": {
+    "path": "marketing/marketing-linkedin-content-creator.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-linkedin-content-creator"
+  },
+  "marketing/marketing-livestream-commerce-coach": {
+    "path": "marketing/marketing-livestream-commerce-coach.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-livestream-commerce-coach"
+  },
+  "marketing/marketing-podcast-strategist": {
+    "path": "marketing/marketing-podcast-strategist.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-podcast-strategist"
+  },
+  "marketing/marketing-private-domain-operator": {
+    "path": "marketing/marketing-private-domain-operator.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-private-domain-operator"
+  },
+  "marketing/marketing-reddit-community-builder": {
+    "path": "marketing/marketing-reddit-community-builder.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-reddit-community-builder"
+  },
+  "marketing/marketing-seo-specialist": {
+    "path": "marketing/marketing-seo-specialist.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-seo-specialist"
+  },
+  "marketing/marketing-short-video-editing-coach": {
+    "path": "marketing/marketing-short-video-editing-coach.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-short-video-editing-coach"
+  },
+  "marketing/marketing-social-media-strategist": {
+    "path": "marketing/marketing-social-media-strategist.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-social-media-strategist"
+  },
+  "marketing/marketing-tiktok-strategist": {
+    "path": "marketing/marketing-tiktok-strategist.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-tiktok-strategist"
+  },
+  "marketing/marketing-twitter-engager": {
+    "path": "marketing/marketing-twitter-engager.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-twitter-engager"
+  },
+  "marketing/marketing-video-optimization-specialist": {
+    "path": "marketing/marketing-video-optimization-specialist.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-video-optimization-specialist"
+  },
+  "marketing/marketing-wechat-official-account": {
+    "path": "marketing/marketing-wechat-official-account.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-wechat-official-account"
+  },
+  "marketing/marketing-weibo-strategist": {
+    "path": "marketing/marketing-weibo-strategist.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-weibo-strategist"
+  },
+  "marketing/marketing-xiaohongshu-specialist": {
+    "path": "marketing/marketing-xiaohongshu-specialist.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-xiaohongshu-specialist"
+  },
+  "marketing/marketing-zhihu-strategist": {
+    "path": "marketing/marketing-zhihu-strategist.md",
+    "department": "marketing",
+    "color": "magenta",
+    "description": "marketing-zhihu-strategist"
+  },
+  "paid/paid-media-auditor": {
+    "path": "paid/paid-media-auditor.md",
+    "department": "paid",
+    "color": "cyan",
+    "description": "paid-media-auditor"
+  },
+  "paid/paid-media-creative-strategist": {
+    "path": "paid/paid-media-creative-strategist.md",
+    "department": "paid",
+    "color": "cyan",
+    "description": "paid-media-creative-strategist"
+  },
+  "paid/paid-media-paid-social-strategist": {
+    "path": "paid/paid-media-paid-social-strategist.md",
+    "department": "paid",
+    "color": "cyan",
+    "description": "paid-media-paid-social-strategist"
+  },
+  "paid/paid-media-ppc-strategist": {
+    "path": "paid/paid-media-ppc-strategist.md",
+    "department": "paid",
+    "color": "cyan",
+    "description": "paid-media-ppc-strategist"
+  },
+  "paid/paid-media-programmatic-buyer": {
+    "path": "paid/paid-media-programmatic-buyer.md",
+    "department": "paid",
+    "color": "cyan",
+    "description": "paid-media-programmatic-buyer"
+  },
+  "paid/paid-media-search-query-analyst": {
+    "path": "paid/paid-media-search-query-analyst.md",
+    "department": "paid",
+    "color": "cyan",
+    "description": "paid-media-search-query-analyst"
+  },
+  "paid/paid-media-tracking-specialist": {
+    "path": "paid/paid-media-tracking-specialist.md",
+    "department": "paid",
+    "color": "cyan",
+    "description": "paid-media-tracking-specialist"
+  },
+  "product/product-behavioral-nudge-engine": {
+    "path": "product/product-behavioral-nudge-engine.md",
+    "department": "product",
+    "color": "purple",
+    "description": "product-behavioral-nudge-engine"
+  },
+  "product/product-feedback-synthesizer": {
+    "path": "product/product-feedback-synthesizer.md",
+    "department": "product",
+    "color": "purple",
+    "description": "product-feedback-synthesizer"
+  },
+  "product/product-manager": {
+    "path": "product/product-manager.md",
+    "department": "product",
+    "color": "purple",
+    "description": "product-manager"
+  },
+  "product/product-sprint-prioritizer": {
+    "path": "product/product-sprint-prioritizer.md",
+    "department": "product",
+    "color": "purple",
+    "description": "product-sprint-prioritizer"
+  },
+  "product/product-trend-researcher": {
+    "path": "product/product-trend-researcher.md",
+    "department": "product",
+    "color": "purple",
+    "description": "product-trend-researcher"
+  },
+  "project/project-management-experiment-tracker": {
+    "path": "project/project-management-experiment-tracker.md",
+    "department": "project",
+    "color": "cyan",
+    "description": "project-management-experiment-tracker"
+  },
+  "project/project-management-jira-workflow-steward": {
+    "path": "project/project-management-jira-workflow-steward.md",
+    "department": "project",
+    "color": "cyan",
+    "description": "project-management-jira-workflow-steward"
+  },
+  "project/project-management-project-shepherd": {
+    "path": "project/project-management-project-shepherd.md",
+    "department": "project",
+    "color": "cyan",
+    "description": "project-management-project-shepherd"
+  },
+  "project/project-management-studio-operations": {
+    "path": "project/project-management-studio-operations.md",
+    "department": "project",
+    "color": "cyan",
+    "description": "project-management-studio-operations"
+  },
+  "project/project-management-studio-producer": {
+    "path": "project/project-management-studio-producer.md",
+    "department": "project",
+    "color": "cyan",
+    "description": "project-management-studio-producer"
+  },
+  "project/project-manager-senior": {
+    "path": "project/project-manager-senior.md",
+    "department": "project",
+    "color": "cyan",
+    "description": "project-manager-senior"
+  },
+  "sales/sales-account-strategist": {
+    "path": "sales/sales-account-strategist.md",
+    "department": "sales",
+    "color": "red",
+    "description": "sales-account-strategist"
+  },
+  "sales/sales-coach": {
+    "path": "sales/sales-coach.md",
+    "department": "sales",
+    "color": "red",
+    "description": "sales-coach"
+  },
+  "sales/sales-deal-strategist": {
+    "path": "sales/sales-deal-strategist.md",
+    "department": "sales",
+    "color": "red",
+    "description": "sales-deal-strategist"
+  },
+  "sales/sales-discovery-coach": {
+    "path": "sales/sales-discovery-coach.md",
+    "department": "sales",
+    "color": "red",
+    "description": "sales-discovery-coach"
+  },
+  "sales/sales-engineer": {
+    "path": "sales/sales-engineer.md",
+    "department": "sales",
+    "color": "red",
+    "description": "sales-engineer"
+  },
+  "sales/sales-outbound-strategist": {
+    "path": "sales/sales-outbound-strategist.md",
+    "department": "sales",
+    "color": "red",
+    "description": "sales-outbound-strategist"
+  },
+  "sales/sales-pipeline-analyst": {
+    "path": "sales/sales-pipeline-analyst.md",
+    "department": "sales",
+    "color": "red",
+    "description": "sales-pipeline-analyst"
+  },
+  "sales/sales-proposal-strategist": {
+    "path": "sales/sales-proposal-strategist.md",
+    "department": "sales",
+    "color": "red",
+    "description": "sales-proposal-strategist"
+  },
+  "macos/macos-spatial-metal-engineer": {
+    "path": "macos/macos-spatial-metal-engineer.md",
+    "department": "macos",
+    "color": "cyan",
+    "description": "macos-spatial-metal-engineer"
+  },
+  "terminal/terminal-integration-specialist": {
+    "path": "terminal/terminal-integration-specialist.md",
+    "department": "terminal",
+    "color": "cyan",
+    "description": "terminal-integration-specialist"
+  },
+  "visionos/visionos-spatial-engineer": {
+    "path": "visionos/visionos-spatial-engineer.md",
+    "department": "visionos",
+    "color": "cyan",
+    "description": "visionos-spatial-engineer"
+  },
+  "xr/xr-cockpit-interaction-specialist": {
+    "path": "xr/xr-cockpit-interaction-specialist.md",
+    "department": "xr",
+    "color": "cyan",
+    "description": "xr-cockpit-interaction-specialist"
+  },
+  "xr/xr-immersive-developer": {
+    "path": "xr/xr-immersive-developer.md",
+    "department": "xr",
+    "color": "cyan",
+    "description": "xr-immersive-developer"
+  },
+  "xr/xr-interface-architect": {
+    "path": "xr/xr-interface-architect.md",
+    "department": "xr",
+    "color": "cyan",
+    "description": "xr-interface-architect"
+  },
+  "accounts/accounts-payable-agent": {
+    "path": "accounts/accounts-payable-agent.md",
+    "department": "accounts",
+    "color": "cyan",
+    "description": "accounts-payable-agent"
+  },
+  "agentic/agentic-identity-trust": {
+    "path": "agentic/agentic-identity-trust.md",
+    "department": "agentic",
+    "color": "cyan",
+    "description": "agentic-identity-trust"
+  },
+  "agents/agents-orchestrator": {
+    "path": "agents/agents-orchestrator.md",
+    "department": "agents",
+    "color": "cyan",
+    "description": "agents-orchestrator"
+  },
+  "automation/automation-governance-architect": {
+    "path": "automation/automation-governance-architect.md",
+    "department": "automation",
+    "color": "cyan",
+    "description": "automation-governance-architect"
+  },
+  "blockchain/blockchain-security-auditor": {
+    "path": "blockchain/blockchain-security-auditor.md",
+    "department": "blockchain",
+    "color": "cyan",
+    "description": "blockchain-security-auditor"
+  },
+  "compliance/compliance-auditor": {
+    "path": "compliance/compliance-auditor.md",
+    "department": "compliance",
+    "color": "cyan",
+    "description": "compliance-auditor"
+  },
+  "corporate/corporate-training-designer": {
+    "path": "corporate/corporate-training-designer.md",
+    "department": "corporate",
+    "color": "cyan",
+    "description": "corporate-training-designer"
+  },
+  "customer/customer-service": {
+    "path": "customer/customer-service.md",
+    "department": "customer",
+    "color": "cyan",
+    "description": "customer-service"
+  },
+  "data/data-consolidation-agent": {
+    "path": "data/data-consolidation-agent.md",
+    "department": "data",
+    "color": "teal",
+    "description": "data-consolidation-agent"
+  },
+  "government/government-digital-presales-consultant": {
+    "path": "government/government-digital-presales-consultant.md",
+    "department": "government",
+    "color": "cyan",
+    "description": "government-digital-presales-consultant"
+  },
+  "healthcare/healthcare-customer-service": {
+    "path": "healthcare/healthcare-customer-service.md",
+    "department": "healthcare",
+    "color": "cyan",
+    "description": "healthcare-customer-service"
+  },
+  "healthcare/healthcare-marketing-compliance": {
+    "path": "healthcare/healthcare-marketing-compliance.md",
+    "department": "healthcare",
+    "color": "cyan",
+    "description": "healthcare-marketing-compliance"
+  },
+  "hospitality/hospitality-guest-services": {
+    "path": "hospitality/hospitality-guest-services.md",
+    "department": "hospitality",
+    "color": "cyan",
+    "description": "hospitality-guest-services"
+  },
+  "hr/hr-onboarding": {
+    "path": "hr/hr-onboarding.md",
+    "department": "hr",
+    "color": "cyan",
+    "description": "hr-onboarding"
+  },
+  "identity/identity-graph-operator": {
+    "path": "identity/identity-graph-operator.md",
+    "department": "identity",
+    "color": "cyan",
+    "description": "identity-graph-operator"
+  },
+  "language/language-translator": {
+    "path": "language/language-translator.md",
+    "department": "language",
+    "color": "cyan",
+    "description": "language-translator"
+  },
+  "legal/legal-billing-time-tracking": {
+    "path": "legal/legal-billing-time-tracking.md",
+    "department": "legal",
+    "color": "gray",
+    "description": "legal-billing-time-tracking"
+  },
+  "legal/legal-client-intake": {
+    "path": "legal/legal-client-intake.md",
+    "department": "legal",
+    "color": "gray",
+    "description": "legal-client-intake"
+  },
+  "legal/legal-document-review": {
+    "path": "legal/legal-document-review.md",
+    "department": "legal",
+    "color": "gray",
+    "description": "legal-document-review"
+  },
+  "loan/loan-officer-assistant": {
+    "path": "loan/loan-officer-assistant.md",
+    "department": "loan",
+    "color": "cyan",
+    "description": "loan-officer-assistant"
+  },
+  "lsp/lsp-index-engineer": {
+    "path": "lsp/lsp-index-engineer.md",
+    "department": "lsp",
+    "color": "cyan",
+    "description": "lsp-index-engineer"
+  },
+  "real/real-estate-buyer-seller": {
+    "path": "real/real-estate-buyer-seller.md",
+    "department": "real",
+    "color": "cyan",
+    "description": "real-estate-buyer-seller"
+  },
+  "recruitment/recruitment-specialist": {
+    "path": "recruitment/recruitment-specialist.md",
+    "department": "recruitment",
+    "color": "cyan",
+    "description": "recruitment-specialist"
+  },
+  "report/report-distribution-agent": {
+    "path": "report/report-distribution-agent.md",
+    "department": "report",
+    "color": "cyan",
+    "description": "report-distribution-agent"
+  },
+  "retail/retail-customer-returns": {
+    "path": "retail/retail-customer-returns.md",
+    "department": "retail",
+    "color": "cyan",
+    "description": "retail-customer-returns"
+  },
+  "sales/sales-data-extraction-agent": {
+    "path": "sales/sales-data-extraction-agent.md",
+    "department": "sales",
+    "color": "red",
+    "description": "sales-data-extraction-agent"
+  },
+  "sales/sales-outreach": {
+    "path": "sales/sales-outreach.md",
+    "department": "sales",
+    "color": "red",
+    "description": "sales-outreach"
+  },
+  "specialized/specialized-chief-of-staff": {
+    "path": "specialized/specialized-chief-of-staff.md",
+    "department": "specialized",
+    "color": "orange",
+    "description": "specialized-chief-of-staff"
+  },
+  "specialized/specialized-civil-engineer": {
+    "path": "specialized/specialized-civil-engineer.md",
+    "department": "specialized",
+    "color": "orange",
+    "description": "specialized-civil-engineer"
+  },
+  "specialized/specialized-cultural-intelligence-strategist": {
+    "path": "specialized/specialized-cultural-intelligence-strategist.md",
+    "department": "specialized",
+    "color": "orange",
+    "description": "specialized-cultural-intelligence-strategist"
+  },
+  "specialized/specialized-developer-advocate": {
+    "path": "specialized/specialized-developer-advocate.md",
+    "department": "specialized",
+    "color": "orange",
+    "description": "specialized-developer-advocate"
+  },
+  "specialized/specialized-document-generator": {
+    "path": "specialized/specialized-document-generator.md",
+    "department": "specialized",
+    "color": "orange",
+    "description": "specialized-document-generator"
+  },
+  "specialized/specialized-french-consulting-market": {
+    "path": "specialized/specialized-french-consulting-market.md",
+    "department": "specialized",
+    "color": "orange",
+    "description": "specialized-french-consulting-market"
+  },
+  "specialized/specialized-korean-business-navigator": {
+    "path": "specialized/specialized-korean-business-navigator.md",
+    "department": "specialized",
+    "color": "orange",
+    "description": "specialized-korean-business-navigator"
+  },
+  "specialized/specialized-mcp-builder": {
+    "path": "specialized/specialized-mcp-builder.md",
+    "department": "specialized",
+    "color": "orange",
+    "description": "specialized-mcp-builder"
+  },
+  "specialized/specialized-model-qa": {
+    "path": "specialized/specialized-model-qa.md",
+    "department": "specialized",
+    "color": "orange",
+    "description": "specialized-model-qa"
+  },
+  "specialized/specialized-salesforce-architect": {
+    "path": "specialized/specialized-salesforce-architect.md",
+    "department": "specialized",
+    "color": "orange",
+    "description": "specialized-salesforce-architect"
+  },
+  "specialized/specialized-workflow-architect": {
+    "path": "specialized/specialized-workflow-architect.md",
+    "department": "specialized",
+    "color": "orange",
+    "description": "specialized-workflow-architect"
+  },
+  "study/study-abroad-advisor": {
+    "path": "study/study-abroad-advisor.md",
+    "department": "study",
+    "color": "cyan",
+    "description": "study-abroad-advisor"
+  },
+  "supply/supply-chain-strategist": {
+    "path": "supply/supply-chain-strategist.md",
+    "department": "supply",
+    "color": "cyan",
+    "description": "supply-chain-strategist"
+  },
+  "zk/zk-steward": {
+    "path": "zk/zk-steward.md",
+    "department": "zk",
+    "color": "cyan",
+    "description": "zk-steward"
+  },
+  "unknown/EXECUTIVE-BRIEF": {
+    "path": "unknown/EXECUTIVE-BRIEF.md",
+    "department": "unknown",
+    "color": "cyan",
+    "description": "EXECUTIVE-BRIEF"
+  },
+  "nexus/nexus-strategy": {
+    "path": "nexus/nexus-strategy.md",
+    "department": "nexus",
+    "color": "cyan",
+    "description": "nexus-strategy"
+  },
+  "unknown/QUICKSTART": {
+    "path": "unknown/QUICKSTART.md",
+    "department": "unknown",
+    "color": "cyan",
+    "description": "QUICKSTART"
+  },
+  "support/support-analytics-reporter": {
+    "path": "support/support-analytics-reporter.md",
+    "department": "support",
+    "color": "blue",
+    "description": "support-analytics-reporter"
+  },
+  "support/support-executive-summary-generator": {
+    "path": "support/support-executive-summary-generator.md",
+    "department": "support",
+    "color": "blue",
+    "description": "support-executive-summary-generator"
+  },
+  "support/support-finance-tracker": {
+    "path": "support/support-finance-tracker.md",
+    "department": "support",
+    "color": "blue",
+    "description": "support-finance-tracker"
+  },
+  "support/support-infrastructure-maintainer": {
+    "path": "support/support-infrastructure-maintainer.md",
+    "department": "support",
+    "color": "blue",
+    "description": "support-infrastructure-maintainer"
+  },
+  "support/support-legal-compliance-checker": {
+    "path": "support/support-legal-compliance-checker.md",
+    "department": "support",
+    "color": "blue",
+    "description": "support-legal-compliance-checker"
+  },
+  "support/support-support-responder": {
+    "path": "support/support-support-responder.md",
+    "department": "support",
+    "color": "blue",
+    "description": "support-support-responder"
+  },
+  "testing/testing-accessibility-auditor": {
+    "path": "testing/testing-accessibility-auditor.md",
+    "department": "testing",
+    "color": "green",
+    "description": "testing-accessibility-auditor"
+  },
+  "testing/testing-api-tester": {
+    "path": "testing/testing-api-tester.md",
+    "department": "testing",
+    "color": "green",
+    "description": "testing-api-tester"
+  },
+  "testing/testing-evidence-collector": {
+    "path": "testing/testing-evidence-collector.md",
+    "department": "testing",
+    "color": "green",
+    "description": "testing-evidence-collector"
+  },
+  "testing/testing-performance-benchmarker": {
+    "path": "testing/testing-performance-benchmarker.md",
+    "department": "testing",
+    "color": "green",
+    "description": "testing-performance-benchmarker"
+  },
+  "testing/testing-reality-checker": {
+    "path": "testing/testing-reality-checker.md",
+    "department": "testing",
+    "color": "green",
+    "description": "testing-reality-checker"
+  },
+  "testing/testing-test-results-analyzer": {
+    "path": "testing/testing-test-results-analyzer.md",
+    "department": "testing",
+    "color": "green",
+    "description": "testing-test-results-analyzer"
+  },
+  "testing/testing-tool-evaluator": {
+    "path": "testing/testing-tool-evaluator.md",
+    "department": "testing",
+    "color": "green",
+    "description": "testing-tool-evaluator"
+  },
+  "testing/testing-workflow-optimizer": {
+    "path": "testing/testing-workflow-optimizer.md",
+    "department": "testing",
+    "color": "green",
+    "description": "testing-workflow-optimizer"
+  }
+}
